@@ -1,0 +1,256 @@
+{
+  "sections": {
+    "slideshow_p7VNTP": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_mzrw67": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hero_section_2160x_d4904673-1ee6-45d9-bcb6-71d950b96492.webp",
+            "heading": "An Effortless Experience",
+            "heading_size": "h0",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Shop Now",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_qfbxyT": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hero_section_2160x_1.webp",
+            "heading": "An Effortless Experience",
+            "heading_size": "h0",
+            "subheading": "Start Selling more Online",
+            "button_label": "Shop Now",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_mzrw67",
+        "slide_qfbxyT"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "collection_list_BMULYA": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_yJhCrM": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-fashion"
+          }
+        },
+        "featured_collection_Qeee8P": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-swimwear"
+          }
+        },
+        "featured_collection_GDbCz9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-innerwear"
+          }
+        },
+        "featured_collection_Rc6cUa": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-acessoiries"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_yJhCrM",
+        "featured_collection_Qeee8P",
+        "featured_collection_GDbCz9",
+        "featured_collection_Rc6cUa"
+      ],
+      "custom_css": [
+        ".card__heading {text-align: center;}"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "color_scheme": "scheme-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_AQDAPp": {
+      "type": "multirow",
+      "blocks": {
+        "row_Yex4Fc": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_768x_aa9908e4-57d1-47d7-8d79-d32581283ce9.webp",
+            "caption": "",
+            "heading": "Built for comfort",
+            "text": "<p>Bringing you the best of ethically sourced fashion from the best designers<\/p>",
+            "button_label": "Shop Now",
+            "button_link": ""
+          }
+        },
+        "row_PFfNir": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_1_480x_7ee004af-d3f1-4dca-aa4e-27daad6087bc.webp",
+            "caption": "",
+            "heading": "Better for the planet",
+            "text": "<p>Committed to sustainability from the ground up. From recycled packaging and fibers.<\/p>",
+            "button_label": "Learn More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_Yex4Fc",
+        "row_PFfNir"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "primary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "scheme-1",
+        "row_color_scheme": "scheme-3",
+        "mobile_content_alignment": "left",
+        "padding_top": 44,
+        "padding_bottom": 20
+      }
+    },
+    "featured_blog_H4Qixb": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Our journal",
+        "heading_size": "h1",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 20,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_8DTH3g": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jg8Uw6": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_fyeGKU": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "button_bHk3Jr": {
+          "type": "button",
+          "settings": {
+            "button_label": "View All",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_jg8Uw6",
+        "text_fyeGKU",
+        "button_bHk3Jr"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "newsletter_bJAgBp": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_HGPAUB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe and Save",
+            "heading_size": "h2"
+          }
+        },
+        "paragraph_gxzqhb": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Stay in touch.<\/p>"
+          }
+        },
+        "email_form_xC9NMa": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading_HGPAUB",
+        "paragraph_gxzqhb",
+        "email_form_xC9NMa"
+      ],
+      "settings": {
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "slideshow_p7VNTP",
+    "collection_list_BMULYA",
+    "multirow_AQDAPp",
+    "featured_blog_H4Qixb",
+    "rich_text_8DTH3g",
+    "newsletter_bJAgBp"
+  ]
+}
