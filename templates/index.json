@@ -270,8 +270,9 @@
         "column_BiW7mW": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/svgviewer-output_5.svg",
+            "title": "Guarantee",
+            "text": "<p>100% customer satisfaction<\/p><p>guaranteed.<\/p>",
             "link_label": "",
             "link": ""
           }
