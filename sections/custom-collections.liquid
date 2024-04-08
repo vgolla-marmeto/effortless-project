@@ -15,6 +15,16 @@
 <div class= "">
 <h1 class="heading">{{ section.settings.section_name }} </h1>
 <div class="collection-list-container">
+    {% for block in section.blocks %}
+        {% if block.collection_id != blank %}
+            <img src={{block.collection-id}}  />
+
+        {% endif %}
+
+
+        {% endfor %}
+
+</div>
     
 
 
@@ -66,7 +76,7 @@
       "settings": [
         {
           "type": "image_picker",
-          "id": "collection-id",
+          "id": "collection_id",
           "label": "t:sections.collection-list.blocks.featured_collection.settings.collection.label"
         },
         {
