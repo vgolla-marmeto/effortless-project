@@ -327,6 +327,13 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "custom_collections_wdaKmU": {
+      "type": "custom-collections",
+      "settings": {
+        "section-name": "",
+        "heading_size": "h0"
+      }
     }
   },
   "order": [
@@ -337,6 +344,7 @@
     "featured_blog_H4Qixb",
     "rich_text_8DTH3g",
     "newsletter_bJAgBp",
-    "featured_collection_PYHNm9"
+    "featured_collection_PYHNm9",
+    "custom_collections_wdaKmU"
   ]
 }
