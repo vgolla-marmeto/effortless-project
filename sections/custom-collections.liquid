@@ -3,7 +3,32 @@
 .heading{
     text-align: center
 }
+.collection-list-container{
+    display: flex;
+    justify-content: "center";
+    align-items : "center";
+    flex-wrap: wrap
+}
+.single_collection{
+  position: relative;
+  max-width: 350px;
+  max-height: 350px
 
+
+}
+.custom-image {
+  width: 100%;
+  height: 100%
+
+}
+.text-container{
+    position: absolute;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px
+}
 
 
 {% endstyle %}
@@ -12,24 +37,24 @@
 
 
 
-<div class= "">
+<div class= "page-width">
     <h1 class="heading">{{ section.settings.section_name }} </h1>
     <div class="collection-list-container">
         <div class="single_collection">
-            <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-fashion-collection_480x.jpg?v=1674843627"  />
-            <div> <p>Men's Fashion </p> </div>
+            <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-fashion-collection_480x.jpg?v=1674843627" class="custom-iamge"  />
+            <div class="text-container"> <p class="text-ele">Men's Fashion </p> </div>
         </div>
         <div class="single_collection">
-            <img src= "https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-swimwear-collection_480x.jpg?v=1674843676"  />
-            <div> <p>Men's swimwear </p> </div>
+            <img src= "https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-swimwear-collection_480x.jpg?v=1674843676" class="custom-iamge"  />
+            <div class="text-container"> <p  class="text-ele">Men's swimwear </p> </div>
         </div>
         <div class="single_collection">
-            <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-underwear-collection_480x.jpg?v=1674843714"  />
-            <div> <p>Men's Innerwear </p> </div>
+            <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-underwear-collection_480x.jpg?v=1674843714" class="custom-iamge"  />
+            <div class="text-container"> <p  class="text-ele">Men's Innerwear </p> </div>
         </div>
         <div class="single_collection">
-            <img src=https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-fashion-collection_480x.jpg?v=1674843627  />
-            <div> <p>Men's accesories </p> </div>
+            <img src=https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-fashion-collection_480x.jpg?v=1674843627 class="custom-iamge" />
+            <div class="text-container"> <p class="text-ele">Men's accesories </p> </div>
         </div>
     </div>
     
