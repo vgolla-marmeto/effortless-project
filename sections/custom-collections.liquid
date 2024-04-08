@@ -17,10 +17,14 @@
 <div class="collection-list-container">
     {% for block in section.blocks %}
         {% if block.collection_id != blank %}
-            <img src={{block.collection-id}}  />
+            <img src=https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-fashion-collection_480x.jpg?v=1674843627  />
 
         {% endif %}
 
+        {% if block.collection_heading != blank %}
+         <h1> {{ block.collection_heading }}
+        {% endif %}
+        
 
         {% endfor %}
 
