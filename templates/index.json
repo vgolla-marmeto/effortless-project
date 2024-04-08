@@ -330,9 +330,21 @@
     },
     "custom_collections_wdaKmU": {
       "type": "custom-collections",
+      "blocks": {
+        "collection_PrpkBP": {
+          "type": "collection",
+          "settings": {
+            "collection-id": "shopify:\/\/shop_images\/Frame1_2.webp",
+            "collection_heading": "Men's Fashion"
+          }
+        }
+      },
+      "block_order": [
+        "collection_PrpkBP"
+      ],
       "settings": {
-        "section-name": "",
-        "heading_size": "h0"
+        "section_name": "Collections",
+        "custom_heading_size": "h1"
       }
     }
   },
