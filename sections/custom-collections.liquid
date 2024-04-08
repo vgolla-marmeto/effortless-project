@@ -14,6 +14,9 @@
 
 <div class= "">
 <h1 class="heading"> Collections </h1>
+<div class="collection-list-container">
+    
+
 
 </div>
 
@@ -25,6 +28,34 @@
   "tag": "section",
   "class": "section",
   "settings": [
+
+    {
+        "type": "inline_richtext",
+        "id": "section-name",
+        "label": "Heading"
+    
+    },
+    {
+        "type": "select",
+        "id": "heading_size",
+        "options": [
+          {
+            "value": "h2",
+            "label": "t:sections.all.heading_size.options__1.label"
+          },
+          {
+            "value": "h1",
+            "label": "t:sections.all.heading_size.options__2.label"
+          },
+          {
+            "value": "h0",
+            "label": "t:sections.all.heading_size.options__3.label"
+          }
+        ],
+        "default": "h1",
+        "label": "t:sections.all.heading_size.label"
+      }
+   
    
   ],
   "presets": [
