@@ -13,7 +13,7 @@
 
 
 <div class= "">
-<h1 class="heading"> Collections </h1>
+<h1 class="heading">{{ section.settings.section_name }} </h1>
 <div class="collection-list-container">
     
 
@@ -31,13 +31,14 @@
 
     {
         "type": "inline_richtext",
-        "id": "section-name",
-        "label": "Heading"
+        "id": "section_name",
+        "label": "Heading",
+        "default": "Collections"
     
     },
     {
         "type": "select",
-        "id": "heading_size",
+        "id": "custom_heading_size",
         "options": [
           {
             "value": "h2",
