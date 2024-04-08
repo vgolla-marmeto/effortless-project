@@ -13,23 +13,25 @@
 
 
 <div class= "">
-<h1 class="heading">{{ section.settings.section_name }} </h1>
-<div class="collection-list-container">
-    <img src=https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-fashion-collection_480x.jpg?v=1674843627  />
-    {% for block in section.blocks %}
-        {% if block.collection_id != blank %}
+    <h1 class="heading">{{ section.settings.section_name }} </h1>
+    <div class="collection-list-container">
+        <div class="single_collection">
+            <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-fashion-collection_480x.jpg?v=1674843627"  />
+            <div> <p>Men's Fashion </p> </div>
+        </div>
+        <div class="single_collection">
+            <img src= "https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-swimwear-collection_480x.jpg?v=1674843676"  />
+            <div> <p>Men's swimwear </p> </div>
+        </div>
+        <div class="single_collection">
+            <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-underwear-collection_480x.jpg?v=1674843714"  />
+            <div> <p>Men's Innerwear </p> </div>
+        </div>
+        <div class="single_collection">
             <img src=https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-fashion-collection_480x.jpg?v=1674843627  />
-
-        {% endif %}
-
-        {% if block.collection_heading != blank %}
-         <h1> {{ block.collection_heading }}
-        {% endif %}
-        
-
-        {% endfor %}
-
-</div>
+            <div> <p>Men's accesories </p> </div>
+        </div>
+    </div>
     
 
 
