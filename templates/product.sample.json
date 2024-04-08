@@ -46,7 +46,7 @@
         "text_UtUaTA": {
           "type": "text",
           "settings": {
-            "text": "new text",
+            "text": "hello world",
             "text_style": "body"
           }
         }
