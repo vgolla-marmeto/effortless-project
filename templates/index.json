@@ -55,6 +55,62 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "multicolumn_MJ99aE": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_BejVjC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/svgviewer-output_1.svg",
+            "title": "Quality",
+            "text": "<p>Exceptional quality from top<\/p><p>to bottom.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_gPQWqq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/svgviewer-output_2.svg",
+            "title": "Delivery",
+            "text": "<p>Fast and free delivery<\/p><p>worldwide.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_BiW7mW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/svgviewer-output_5.svg",
+            "title": "Guarantee",
+            "text": "<p>100% customer satisfaction<\/p><p>guaranteed.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_BejVjC",
+        "column_gPQWqq",
+        "column_BiW7mW"
+      ],
+      "settings": {
+        "title": "Why Choose Effortless?",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collection_list_BMULYA": {
       "type": "collection-list",
       "blocks": {
@@ -247,6 +303,7 @@
   },
   "order": [
     "slideshow_p7VNTP",
+    "multicolumn_MJ99aE",
     "collection_list_BMULYA",
     "multirow_AQDAPp",
     "featured_blog_H4Qixb",
