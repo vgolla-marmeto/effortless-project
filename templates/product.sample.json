@@ -3,13 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -49,17 +42,24 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "text_UtUaTA": {
+          "type": "text",
+          "settings": {
+            "text": "new text",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "text_UtUaTA"
       ],
       "settings": {
         "enable_sticky_info": true,
