@@ -61,13 +61,18 @@
   ],
   "blocks": [
     {
-      "type": "featured_collection",
+      "type": "collection",
       "name": "collection",
       "settings": [
         {
-          "type": "collection",
+          "type": "image_picker",
           "id": "collection-id",
           "label": "t:sections.collection-list.blocks.featured_collection.settings.collection.label"
+        },
+        {
+         "type": "inline_richtext" ,
+         "label": "Collection Heading",
+         "id" : "collection_heading"
         }
       ]
     }
@@ -77,13 +82,13 @@
     { "name": "custom-collection-section",
         "blocks": [
             {
-              "type": "featured_collection"
+              "type": "collection"
             },
             {
-              "type": "featured_collection"
+              "type": "collection"
             },
             {
-              "type": "featured_collection"
+              "type": "collection"
             }
           ]
     }
