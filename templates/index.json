@@ -344,26 +344,33 @@
         "featured_collection_YpfgRA": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "mens-swimwear"
           }
         },
         "featured_collection_4GpUja": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "mens-fashion"
           }
         },
         "featured_collection_TKKRmV": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "best-sellers"
+          }
+        },
+        "featured_collection_XL8ALP": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-acessoiries"
           }
         }
       },
       "block_order": [
         "featured_collection_YpfgRA",
         "featured_collection_4GpUja",
-        "featured_collection_TKKRmV"
+        "featured_collection_TKKRmV",
+        "featured_collection_XL8ALP"
       ],
       "settings": {
         "title": "Collections",
