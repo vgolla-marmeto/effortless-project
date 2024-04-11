@@ -108,15 +108,14 @@
        <div class="splide">
            <div class="splide__track">
                <ul class="splide__list">
+                  {% for block in section.blocks %}
                    <li class="splide__slide">
-                       <img src={{ section.settings.image_ele | image_url}} class="img-ele">
+                      {% if block.Image_id != blank %}
+                        <img src={{ block.Image_id | image_url}} height="auto" width="auto" class="img-ele">
+
+                      {% endif %}
                    </li>
-                   <li class="splide__slide">
-                        <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/our-story-group_768x.png?v=1654113574" class="img-ele" />
-                   </li>
-                   <li class="splide__slide">
-                        <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/our-story-group_768x.png?v=1654113574" class="img-ele" />
-                   </li>
+                   {% endfor %}
                </ul>
            </div>
        </div>
