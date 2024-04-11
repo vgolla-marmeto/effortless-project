@@ -110,7 +110,7 @@ animation-fill-mode: forwards;
         <div class="collections">
         {%- for block in section.blocks -%}
             <div class="single-collection">
-                  {% if block.settings.collection.img.src != blank -%}
+                  {% if block.settings.collection.featured_image != blank -%}
                  <img src={{ block.settings.collection.image.src | image_url }} width="auto" height="auto" class="img-ele" />
                  {%- endif -%}
                  <div class="text-container">
