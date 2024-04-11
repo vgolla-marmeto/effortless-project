@@ -320,6 +320,86 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "ours_story_section_PpyRYg": {
+      "type": "ours-story-section",
+      "blocks": {
+        "heading_QnkQDy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_qDjUyh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_xCEhq8": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_QnkQDy",
+        "text_qDjUyh",
+        "button_xCEhq8"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "section_color_background": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ours_story_section_4xMaXW": {
+      "type": "ours-story-section",
+      "blocks": {
+        "heading_UUdyAB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_9trKCz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_bqc8Ej": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_UUdyAB",
+        "text_9trKCz",
+        "button_bqc8Ej"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "section_color_background": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -330,6 +410,8 @@
     "featured_blog_H4Qixb",
     "rich_text_8DTH3g",
     "newsletter_bJAgBp",
-    "featured_collection_PYHNm9"
+    "featured_collection_PYHNm9",
+    "ours_story_section_PpyRYg",
+    "ours_story_section_4xMaXW"
   ]
 }
