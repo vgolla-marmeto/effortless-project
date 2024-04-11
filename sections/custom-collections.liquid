@@ -109,7 +109,7 @@ animation-fill-mode: forwards;
         {%- endif -%}
         <div class="collections">
         {%- for block in section.blocks -%}
-            <div class="single-collection">
+            <div class="single-collection" style="text-align:{{  }}">
                   {% if block.settings.collection.featured_image != blank -%}
                  <img src={{ block.settings.collection.image.src | image_url }} width="auto" height="auto" class="img-ele" />
                  {%- endif -%}
@@ -186,6 +186,7 @@ animation-fill-mode: forwards;
     {
       "type": "select",
       "id": "heading_position",
+      "label": "Heading Position",
       "options": [
         {
           "value": "left",
