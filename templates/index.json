@@ -330,21 +330,47 @@
     },
     "custom_collections_wdaKmU": {
       "type": "custom-collections",
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_collections_ppWJGC": {
+      "type": "custom-collections",
       "blocks": {
-        "collection_PrpkBP": {
-          "type": "collection",
+        "featured_collection_YpfgRA": {
+          "type": "featured_collection",
           "settings": {
-            "collection-id": "shopify:\/\/shop_images\/Frame1_2.webp",
-            "collection_heading": "Men's Fashion"
+            "collection": ""
+          }
+        },
+        "featured_collection_4GpUja": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_TKKRmV": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
           }
         }
       },
       "block_order": [
-        "collection_PrpkBP"
+        "featured_collection_YpfgRA",
+        "featured_collection_4GpUja",
+        "featured_collection_TKKRmV"
       ],
       "settings": {
-        "section_name": "Collections",
-        "custom_heading_size": "h1"
+        "title": "Collections",
+        "heading_size": "h1",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -357,6 +383,7 @@
     "rich_text_8DTH3g",
     "newsletter_bJAgBp",
     "featured_collection_PYHNm9",
-    "custom_collections_wdaKmU"
+    "custom_collections_wdaKmU",
+    "custom_collections_ppWJGC"
   ]
 }
