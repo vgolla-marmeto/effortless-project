@@ -1,22 +1,126 @@
 
+{%style %}
+
+.collections-container{
+
+
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 40px 5px;
+
+}
+
+.custom-section-heading{
+text-align: center;
+}
+
+.single-collection{
+height:350px;
+width: 100%;
+
+position: relative;
+}
+.collections{
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+justify-items: center;
+gap: 20px;
+width: 90%;
+
+}
+.img-ele{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.text-container{
+position: absolute;
+bottom: 0;
+min-height: 35px;
+padding: 4 15px;
+background-color: rgba(0, 0, 0, 0.6);
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+
+}
+.text-element{
+color: white;
+font-size: 14px;
+
+}
+
+.single-collection:hover .text-container{
+animation-name: changebackground;
+animation-duration: 0.3s;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+}
+
+@keyframes changebackground {
+0%{
+    background-color:  rgba(58, 131,126, 0.5);
+    height: 50%;
+
+}
+
+
+100%{
+    background-color: rgba(58, 131,126, 0.5);
+    height: 100%;
+} 
+
+}
+
+@media  screen and (max-width:600px) {
+.collections{
+    grid-template-columns: 1fr;
+}
+}
+@media  screen and (min-width:768px) {
+.custom-section-heading{
+    font-size: 42px;
+}
+
+}
+
+
+{% endstyle %}
+
+
+
+
+
+
+
+
+
+
+
 <div class="section collections-container">
         <h1 class="custom-section-heading">Collections</h1>
         <div class="collections">
         {%- for block in section.blocks -%}
             <div class="single-collection">
-                 <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-fashion-collection_480x.jpg?v=1674843627" class="img-ele" />
+                 <img src={{ block.settings.collection.featured_image | image_url }} width="200px" height="200px" class="img-ele" />
                  <div class="text-container">
-                    <h3 class="text-element">Men's Fashion</h3>
+                    <h3 class="text-element">{{ block.settings.collection.collection_title }}</h3>
                  </div>
             </div>
-            {% render 'card-collection',
+            {% comment %} {% render 'card-collection',
               card_collection: block.settings.collection,
               media_aspect_ratio: section.settings.image_ratio,
               columns: columns,
               placeholder_image: placeholder_image
-            %}
+            %} {% endcomment %}
             {%- endfor -%}
-            <div class="single-collection">
+            {% comment %} <div class="single-collection">
                 <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-swimwear-collection_480x.jpg?v=1674843676" class="img-ele" />
                 <div class="text-container">
                    <h3 class="text-element">Men's Swimwear</h3>
@@ -33,7 +137,7 @@
                 <div class="text-container">
                 <h3 class="text-element">Men's Accessories</h3>
                 </div>
-            </div>
+            </div> {% endcomment %}
 
         </div>
     </div>
