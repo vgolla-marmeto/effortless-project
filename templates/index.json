@@ -114,25 +114,25 @@
     "custom_collections_ppWJGC": {
       "type": "custom-collections",
       "blocks": {
-        "featured_collection_YpfgRA": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "mens-swimwear"
-          }
-        },
-        "featured_collection_4GpUja": {
+        "featured_collection_WpFrqq": {
           "type": "featured_collection",
           "settings": {
             "collection": "mens-fashion"
           }
         },
-        "featured_collection_TKKRmV": {
+        "featured_collection_bTMWCe": {
           "type": "featured_collection",
           "settings": {
-            "collection": "best-sellers"
+            "collection": "mens-swimwear"
           }
         },
-        "featured_collection_XL8ALP": {
+        "featured_collection_k36D6H": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-innerwear"
+          }
+        },
+        "featured_collection_iy7bxA": {
           "type": "featured_collection",
           "settings": {
             "collection": "mens-acessoiries"
@@ -140,10 +140,10 @@
         }
       },
       "block_order": [
-        "featured_collection_YpfgRA",
-        "featured_collection_4GpUja",
-        "featured_collection_TKKRmV",
-        "featured_collection_XL8ALP"
+        "featured_collection_WpFrqq",
+        "featured_collection_bTMWCe",
+        "featured_collection_k36D6H",
+        "featured_collection_iy7bxA"
       ],
       "settings": {
         "title": "Collections",
