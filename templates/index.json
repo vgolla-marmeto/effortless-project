@@ -147,7 +147,7 @@
       ],
       "settings": {
         "title": "Collections",
-        "heading_size": "h1",
+        "fontSize": 36,
         "heading_position": "center",
         "color_background": "#ffffff",
         "padding_top": 36,
