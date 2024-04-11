@@ -111,56 +111,6 @@
         "padding_bottom": 36
       }
     },
-    "collection_list_BMULYA": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_yJhCrM": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "mens-fashion"
-          }
-        },
-        "featured_collection_Qeee8P": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "mens-swimwear"
-          }
-        },
-        "featured_collection_GDbCz9": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "mens-innerwear"
-          }
-        },
-        "featured_collection_Rc6cUa": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "mens-acessoiries"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_yJhCrM",
-        "featured_collection_Qeee8P",
-        "featured_collection_GDbCz9",
-        "featured_collection_Rc6cUa"
-      ],
-      "custom_css": [
-        ".card__heading {text-align: center;}"
-      ],
-      "settings": {
-        "title": "Collections",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 2,
-        "color_scheme": "scheme-1",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 44,
-        "padding_bottom": 36
-      }
-    },
     "multirow_AQDAPp": {
       "type": "multirow",
       "blocks": {
@@ -365,7 +315,8 @@
       "settings": {
         "title": "Collections",
         "heading_size": "h1",
-        "color_scheme": "scheme-1",
+        "heading_position": "left",
+        "color_background": "#ffffff",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -374,7 +325,6 @@
   "order": [
     "slideshow_p7VNTP",
     "multicolumn_MJ99aE",
-    "collection_list_BMULYA",
     "multirow_AQDAPp",
     "featured_blog_H4Qixb",
     "rich_text_8DTH3g",
