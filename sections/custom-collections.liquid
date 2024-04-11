@@ -109,7 +109,7 @@ animation-fill-mode: forwards;
         {%- endif -%}
         <div class="collections">
         {%- for block in section.blocks -%}
-            <div class="single-collection" style="text-align:{{  }}">
+            <div class="single-collection" style="text-align:{{ settings.settings.heading_position }}">
                   {% if block.settings.collection.featured_image != blank -%}
                  <img src={{ block.settings.collection.image.src | image_url }} width="auto" height="auto" class="img-ele" />
                  {%- endif -%}
@@ -201,7 +201,7 @@ animation-fill-mode: forwards;
         }
       ],
       "default": "left",
-      "label": "Left"
+      "label": "Heading Position"
     },
     {
       "type": "color_background",
