@@ -1,4 +1,56 @@
 
+<div class="section collections-container">
+        <h1 class="custom-section-heading">Collections</h1>
+        <div class="collections">
+            <div class="single-collection">
+                 <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-fashion-collection_480x.jpg?v=1674843627" class="img-ele" />
+                 <div class="text-container">
+                    <h3 class="text-element">Men's Fashion</h3>
+                 </div>
+            </div>
+            <div class="single-collection">
+                <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-swimwear-collection_480x.jpg?v=1674843676" class="img-ele" />
+                <div class="text-container">
+                   <h3 class="text-element">Men's Swimwear</h3>
+                </div>
+            </div>
+            <div class="single-collection">
+                <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-underwear-collection_480x.jpg?v=1674843714" class="img-ele" />
+                <div class="text-container">
+                <h3 class="text-element">Men's Innerwear</h3>
+                </div>
+            </div>
+            <div class="single-collection">
+                <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-accessories-collection_480x.jpg?v=1674843434" class="img-ele" />
+                <div class="text-container">
+                <h3 class="text-element">Men's Accessories</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 {% schema %}
@@ -38,11 +90,30 @@
       "label": "t:sections.all.heading_size.label"
     },
     {
+      "type": "select",
+      "id": "heading_position",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.all.heading_position.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.all.heading_position.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.all.heading_position.options__3.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.all.heading_position.label"
+    },
+    {
       "type": "color_background",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "info": "t:sections.all.colors.has_cards_info",
-      "default": "scheme-1"
+      "id": "color_background",
+      "label": "Background Color",
+      "default": "#ffffff"
     },
     {
       "type": "range",
