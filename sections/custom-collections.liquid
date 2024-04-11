@@ -104,41 +104,23 @@ animation-fill-mode: forwards;
 
 
 <div class="section collections-container">
-        <h1 class="custom-section-heading">Collections</h1>
+        {%- if section.settings.title != blank -%}
+        <h1 class="custom-section-heading">{{ section.settings.title }}</h1>
+        {%- endif -%}
         <div class="collections">
         {%- for block in section.blocks -%}
             <div class="single-collection">
-                 <img src={{ block.settings.collection.image.src | image_url }} width="200px" height="200px" class="img-ele" />
+                  {% if block.settings.collection.img.src -%}
+                 <img src={{ block.settings.collection.image.src | image_url }} width="auto" height="auto" class="img-ele" />
+                 {%- endif -%}
                  <div class="text-container">
-                    <h3 class="text-element">{{ block.settings.collection.title }}</h3>
+                    {%- if block.settings.collection.title -%}
+                      <h3 class="text-element">{{ block.settings.collection.title }}</h3>
+                    {%- endif -%}
+                    
                  </div>
             </div>
-            {% comment %} {% render 'card-collection',
-              card_collection: block.settings.collection,
-              media_aspect_ratio: section.settings.image_ratio,
-              columns: columns,
-              placeholder_image: placeholder_image
-            %} {% endcomment %}
             {%- endfor -%}
-            {% comment %} <div class="single-collection">
-                <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-swimwear-collection_480x.jpg?v=1674843676" class="img-ele" />
-                <div class="text-container">
-                   <h3 class="text-element">Men's Swimwear</h3>
-                </div>
-            </div>
-            <div class="single-collection">
-                <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-underwear-collection_480x.jpg?v=1674843714" class="img-ele" />
-                <div class="text-container">
-                <h3 class="text-element">Men's Innerwear</h3>
-                </div>
-            </div>
-            <div class="single-collection">
-                <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-accessories-collection_480x.jpg?v=1674843434" class="img-ele" />
-                <div class="text-container">
-                <h3 class="text-element">Men's Accessories</h3>
-                </div>
-            </div> {% endcomment %}
-
         </div>
     </div>
 
