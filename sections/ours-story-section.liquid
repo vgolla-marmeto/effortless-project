@@ -78,6 +78,9 @@
         padding: 3rem;
     }
 }
+.splide__slide{
+  position: "relative"
+}
 
 .splide__arrow--prev, .splide__arrow--next{
     display: none !important;
@@ -93,7 +96,15 @@
 .splide__pagination__page.is-active{
     background-color: #3A837E !important;
 }
+.product-tag-circle{
+  position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    z-index: 9;
+    border-radius: 100%;
 
+}
 
 
 {% endstyle %}
@@ -112,6 +123,9 @@
                    <li class="splide__slide">
                       {% if block.settings.Image_id != blank %}
                         <img src={{ block.settings.Image_id | image_url}}  class="img-ele">
+                        <div class="hotspot-container">
+                         <span class="product-tag-circle"></span>
+                        </div>
 
                       {% endif %}
                    </li>
