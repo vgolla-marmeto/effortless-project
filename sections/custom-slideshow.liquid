@@ -1,0 +1,135 @@
+
+
+
+
+
+
+
+{% schema %}
+
+
+
+{
+    "name": "Custom Slideshow",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+           {
+            "type": "header",
+            "content": "Slider Options"
+        
+        },
+        {
+            "type": "checkbox",
+            "id": "auto_play",
+            "label": "Enable autoplay",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "show_pagination",
+            "label": "Show Dots",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "show_arrows",
+            "label": "Show arrows",
+            "default": false
+        },
+        {
+            "type": "range",
+            "id": "auto_play_duration",
+            "min": 1000,
+            "max": 5000,
+            "step": 1000,
+            "unit": "ms",
+            "label": "Autoplay Duration",
+            "default":2000
+        },
+        {
+            "type": "header",
+            "content": "Animation Options"
+        },
+        {
+            "type": "select",
+            "id": "slider_animation",
+            "label": "Slider animation",
+            "options": [
+                {
+                "value": "fade",
+                "label": "Fade"
+                },
+                {
+                  "value": "slide",
+                "label": "Slide"
+                },
+                 {
+                     "value": "loop",
+                    "label": "Loop"
+                    }
+
+            ],
+            "default": "slide"
+        },
+        {
+            "type": "header",
+            "content": "Section Padding"
+        },
+        {
+            "type": "range",
+            "id": "padding_top",
+            "min": 0,
+            "max": 100,
+            "step": 10,
+            "unit": "px",
+            "label": "Padding",
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 10,
+            "unit": "px",
+            "label": "Padding",
+            "default": 0
+        }
+    ],
+    "blocks": [
+        {
+          "type": "slide",
+          "name": "Slide",
+          "settings": [
+            {
+                "type": "header",
+                "content": "Media Options"
+            },
+            {
+                "type": "image_picker",
+                "id": "desktop_image",
+                "label": "Desktop Image",
+                "info": "Recommended size 1360 x 633 px"
+            },
+            {
+                "type": "image_picker",
+                "id": "mobile_image",
+                "label": "Mobile image",
+                "info": "Recommended size 360 x 282 px"
+            }
+
+          ]
+        }
+    ],
+    "presets": [
+        {
+          "name": "Custom Slideshow"
+        }
+    ]
+}
+
+
+
+
+{% endschema %}
