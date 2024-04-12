@@ -103,7 +103,25 @@
     background: #ffffff;
     z-index: 9;
     border-radius: 100%;
+    top: 35%;
+    left: 30%;
 
+}
+.hotspot-container .product-tag-circle:before {
+    position: absolute;
+    content: "";
+    border-radius: 100%;
+    transition: all .4s;
+    border: 15px solid #ffffff80;
+    width: 36px;
+    height: 36px;
+    left: -10px;
+    z-index: 8;
+    top: -10px;
+}
+.hotspot-bottom .product-tag-circle{
+ top:75%;
+ left: 46%;
 }
 
 
@@ -126,6 +144,9 @@
                         <div class="hotspot-container">
                          <span class="product-tag-circle"></span>
                         </div>
+                        <div class="hotspot-container hotspot-bottom">
+                          <span class="product-tag-circle"></span>
+                         </div>
 
                       {% endif %}
                    </li>
