@@ -98,12 +98,14 @@ animation-fill-mode: forwards;
 <div class="section collections-container">
   <h1 class="custom-section-heading">Collections</h1>
   <div class="collections">
+    {%  for block in section.settings.blocks %}
       <div class="single-collection">
-           <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-fashion-collection_480x.jpg?v=1674843627" class="img-ele" />
+           <img src={{ block.settings.collection.image.src | image_url }} class="img-ele" />
            <div class="text-container">
-              <h3 class="text-element">Men's Fashion</h3>
+              <h3 class="text-element">{{ block.settings.collection.title }}</h3>
            </div>
       </div>
+      {% endfor %}
       <div class="single-collection">
           <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-swimwear-collection_480x.jpg?v=1674843676" class="img-ele" />
           <div class="text-container">
