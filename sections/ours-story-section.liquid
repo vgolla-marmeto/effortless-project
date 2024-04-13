@@ -140,14 +140,17 @@
                   {% for block in section.blocks %}
                    <li class="splide__slide">
                       {% if block.settings.Image_id != blank %}
-                        <img src={{ block.settings.Image_id | image_url}}  class="img-ele">
+                        <img src="{{ block.settings.Image_id | image_url}}" height="auto" width="auto" class="img-ele">
+                        {% if block.settings.first_checkbox == true %}
                         <div class="hotspot-container">
                          <span class="product-tag-circle"></span>
                         </div>
+                        {%  endif %}
+                        {% if block.settings.second_checkbox == true %}
                         <div class="hotspot-container hotspot-bottom">
                           <span class="product-tag-circle"></span>
                          </div>
-
+                        {%  endif %}
                       {% endif %}
                    </li>
                    {% endfor %}
