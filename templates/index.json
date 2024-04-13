@@ -316,7 +316,7 @@
           "type": "image_picker",
           "settings": {
             "Image_id": "shopify:\/\/shop_images\/our-story-group_768x_1.webp",
-            "first_checkbox": false,
+            "first_checkbox": true,
             "first_product": "mens-athletic-wear",
             "first_hotspot_top_position": 0,
             "first_hotspot_left_position": 0,
