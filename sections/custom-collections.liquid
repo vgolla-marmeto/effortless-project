@@ -24,12 +24,13 @@ width: 100%;
 
 position: relative;
 }
-.collections-{{ section.id }}{
+.collections{
 
 display: grid;
 grid-template-columns: repeat({{section.settings.no_of_blocks_for_desktop}}, 1fr);
 justify-items: center;
 width: 90%;
+gap: 20px;
 
 }
 .img-ele{
@@ -80,7 +81,7 @@ animation-fill-mode: forwards;
 }
 
 @media  screen and (max-width:600px) {
-.collections-{{ section.id }}{
+.collections{
     grid-template-columns: repeat({{section.settings.no_of_blocks_for_mobile}}, 1fr);
 }
 }
@@ -112,7 +113,7 @@ animation-fill-mode: forwards;
         {%- if section.settings.title != blank -%}
         <h1 class="custom-section-heading" style="text-align:{{ section.settings.heading_position }}; font-size:{{ section.settings.fontSize }}px;">{{ section.settings.title }}</h1>
         {%- endif -%}
-        <div class="collections-{{ section.id }}">
+        <div class="collections">
         {%- for block in section.blocks -%}
           <a class="collection_url" href= "{{ block.settings.collection.url }}" target="_blank" >
             <div class="single-collection">
