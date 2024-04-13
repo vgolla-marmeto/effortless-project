@@ -151,7 +151,9 @@
         "heading_position": "center",
         "color_background": "#ffffff",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "no_of_blocks_for_desktop": 2,
+        "no_of_blocks_for_mobile": 1
       }
     },
     "featured_collection_PYHNm9": {
@@ -361,11 +363,15 @@
         "slide_kRiR4U": {
           "type": "slide",
           "settings": {
+            "pre_heading": "Women's Apparel",
+            "heading": "Elevate your wardrobe with our limited-time fashion offer!"
           }
         },
         "slide_Razyhj": {
           "type": "slide",
           "settings": {
+            "pre_heading": "Women's Apparel",
+            "heading": "Elevate your wardrobe with our limited-time fashion offer!"
           }
         }
       },
@@ -382,6 +388,61 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "ours_story_section_XPPUdk": {
+      "type": "ours-story-section",
+      "blocks": {
+        "image_picker_W8ck84": {
+          "type": "image_picker",
+          "settings": {
+            "first_checkbox": false,
+            "first_product": "",
+            "first_hotspot_top_position": 0,
+            "first_hotspot_left_position": 0,
+            "second_checkbox": false,
+            "second_product": "",
+            "second_hotspot_top_position": 0,
+            "second_hotspot_left_position": 0
+          }
+        },
+        "image_picker_UqzFFL": {
+          "type": "image_picker",
+          "settings": {
+            "first_checkbox": false,
+            "first_product": "",
+            "first_hotspot_top_position": 0,
+            "first_hotspot_left_position": 0,
+            "second_checkbox": false,
+            "second_product": "",
+            "second_hotspot_top_position": 0,
+            "second_hotspot_left_position": 0
+          }
+        },
+        "image_picker_73hxca": {
+          "type": "image_picker",
+          "settings": {
+            "first_checkbox": false,
+            "first_product": "",
+            "first_hotspot_top_position": 0,
+            "first_hotspot_left_position": 0,
+            "second_checkbox": false,
+            "second_product": "",
+            "second_hotspot_top_position": 0,
+            "second_hotspot_left_position": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_picker_W8ck84",
+        "image_picker_UqzFFL",
+        "image_picker_73hxca"
+      ],
+      "settings": {
+        "heading": "Our Story",
+        "text": "Effortless was designed and developed by leading ecommerce professionals who are passionate about design and user experience, creating intuitive, user-friendly layouts that are optimized for success and sure to delight our customers.",
+        "button_label": "Shop Now",
+        "button_linkEl": ""
+      }
     }
   },
   "order": [
@@ -394,6 +455,7 @@
     "rich_text_8DTH3g",
     "ours_story_section_ptcYdR",
     "newsletter_bJAgBp",
-    "custom_slideshow_BJmdja"
+    "custom_slideshow_BJmdja",
+    "ours_story_section_XPPUdk"
   ]
 }
