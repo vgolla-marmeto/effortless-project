@@ -98,7 +98,7 @@ animation-fill-mode: forwards;
 <div class="section collections-container">
   <h1 class="custom-section-heading">Collections</h1>
   <div class="collections">
-    {%  for block in section.settings.blocks %}
+    {%  for block in section.blocks %}
       <div class="single-collection">
            <img src= {{ block.settings.collection.image.src | image_url }} class="img-ele" />
            <div class="text-container">
