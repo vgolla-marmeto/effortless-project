@@ -99,14 +99,14 @@ animation-fill-mode: forwards;
   <h1 class="custom-section-heading">Collections</h1>
   <div class="collections">
     {%  for block in section.blocks %}
-      <a class="collection_url" href= "{{ block.settings.collection.url }}" >
       <div class="single-collection">
+        <a class="collection_url" href= "{{ block.settings.collection.url }}" >
            <img src= "{{ block.settings.collection.image.src | image_url }}" class="img-ele" />
            <div class="text-container">
               <h3 class="text-element">{{ block.settings.collection.title }}</h3>
            </div>
+          </a>
       </div>
-    </a> 
       {% endfor %}
   </div>
 </div>
