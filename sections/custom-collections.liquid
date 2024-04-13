@@ -8,8 +8,6 @@ min-height: 100vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
-padding: 40px 5px;
 
 }
 
@@ -114,7 +112,7 @@ animation-fill-mode: forwards;
 
 
 
- <div class=" section collections-container" style="background-color: {{ section.settings.color_background }}; padding-top:{{ section.settings.padding_top }}px; padding-bottom:{{ section.settings.padding_bottom }}px;  ">
+ <div class=" section collections-container page-width" style="background-color: {{ section.settings.color_background }}; padding-top:{{ section.settings.padding_top }}px; padding-bottom:{{ section.settings.padding_bottom }}px;  ">
         {%- if section.settings.title != blank -%}
         <h1 class="custom-section-heading" style="text-align:{{ section.settings.heading_position }}; font-size:{{ section.settings.fontSize }}px;">{{ section.settings.title }}</h1>
         {%- endif -%}
