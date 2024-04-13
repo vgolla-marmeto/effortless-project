@@ -295,19 +295,61 @@
         "image_picker_XpDfUf": {
           "type": "image_picker",
           "settings": {
-            "Image_id": "shopify:\/\/shop_images\/images_3_768x_1.webp"
+            "Image_id": "shopify:\/\/shop_images\/images_3_768x_1.webp",
+            "first_checkbox": false,
+            "first_product": "flower-printed-casual-shirt",
+            "first_hotspot_top_position": 0,
+            "first_hotspot_left_position": 0,
+            "first_card_top_position": 0,
+            "first_card_left_position": 0,
+            "first_card_link": "shopify:\/\/products\/flower-printed-casual-shirt",
+            "second_checkbox": false,
+            "second_product": "",
+            "second_hotspot_top_position": 0,
+            "second_hotspot_left_position": 0,
+            "second_card_top_position": 0,
+            "second_card_left_position": 0,
+            "second_card_link": ""
           }
         },
         "image_picker_rFPKTq": {
           "type": "image_picker",
           "settings": {
-            "Image_id": "shopify:\/\/shop_images\/our-story-group_768x_1.webp"
+            "Image_id": "shopify:\/\/shop_images\/our-story-group_768x_1.webp",
+            "first_checkbox": false,
+            "first_product": "",
+            "first_hotspot_top_position": 0,
+            "first_hotspot_left_position": 0,
+            "first_card_top_position": 0,
+            "first_card_left_position": 0,
+            "first_card_link": "",
+            "second_checkbox": false,
+            "second_product": "",
+            "second_hotspot_top_position": 0,
+            "second_hotspot_left_position": 0,
+            "second_card_top_position": 0,
+            "second_card_left_position": 0,
+            "second_card_link": ""
           }
         },
         "image_picker_JDyJjp": {
           "type": "image_picker",
           "settings": {
-            "Image_id": "shopify:\/\/shop_images\/our-story_768x_1.webp"
+            "Image_id": "shopify:\/\/shop_images\/our-story_768x_1.webp",
+            "first_checkbox": false,
+            "first_product": "",
+            "first_hotspot_top_position": 0,
+            "first_hotspot_left_position": 0,
+            "first_card_top_position": 0,
+            "first_card_left_position": 0,
+            "first_card_link": "",
+            "second_checkbox": false,
+            "second_product": "",
+            "second_hotspot_top_position": 0,
+            "second_hotspot_left_position": 0,
+            "second_card_top_position": 0,
+            "second_card_left_position": 0,
+            "second_card_link": ""
           }
         }
       },
