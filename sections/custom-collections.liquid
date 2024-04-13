@@ -90,6 +90,9 @@ animation-fill-mode: forwards;
 }
 
 }
+.collection_url {
+  text-decoration: none;
+}
 
 
 {% endstyle %}
@@ -104,15 +107,16 @@ animation-fill-mode: forwards;
 
 
 
-<div class="section collections-container " style="background-color: {{ section.settings.color_background }}; padding-top:{{ section.settings.padding_top }}px; padding-bottom:{{ section.settings.padding_bottom }}px;  ">
+<div class="section collections-container" style="background-color: {{ section.settings.color_background }}; padding-top:{{ section.settings.padding_top }}px; padding-bottom:{{ section.settings.padding_bottom }}px;  ">
         {%- if section.settings.title != blank -%}
         <h1 class="custom-section-heading" style="text-align:{{ section.settings.heading_position }}; font-size:{{ section.settings.fontSize }}px;">{{ section.settings.title }}</h1>
         {%- endif -%}
         <div class="collections">
         {%- for block in section.blocks -%}
+          <a class="collection_url" href= "{{ block.settings.collection.url }}" target="_blank" >
             <div class="single-collection">
                   {% if block.settings.collection.featured_image != blank -%}
-                 <img src={{ block.settings.collection.image.src | image_url }} width="auto" height="auto" class="img-ele" />
+                 <img src="{{ block.settings.collection.image.src | image_url }}"  width="auto" height="auto" class="img-ele" />
                  {%- endif -%}
                  <div class="text-container">
                     {%- if block.settings.collection.title -%}
@@ -121,6 +125,7 @@ animation-fill-mode: forwards;
                     
                  </div>
             </div>
+          </a>
             {%- endfor -%}
         </div>
     </div>
@@ -229,6 +234,12 @@ animation-fill-mode: forwards;
           "type": "collection",
           "id": "collection",
           "label": "t:sections.collection-list.blocks.featured_collection.settings.collection.label"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Collection Url",
+          "default": ""
         }
       ]
     }
