@@ -100,31 +100,12 @@ animation-fill-mode: forwards;
   <div class="collections">
     {%  for block in section.blocks %}
       <div class="single-collection">
-           <img src= {{ block.settings.collection.image.src | image_url }} class="img-ele" />
+           <img src= "{{ block.settings.collection.image.src | image_url }}" class="img-ele" />
            <div class="text-container">
               <h3 class="text-element">{{ block.settings.collection.title }}</h3>
            </div>
       </div>
       {% endfor %}
-      {% comment %} <div class="single-collection">
-          <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-swimwear-collection_480x.jpg?v=1674843676" class="img-ele" />
-          <div class="text-container">
-             <h3 class="text-element">Men's Swimwear</h3>
-          </div>
-      </div>
-      <div class="single-collection">
-          <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-underwear-collection_480x.jpg?v=1674843714" class="img-ele" />
-          <div class="text-container">
-          <h3 class="text-element">Men's Innerwear</h3>
-          </div>
-      </div>
-      <div class="single-collection">
-          <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-accessories-collection_480x.jpg?v=1674843434" class="img-ele" />
-          <div class="text-container">
-          <h3 class="text-element">Men's Accessories</h3>
-          </div>
-      </div> {% endcomment %}
-
   </div>
 </div>
 
