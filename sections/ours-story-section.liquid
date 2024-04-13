@@ -97,7 +97,7 @@
 .splide__pagination__page.is-active{
     background-color: #3A837E !important;
 }
-.product-tag-circle{
+.product-tag-circle-top{
   position: absolute;
     width: 15px;
     height: 15px;
@@ -108,7 +108,7 @@
     left: 30%;
 
 }
-.hotspot-container .product-tag-circle:before {
+.hotspot-container-top .product-tag-circle-top:before {
     position: absolute;
     content: "";
     border-radius: 100%;
@@ -120,9 +120,28 @@
     z-index: 8;
     top: -10px;
 }
-.hotspot-bottom .product-tag-circle{
- top:75%;
- left: 46%;
+.product-tag-circle-bottom{
+  position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    z-index: 9;
+    border-radius: 100%;
+    top: 35%;
+    left: 30%;
+
+}
+.hotspot-container-bottom .product-tag-circle-bottom:before {
+    position: absolute;
+    content: "";
+    border-radius: 100%;
+    transition: all .4s;
+    border: 15px solid #ffffff80;
+    width: 36px;
+    height: 36px;
+    left: -10px;
+    z-index: 8;
+    top: -10px;
 }
 
 
@@ -144,13 +163,13 @@
                       {% if block.settings.Image_id != blank %}
                         <img src="{{ block.settings.Image_id | image_url}}" height="auto" width="auto" class="img-ele">
                         {% if block.settings.first_checkbox == true %}
-                        <div class="hotspot-container">
-                         <span class="product-tag-circle" style="top:{{ block.settings.first_hotspot_top_position }}%; left:{{ block.settings.first_hotspot_left_position }}%;"></span>
+                        <div class="hotspot-container-top">
+                         <span class="product-tag-circle-bottom" style="top:{{ block.settings.first_hotspot_top_position }}%; left:{{ block.settings.first_hotspot_left_position }}%;"></span>
                         </div>
                         {%  endif %}
                         {% if block.settings.second_checkbox == true %}
-                        <div class="hotspot-container hotspot-bottom">
-                          <span class="product-tag-circle" style="top:{{ block.settings.second_hotspot_top_position}}%; left:{{ block.settings.second_hotspot_top_position}}%;"></span>
+                        <div class="hotspot-container-bottom">
+                          <span class="product-tag-circle-bottom" style="top:{{ block.settings.second_hotspot_top_position}}%; left:{{ block.settings.second_hotspot_top_position}}%;"></span>
                          </div>
                         {%  endif %}
                       {% endif %}
