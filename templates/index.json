@@ -343,7 +343,7 @@
             "first_card_top_position": 0,
             "first_card_left_position": 0,
             "first_card_link": "shopify:\/\/products\/blue-pattern-suit",
-            "second_checkbox": false,
+            "second_checkbox": true,
             "second_product": "shoes-classic-brown",
             "second_hotspot_top_position": 0,
             "second_hotspot_left_position": 0,
