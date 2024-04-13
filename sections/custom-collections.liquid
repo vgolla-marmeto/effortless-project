@@ -24,10 +24,10 @@ width: 100%;
 
 position: relative;
 }
-.collections{
+.collections-{{ section.id }}{
 
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: repeat({{section.settings.no_of_blocks_for_desktop}}, 1fr);
 justify-items: center;
 gap: 20px;
 width: 90%;
@@ -80,8 +80,8 @@ animation-fill-mode: forwards;
 }
 
 @media  screen and (max-width:600px) {
-.collections{
-    grid-template-columns: 1fr;
+.collections-{{ section.id }}{
+    grid-template-columns: repeat({{section.settings.no_of_blocks_for_mobile}}, 1fr);
 }
 }
 @media  screen and (min-width:768px) {
@@ -92,6 +92,7 @@ animation-fill-mode: forwards;
 }
 .collection_url {
   text-decoration: none;
+  outline:none;
 }
 
 
@@ -111,7 +112,7 @@ animation-fill-mode: forwards;
         {%- if section.settings.title != blank -%}
         <h1 class="custom-section-heading" style="text-align:{{ section.settings.heading_position }}; font-size:{{ section.settings.fontSize }}px;">{{ section.settings.title }}</h1>
         {%- endif -%}
-        <div class="collections">
+        <div class="collections-{{ section.id }}">
         {%- for block in section.blocks -%}
           <a class="collection_url" href= "{{ block.settings.collection.url }}" target="_blank" >
             <div class="single-collection">
@@ -223,6 +224,24 @@ animation-fill-mode: forwards;
       "unit": "px",
       "label": "Padding Bottom",
       "default": 36
+    },
+    {
+      "type": "range",
+      "id": "no_of_blocks_for_desktop",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "No of Collections on Desktop",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "no_of_blocks_for_mobile",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "No of Collections on Mobile",
+      "default": 1
     }
   ],
   "blocks": [
@@ -234,12 +253,6 @@ animation-fill-mode: forwards;
           "type": "collection",
           "id": "collection",
           "label": "t:sections.collection-list.blocks.featured_collection.settings.collection.label"
-        },
-        {
-          "type": "url",
-          "id": "link_url",
-          "label": "Collection Url",
-          "default": ""
         }
       ]
     }
