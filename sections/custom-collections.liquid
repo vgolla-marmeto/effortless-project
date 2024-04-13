@@ -115,7 +115,7 @@ animation-fill-mode: forwards;
         {%- endif -%}
         <div class="collections">
         {%- for block in section.blocks -%}
-          <a class="collection_url" href= "{{ block.settings.collection.url }}" target="_blank" >
+          {% comment %} <a class="collection_url" href= "{{ block.settings.collection.url }}" > {% endcomment %}
             <div class="single-collection">
                   {% if block.settings.collection.featured_image != blank -%}
                  <img src="{{ block.settings.collection.image.src | image_url }}"  width="auto" height="auto" class="img-ele" />
@@ -127,7 +127,7 @@ animation-fill-mode: forwards;
                     
                  </div>
             </div>
-          </a>
+          {% comment %} </a> {% endcomment %}
             {%- endfor -%}
         </div>
     </div>
