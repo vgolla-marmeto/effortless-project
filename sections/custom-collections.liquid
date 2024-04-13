@@ -9,33 +9,34 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-padding: 40px 5px;
 
 }
 
 .custom-section-heading{
-text-align: center;
+width:100%;
+padding:10px 20px;
 }
 
 .single-collection{
 height:350px;
 width: 100%;
+flex-grow:1;
 
 position: relative;
 }
 .collections{
 
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: repeat({{section.settings.no_of_blocks_for_desktop}}, 1fr);
 justify-items: center;
 gap: 20px;
-width: 90%;
 
 }
 .img-ele{
 width: 100%;
 height: 100%;
 object-fit: cover;
+flex-grow:1;
 }
 
 .text-container{
@@ -52,7 +53,8 @@ width: 100%;
 }
 .text-element{
 color: white;
-font-size: 14px;
+font-size: 15px;
+font-weight:bold;
 
 }
 
@@ -80,7 +82,7 @@ animation-fill-mode: forwards;
 
 @media  screen and (max-width:600px) {
 .collections{
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat({{section.settings.no_of_blocks_for_mobile}}, 1fr);
 }
 }
 @media  screen and (min-width:768px) {
@@ -88,6 +90,10 @@ animation-fill-mode: forwards;
     font-size: 42px;
 }
 
+}
+.collection_url {
+  text-decoration: none;
+  outline:none;
 }
 
 
@@ -112,7 +118,7 @@ animation-fill-mode: forwards;
           <a class="collection_url" href= "{{ block.settings.collection.url }}" target="_blank" >
             <div class="single-collection">
                   {% if block.settings.collection.featured_image != blank -%}
-                 <img src="{{ block.settings.collection.image.src | image_url }}"  class="img-ele" />
+                 <img src="{{ block.settings.collection.image.src | image_url }}"  width="auto" height="auto" class="img-ele" />
                  {%- endif -%}
                  <div class="text-container">
                     {%- if block.settings.collection.title -%}
