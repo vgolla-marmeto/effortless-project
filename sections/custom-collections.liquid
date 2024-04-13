@@ -98,21 +98,21 @@ animation-fill-mode: forwards;
 <div class="section collections-container">
   <h1 class="custom-section-heading">Collections</h1>
   <div class="collections">
-    {%- for block in section.blocks -%}
+    {% for block in section.blocks %}
       <a class="collection_url" href= "{{ block.settings.collection.url }}" >
        <div class="single-collection">
-             {% if block.settings.collection.featured_image != blank -%}
+             {% if block.settings.collection.featured_image != blank %}
             <img src="{{ block.settings.collection.image.src | image_url }}" class="img-ele" />
-            {%- endif -%}
+            {% endif %}
             <div class="text-container">
-               {%- if block.settings.collection.title -%}
+               {% if block.settings.collection.title %}
                  <h3 class="text-element">{{ block.settings.collection.title }}</h3>
-               {%- endif -%}
+               {% endif %}
                
             </div>
        </div>
       </a> 
-       {%- endfor -%}
+       {% endfor %}
 
   </div>
 </div>
