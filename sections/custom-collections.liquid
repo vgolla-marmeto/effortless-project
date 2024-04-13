@@ -95,14 +95,43 @@ animation-fill-mode: forwards;
 
 
 
+<div class="section collections-container">
+  <h1 class="custom-section-heading">Collections</h1>
+  <div class="collections">
+      <div class="single-collection">
+           <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-fashion-collection_480x.jpg?v=1674843627" class="img-ele" />
+           <div class="text-container">
+              <h3 class="text-element">Men's Fashion</h3>
+           </div>
+      </div>
+      <div class="single-collection">
+          <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-swimwear-collection_480x.jpg?v=1674843676" class="img-ele" />
+          <div class="text-container">
+             <h3 class="text-element">Men's Swimwear</h3>
+          </div>
+      </div>
+      <div class="single-collection">
+          <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-underwear-collection_480x.jpg?v=1674843714" class="img-ele" />
+          <div class="text-container">
+          <h3 class="text-element">Men's Innerwear</h3>
+          </div>
+      </div>
+      <div class="single-collection">
+          <img src="https://effortless-theme-demo.myshopify.com/cdn/shop/files/mens-accessories-collection_480x.jpg?v=1674843434" class="img-ele" />
+          <div class="text-container">
+          <h3 class="text-element">Men's Accessories</h3>
+          </div>
+      </div>
+
+  </div>
+</div>
 
 
 
 
 
 
-
-<div class=" section collections-container" style="background-color: {{ section.settings.color_background }}; padding-top:{{ section.settings.padding_top }}px; padding-bottom:{{ section.settings.padding_bottom }}px;  ">
+{% comment %} <div class=" section collections-container" style="background-color: {{ section.settings.color_background }}; padding-top:{{ section.settings.padding_top }}px; padding-bottom:{{ section.settings.padding_bottom }}px;  ">
         {%- if section.settings.title != blank -%}
         <h1 class="custom-section-heading" style="text-align:{{ section.settings.heading_position }}; font-size:{{ section.settings.fontSize }}px;">{{ section.settings.title }}</h1>
         {%- endif -%}
@@ -111,7 +140,7 @@ animation-fill-mode: forwards;
            <a class="collection_url" href= "{{ block.settings.collection.url }}" >
             <div class="single-collection">
                   {% if block.settings.collection.featured_image != blank -%}
-                 <img src="{{ block.settings.collection.image.src | image_url }}"  width="auto" height="auto" class="img-ele" />
+                 <img src="{{ block.settings.collection.image.src | image_url }}" class="img-ele" />
                  {%- endif -%}
                  <div class="text-container">
                     {%- if block.settings.collection.title -%}
@@ -129,7 +158,7 @@ animation-fill-mode: forwards;
 
 
 
-
+ {% endcomment %}
 
 
 
