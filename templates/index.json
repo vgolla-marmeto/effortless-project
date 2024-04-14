@@ -301,14 +301,14 @@
             "first_hotspot_top_position": 35,
             "first_hotspot_left_position": 31,
             "first_card_top_position": 29,
-            "first_card_left_position": 39,
+            "first_card_left_position": 37,
             "first_card_link": "shopify:\/\/products\/flower-printed-casual-shirt",
             "second_checkbox": true,
             "second_product": "nylon-holdall-bag",
             "second_hotspot_top_position": 76,
             "second_hotspot_left_position": 45,
-            "second_card_top_position": 0,
-            "second_card_left_position": 0,
+            "second_card_top_position": 76,
+            "second_card_left_position": 48,
             "second_card_link": "shopify:\/\/products\/nylon-holdall-bag"
           }
         },
