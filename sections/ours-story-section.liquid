@@ -205,10 +205,25 @@
   z-index: 10;
 
 }
-.card-container-link{
-  outline:none;
-}
 
+.card-container-link-bottom{
+  opacity:0;
+}
+.card-container-link-top{
+ opacity:0;
+}
+.hotspot-container-top:hover~.card-container-link-top{
+  opacity:1;
+}
+.hotspot-container-bottom:hover~.card-container-link-bottom{
+  opacity:1;
+}
+.card-container-link-top:hover{
+  opacity:1;
+}
+.card-container-link-bottom:hover{
+  opacity:1;
+}
 
 {% endstyle %}
 
@@ -231,7 +246,7 @@
                         <div class="hotspot-container-top">
                          <span class="product-tag-circle-top" style="top:{{ block.settings.first_hotspot_top_position }}%; left:{{ block.settings.first_hotspot_left_position }}%; transform:translate(-50%)"></span>
                         </div>
-                        <a href= "{{ block.settings.first_card_link }}" class="card-container-link">
+                        <a href= "{{ block.settings.first_card_link }}" class="card-container-link-top">
                           <div class="top-card_hover_show" style="top:{{ block.settings.first_card_top_position }}%; left:{{ block.settings.first_card_left_position }}%;">
                             
                               <div class="hover_card_image_container">
@@ -252,7 +267,7 @@
                         <div class="hotspot-container-bottom">
                           <span class="product-tag-circle-bottom" style="top:{{ block.settings.second_hotspot_top_position}}%; left:{{ block.settings.second_hotspot_left_position}}%;"></span>
                          </div>
-                         <a href= "{{ block.settings.second_card_link }}">
+                         <a href= "{{ block.settings.second_card_link }}"  class="card-container-link-bottom">
                           <div class="bottom-card_hover_show" style="top:{{ block.settings.second_card_top_position }}%; left:{{ block.settings.second_card_left_position }}%; transform:translate(-50%)">
                             
                               <div class="hover_card_image_container">
