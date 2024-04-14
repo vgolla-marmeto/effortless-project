@@ -173,6 +173,7 @@
 
 }
 .product_card_title{
+  white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     display:inline;
@@ -216,7 +217,7 @@
                         {%  endif %}
                         <div class="card_hover_show">
                           <div class="hover_card_image_container">
-                            <img src= "{{ block.settings.first_product.images.src | image_url }} "  height=82 width=82 class="hover_card_image">
+                            <img src= "{{ block.settings.first_product.image.src }} "  height=82 width=82 class="hover_card_image">
                           </div>
                            <div>
                             <p class= "product_card_title">{{ block.settings.first_product.title }}</p>
