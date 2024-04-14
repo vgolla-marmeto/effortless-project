@@ -240,44 +240,45 @@
                         <div class="hotspot-container-top">
                          <span class="product-tag-circle-top" style="top:{{ block.settings.first_hotspot_top_position }}%; left:{{ block.settings.first_hotspot_left_position }}%;"></span>
                         </div>
+                        <a href= "{{ block.settings.first_card_link }}">
+                          <div class="top-card_hover_show">
+                            
+                              <div class="hover_card_image_container">
+                                <img src= "{{ block.settings.first_product.featured_image | image_url }} "  height=82 width=82 class="hover_card_image">
+                              </div>
+                              <div class="card-text-container">
+                                <p class= "product_card_title">{{ block.settings.first_product.title }}</p>
+                                <p class= "product_card_price">{{ block.settings.first_product.price | money }}</p>
+                                <span class="view_deatails_btn">View full details</span>
+  
+                              </div>
+  
+                          </div>
+                          
+                        </a>
                         {%  endif %}
                         {% if block.settings.second_checkbox == true %}
                         <div class="hotspot-container-bottom">
                           <span class="product-tag-circle-bottom" style="top:{{ block.settings.second_hotspot_top_position}}%; left:{{ block.settings.second_hotspot_left_position}}%;"></span>
                          </div>
+                         <a href= "{{ block.settings.second_card_link }}">
+                          <div class="bottom-card_hover_show">
+                            
+                              <div class="hover_card_image_container">
+                                <img src= "{{ block.settings.second_product.featured_image | image_url }} "  height=82 width=82 class="hover_card_image">
+                              </div>
+                              <div class="card-text-container">
+                                <p class= "product_card_title">{{ block.settings.second_product.title }}</p>
+                                <p class= "product_card_price">{{ block.settings.second_product.price | money }}</p>
+                                <span class="view_deatails_btn">View full details</span>
+  
+                              </div>
+                        
+  
+                          </div>
+                        </a>
                         {%  endif %}
-                        <a href= "{{ block.settings.first_card_link }}">
-                        <div class="top-card_hover_show">
-                          
-                          <div class="hover_card_image_container">
-                            <img src= "{{ block.settings.first_product.featured_image | image_url }} "  height=82 width=82 class="hover_card_image">
-                          </div>
-                           <div class="card-text-container">
-                            <p class= "product_card_title">{{ block.settings.first_product.title }}</p>
-                            <p class= "product_card_price">{{ block.settings.first_product.price | money }}</p>
-                            <span class="view_deatails_btn">View full details</span>
-
-                          </div>
-                    
-
-                        </div>
-                      </a>
-                        <a href= "{{ block.settings.second_card_link }}">
-                        <div class="bottom-card_hover_show">
-                          
-                            <div class="hover_card_image_container">
-                              <img src= "{{ block.settings.second_product.featured_image | image_url }} "  height=82 width=82 class="hover_card_image">
-                            </div>
-                            <div class="card-text-container">
-                              <p class= "product_card_title">{{ block.settings.second_product.title }}</p>
-                              <p class= "product_card_price">{{ block.settings.second_product.price | money }}</p>
-                              <span class="view_deatails_btn">View full details</span>
-
-                            </div>
-                      
-
-                        </div>
-                      </a>
+                        
                       {% endif %}
                    </li>
                    {% endfor %}
