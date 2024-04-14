@@ -246,8 +246,9 @@
                           <span class="product-tag-circle-bottom" style="top:{{ block.settings.second_hotspot_top_position}}%; left:{{ block.settings.second_hotspot_left_position}}%;"></span>
                          </div>
                         {%  endif %}
+                        <a href= "{{ block.settings.first_card_link }}">
                         <div class="top-card_hover_show">
-                          <a href= "{{ block.settings.first_card_link }}">
+                          
                           <div class="hover_card_image_container">
                             <img src= "{{ block.settings.first_product.featured_image | image_url }} "  height=82 width=82 class="hover_card_image">
                           </div>
@@ -257,9 +258,10 @@
                             <span class="view_deatails_btn">View full details</span>
 
                           </div>
-                        </a>
+                    
 
                         </div>
+                      </a>
                         <a href= "{{ block.settings.second_card_link }}">
                         <div class="bottom-card_hover_show">
                           
