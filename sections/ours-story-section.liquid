@@ -260,8 +260,9 @@
                         </a>
 
                         </div>
+                        <a href= "{{ block.settings.second_card_link }}">
                         <div class="bottom-card_hover_show">
-                          <a href= "{{ block.settings.second_card_link }}">
+                          
                             <div class="hover_card_image_container">
                               <img src= "{{ block.settings.second_product.featured_image | image_url }} "  height=82 width=82 class="hover_card_image">
                             </div>
@@ -271,9 +272,10 @@
                               <span class="view_deatails_btn">View full details</span>
 
                             </div>
-                         </a>
+                      
 
                         </div>
+                      </a>
                       {% endif %}
                    </li>
                    {% endfor %}
