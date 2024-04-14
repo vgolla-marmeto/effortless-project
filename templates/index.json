@@ -307,8 +307,8 @@
             "second_product": "nylon-holdall-bag",
             "second_hotspot_top_position": 76,
             "second_hotspot_left_position": 45,
-            "second_card_top_position": 76,
-            "second_card_left_position": 48,
+            "second_card_top_position": 72,
+            "second_card_left_position": 70,
             "second_card_link": "shopify:\/\/products\/nylon-holdall-bag"
           }
         },
@@ -320,8 +320,8 @@
             "first_product": "mens-athletic-wear",
             "first_hotspot_top_position": 35,
             "first_hotspot_left_position": 33,
-            "first_card_top_position": 0,
-            "first_card_left_position": 0,
+            "first_card_top_position": 31,
+            "first_card_left_position": 39,
             "first_card_link": "shopify:\/\/products\/mens-athletic-wear",
             "second_checkbox": false,
             "second_product": "",
@@ -340,15 +340,15 @@
             "first_product": "blue-pattern-suit",
             "first_hotspot_top_position": 30,
             "first_hotspot_left_position": 34,
-            "first_card_top_position": 0,
-            "first_card_left_position": 0,
+            "first_card_top_position": 26,
+            "first_card_left_position": 39,
             "first_card_link": "shopify:\/\/products\/blue-pattern-suit",
             "second_checkbox": true,
             "second_product": "shoes-classic-brown",
             "second_hotspot_top_position": 85,
             "second_hotspot_left_position": 52,
-            "second_card_top_position": 0,
-            "second_card_left_position": 0,
+            "second_card_top_position": 80,
+            "second_card_left_position": 30,
             "second_card_link": "shopify:\/\/products\/shoes-classic-brown"
           }
         }
