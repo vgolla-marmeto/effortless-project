@@ -10,11 +10,7 @@
     line-height: 1.5;
     text-align:center;
     }
-    .splide{
-        max-width:100%;
-        margin:0 auto;
-    }
-
+   
     .splide__arrow{
         background:transparent;
     }
@@ -29,15 +25,20 @@
         margin-left:15px;
     }
 
-    @media screen and (min-width:768px){
+    @media screen and (min-width:749px){
         .custom-slideshow--{{ section.id }}{
             padding-top:{{ section.settings.padding_top }}px;
             padding-bottom:{{ section.settings.padding_bottom }}px;
         }
-        .splider {
-            max-width:500px;
-             margin:0 auto;
+        .splide{
+            width:600px;
+            margin : 0 auto;
         }
+    }
+
+    .splide{
+        max-width:100%;
+        margin:0 auto;
     }
 {% endstyle %}
 
