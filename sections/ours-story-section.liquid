@@ -143,6 +143,21 @@
     z-index: 8;
     top: -10px;
 }
+.card_hover_show{
+  max-width: 130px;
+  padding: 8px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.view_deatails_btn{
+  font-size: .875rem;
+    color: rgb(58, 131, 126,1);
+    font-weight: 700;
+    text-decoration: underline;
+    padding-top: 10px;
+    display: block;
+}
 
 
 {% endstyle %}
@@ -165,6 +180,18 @@
                         {% if block.settings.first_checkbox == true %}
                         <div class="hotspot-container-top">
                          <span class="product-tag-circle-top" style="top:{{ block.settings.first_hotspot_top_position }}%; left:{{ block.settings.first_hotspot_left_position }}%;"></span>
+                        </div>
+                        <div class="card_hover_show">
+                          <div>
+                            <img src= "{{ block.settings.product.Featured_image | image_url }} "  height=82 width=82 class="hover_card_image">
+                          </div>
+                           <div>
+                            <p class= "product_card_title"></p>
+                            <p class= "product_card_price"></p>
+                            <span class="view_deatails_btn">View full details</span>
+
+                          </div>
+
                         </div>
                         {%  endif %}
                         {% if block.settings.second_checkbox == true %}
