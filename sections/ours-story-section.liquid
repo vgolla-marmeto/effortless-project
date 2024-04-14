@@ -147,8 +147,7 @@
   max-width: 130px;
   padding: 8px;
   display: flex;
-  justify-content:center;
-  align-items:center;
+  background-color:#fff;
 }
 .view_deatails_btn{
   font-size: .875rem;
@@ -158,6 +157,30 @@
     padding-top: 10px;
     display: block;
 }
+.hover_card_image_container{
+  display: flex;
+    margin-right: 10px;
+    width: 82px;
+    max-height: 82px;
+}
+.hover_card_image{
+  width:100%;
+  object-position:center;
+
+}
+.product_card_title{
+  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.product_card_price{
+  font-size: .875rem;
+    color: #000;
+    font-weight: 400;
+}
+
+
+
 
 
 {% endstyle %}
@@ -182,12 +205,12 @@
                          <span class="product-tag-circle-top" style="top:{{ block.settings.first_hotspot_top_position }}%; left:{{ block.settings.first_hotspot_left_position }}%;"></span>
                         </div>
                         <div class="card_hover_show">
-                          <div>
+                          <div class="hover_card_image_container">
                             <img src= "{{ block.settings.product.Featured_image | image_url }} "  height=82 width=82 class="hover_card_image">
                           </div>
                            <div>
-                            <p class= "product_card_title"></p>
-                            <p class= "product_card_price"></p>
+                            <p class= "product_card_title">Hello world</p>
+                            <p class= "product_card_price">bsl 123</p>
                             <span class="view_deatails_btn">View full details</span>
 
                           </div>
