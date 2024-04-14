@@ -142,7 +142,7 @@
     z-index: 8;
     top: -10px;
 }
-.card_hover_show{
+.top-card_hover_show{
   padding: 8px;
   display: flex;
   background-color:#fff;
@@ -224,7 +224,8 @@
                           <span class="product-tag-circle-bottom" style="top:{{ block.settings.second_hotspot_top_position}}%; left:{{ block.settings.second_hotspot_left_position}}%;"></span>
                          </div>
                         {%  endif %}
-                        <div class="card_hover_show">
+                        <div class="top-card_hover_show">
+                          <a href= "{{ block.settings.first_card_link }}">
                           <div class="hover_card_image_container">
                             <img src= "{{ block.settings.first_product.featured_image | image_url }} "  height=82 width=82 class="hover_card_image">
                           </div>
@@ -234,6 +235,21 @@
                             <span class="view_deatails_btn">View full details</span>
 
                           </div>
+                        </a>
+
+                        </div>
+                        <div class="top-card_hover_show">
+                          <a href= "{{ block.settings.second_card_link }}">
+                          <div class="hover_card_image_container">
+                            <img src= "{{ block.settings.second_product.featured_image | image_url }} "  height=82 width=82 class="hover_card_image">
+                          </div>
+                           <div class="card-text-container">
+                            <p class= "product_card_title">{{ block.settings.second_product.title }}</p>
+                            <p class= "product_card_price">{{ block.settings.second_product.price | money }}</p>
+                            <span class="view_deatails_btn">View full details</span>
+
+                          </div>
+                        </a>
 
                         </div>
                       {% endif %}
