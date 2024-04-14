@@ -11,9 +11,10 @@
     text-align:center;
     }
     .splide{
-        max-width:600px;
+        max-width:100%;
         margin:0 auto;
     }
+
     .splide__arrow{
         background:transparent;
     }
@@ -32,6 +33,10 @@
         .custom-slideshow--{{ section.id }}{
             padding-top:{{ section.settings.padding_top }}px;
             padding-bottom:{{ section.settings.padding_bottom }}px;
+        }
+        .splider {
+            max-width:500px;
+            margin:0 auto;
         }
     }
 {% endstyle %}
