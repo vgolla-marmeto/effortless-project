@@ -259,11 +259,17 @@
                           <div class="bottom-card_hover_show" style="top:{{ block.settings.second_card_top_position }}%; left:{{ block.settings.second_card_left_position }}%; transform:translate(-50%)">
                             
                               <div class="hover_card_image_container">
-                                <img src= "{{ block.settings.second_product.featured_image | image_url }} "  height=82 width=82 class="hover_card_image">
+                                {% if block.settings.second_product.featured_image != blank %}
+                                <img src= "{{ block.settings.second_product.featured_image | image_url }} "  height=82 width=82 class="hover_card_image" alt="product-image">
+                              {% endif %}
                               </div>
                               <div class="card-text-container">
+                                {% if  block.settings.second_product.title != blank %}
                                 <p class= "product_card_title">{{ block.settings.second_product.title }}</p>
+                                {% endif %}
+                                {% if block.settings.second_product.price != blank  %}
                                 <p class= "product_card_price">BZ${{ block.settings.second_product.price | money_without_currency }}</p>
+                                {% endif %}
                                 <span class="view_deatails_btn">View full details</span>
   
                               </div>
