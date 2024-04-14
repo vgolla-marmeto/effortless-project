@@ -82,9 +82,6 @@
   position: "relative"
 }
 
-.splide__arrow--prev, .splide__arrow--next{
-    display: none !important;
-}
 
 .splide__pagination__page{
     bottom: -50px;
@@ -95,6 +92,7 @@
 }
 .splide__pagination__page.is-active{
     background-color: #3A837E !important;
+    transform: scale(1) !important;
 }
 .product-tag-circle-top{
   position: absolute;
@@ -232,7 +230,7 @@
 <div class="our-story-bg-container">
   <div class="our-story-content-container">
    <div class="our-story-iamge-container">
-       <div class="splide">
+       <div class="splide" id="ourStorySplider">
            <div class="splide__track">
                <ul class="splide__list">
                   {% for block in section.blocks %}
@@ -244,14 +242,14 @@
                          <span class="product-tag-circle-top" style="top:{{ block.settings.first_hotspot_top_position }}%; left:{{ block.settings.first_hotspot_left_position }}%;"></span>
                         </div>
                         <a href= "{{ block.settings.first_card_link }}" class="card-container-link">
-                          <div class="top-card_hover_show">
+                          <div class="top-card_hover_show" style="top:{{ block.settings.first_card_top_position }}%; left:{{ block.settings.first_card_left_position }}%;">
                             
                               <div class="hover_card_image_container">
                                 <img src= "{{ block.settings.first_product.featured_image | image_url }} "  height=82 width=82 class="hover_card_image">
                               </div>
                               <div class="card-text-container">
                                 <p class= "product_card_title">{{ block.settings.first_product.title }}</p>
-                                <p class= "product_card_price">{{ block.settings.first_product.price | money }}</p>
+                                <p class= "product_card_price">BZ${{ block.settings.first_product.price | money_without_currency }}</p>
                                 <span class="view_deatails_btn">View full details</span>
   
                               </div>
@@ -265,14 +263,14 @@
                           <span class="product-tag-circle-bottom" style="top:{{ block.settings.second_hotspot_top_position}}%; left:{{ block.settings.second_hotspot_left_position}}%;"></span>
                          </div>
                          <a href= "{{ block.settings.second_card_link }}">
-                          <div class="bottom-card_hover_show">
+                          <div class="bottom-card_hover_show" style="top:{{ block.settings.second_card_top_position }}%; left:{{ block.settings.second_card_left_position }}%;">
                             
                               <div class="hover_card_image_container">
                                 <img src= "{{ block.settings.second_product.featured_image | image_url }} "  height=82 width=82 class="hover_card_image">
                               </div>
                               <div class="card-text-container">
                                 <p class= "product_card_title">{{ block.settings.second_product.title }}</p>
-                                <p class= "product_card_price">{{ block.settings.second_product.price | money }}</p>
+                                <p class= "product_card_price">BZ${{ block.settings.second_product.price | money_without_currency }}</p>
                                 <span class="view_deatails_btn">View full details</span>
   
                               </div>
@@ -313,7 +311,7 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    var splide = new Splide('.splide', {
+    var splide = new Splide('#ourStorySplider', {
         autoplay: false,
         pagination: true,
         arrows: false
