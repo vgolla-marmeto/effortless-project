@@ -214,11 +214,11 @@
                         {%  endif %}
                         <div class="card_hover_show">
                           <div class="hover_card_image_container">
-                            <img src= "{{ block.settings.product.images.src | image_url }} "  height=82 width=82 class="hover_card_image">
+                            <img src= "{{ block.settings.first_product.images.src | image_url }} "  height=82 width=82 class="hover_card_image">
                           </div>
                            <div>
-                            <p class= "product_card_title">Hello world</p>
-                            <p class= "product_card_price">bsl 123</p>
+                            <p class= "product_card_title">{{ block.settings.first_product.title }}</p>
+                            <p class= "product_card_price">{{ block.settings.first_product.variants.price }}</p>
                             <span class="view_deatails_btn">View full details</span>
 
                           </div>
