@@ -206,6 +206,12 @@
                         <div class="hotspot-container-top">
                          <span class="product-tag-circle-top" style="top:{{ block.settings.first_hotspot_top_position }}%; left:{{ block.settings.first_hotspot_left_position }}%;"></span>
                         </div>
+                        {%  endif %}
+                        {% if block.settings.second_checkbox == true %}
+                        <div class="hotspot-container-bottom">
+                          <span class="product-tag-circle-bottom" style="top:{{ block.settings.second_hotspot_top_position}}%; left:{{ block.settings.second_hotspot_left_position}}%;"></span>
+                         </div>
+                        {%  endif %}
                         <div class="card_hover_show">
                           <div class="hover_card_image_container">
                             <img src= "{{ block.settings.product.Featured_image | image_url }} "  height=82 width=82 class="hover_card_image">
@@ -218,12 +224,6 @@
                           </div>
 
                         </div>
-                        {%  endif %}
-                        {% if block.settings.second_checkbox == true %}
-                        <div class="hotspot-container-bottom">
-                          <span class="product-tag-circle-bottom" style="top:{{ block.settings.second_hotspot_top_position}}%; left:{{ block.settings.second_hotspot_left_position}}%;"></span>
-                         </div>
-                        {%  endif %}
                       {% endif %}
                    </li>
                    {% endfor %}
