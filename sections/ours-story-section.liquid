@@ -153,6 +153,17 @@
   z-index: 10;
 
 }
+.top-card_hover_show{
+  padding: 8px;
+  display: flex;
+  background-color:#fff;
+  position:absolute;
+  align-items:center;
+  top:20%;
+  left:20%;
+  z-index: 10;
+
+}
 .view_deatails_btn{
   font-size: 1.5rem;
     color: rgb(58, 131, 126,1);
@@ -238,7 +249,7 @@
                         </a>
 
                         </div>
-                        <div class="top-card_hover_show">
+                        <div class="bottom-card_hover_show">
                           <a href= "{{ block.settings.second_card_link }}">
                           <div class="hover_card_image_container">
                             <img src= "{{ block.settings.second_product.featured_image | image_url }} "  height=82 width=82 class="hover_card_image">
