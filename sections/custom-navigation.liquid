@@ -1,0 +1,110 @@
+
+
+
+
+
+
+
+
+
+
+
+{% schema %}
+
+
+{
+  "name": "Custom Header",
+  "class": "section",
+  "tag": "section",
+  "settings": [
+     {
+       "type": "image_picker",
+       "id": "logio_image",
+       "label": "Logo Image"
+    
+    },
+    {
+        "type": "link_list",
+        "id": "header_list",
+        "label": "Navigation Menu"
+    },
+   {
+  "type": "color_background",
+  "id": "background_color",
+   "label": "Background Color",
+   "default": "#ffffff"
+
+
+},
+{
+    "type": "select",
+    "id": "header_position",
+    "label": "Header Position",
+    "options": [
+        {
+        "value": "fixed",
+        "label": "Fixed"
+        },
+        {
+          "value": "sticky",
+          "label": "Sticky"
+        
+        }
+    ],
+    "default": "fixed"
+},
+{
+    "type": "select",
+    "id": "desktop_menu_type",
+    "label": "Desktop Menu Type",
+    "options": [
+        {
+        "value": "drawer",
+        "label": "drawer"
+        },
+        {
+         "value": "megamenu",
+         "label": "Mega Menu"
+        }
+    ],
+    "default": "drawer"
+},
+{
+    "type": "checkbox",
+    "id": "search_icon",
+    "label": "Display Search Icon",
+    "default": false
+},
+
+{
+    "type": "checkbox",
+    "id": "display_profile",
+    "label": "Display Profile Icon",
+    "default": false
+},
+  {
+    "type": "checkbox",
+    "id": "display_cart",
+    "label": "Display Cart Icon",
+    "default": false
+  },
+  {
+    "type": "color",
+    "id": "text_color",
+    "label": "Header Text Color",
+    "default": "#000000"
+  }
+
+  ],
+  "presets": [
+    {
+        "name": "Custom Header"
+    
+    } 
+  ]
+
+}
+
+
+
+{% endschema %}
