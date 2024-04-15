@@ -8,9 +8,13 @@
     padding:6rem;
     min-height: 100vh;
 }
+*{
+  font-family: "Montserrat";
+}
 
 *, :after, :before {
     box-sizing: inherit;
+    
 }
 .our-story-content-container{
     display: flex;
@@ -56,6 +60,7 @@
     border: none;
     color: #ffffff;
     margin-top: 20px;
+    font-weight:bold;
 
 }
 
@@ -175,7 +180,7 @@
 }
 .card-text-container{
   background-color: #fff;
-  max-width: 130px;
+  max-width: 150px;
 }
 .product_card_title{
   white-space: nowrap;
@@ -298,7 +303,7 @@
            </div>
        </div>
    </div>
-   <div class="our-story-text-contentainer" data-aos="fade-up" data-aos-duration="3000" >
+   <div class="our-story-text-contentainer" data-aos="fade-up" data-aos-duration="2000" >
        <div class="heading-container">
            {% if section.settings.heading != blank %}
             <h1 class="heading-Ele">{{section.settings.heading  }}</h1>
