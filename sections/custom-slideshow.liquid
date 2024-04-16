@@ -1,6 +1,89 @@
 
 
 
+{% liquid 
+
+ assign autoplay = {{ section.settings.auto_play }}
+ assign showPagination = {{ section.settings.show_pagination }}
+
+ assign showArrows = {{ section.settings.show_arrows }}
+
+ assign duration = {{ section.settings.auto_play_duration }}
+
+
+%}
+
+
+{% capture sliderSettings %}
+{
+ "autoplay": {{ autoplay }},
+ "pagination" : {{ show_pagination }},
+ "arrows": {{ showArrows }},
+ "speed": {{ duration }}
+
+}
+{% endcapture %}
+
+
+
+
+
+{% style %}
+
+.padding-{{ section.id }}{
+    padding-top: {{ paddingTop | divided_by:2 }}px;
+    padding-bottom: {{ paddingBottom | divided_by:2 }}px;
+  }
+
+  @media screen and (min-width:750px){
+    .padding-{{section.id}}{
+      padding-top: {{ paddingTop }}px;
+      padding-bottom: {{ paddingBottom }}px;
+    }
+    
+  }
+
+
+{% endstyle %}
+
+
+<div class="custom-slideshow padding-{{ section.id }}">
+    <div class="page-width">
+        <slide-component data-slider-settings='{{ sliderSettings }}'>
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">{{ 'product-1' | placeholder_svg_tag }}</li>
+                          <li class="splide__slide">{{ 'product-1' | placeholder_svg_tag }}</li>
+                          <li class="splide__slide">{{ 'product-1' | placeholder_svg_tag }}</li>
+                      </ul>
+                </div>
+              </div>
+
+        </slide-component>
+    </div>
+</div>
+
+
+
+
+
+
+<script src= {{ "component-splide.js" | asset_url }} defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
