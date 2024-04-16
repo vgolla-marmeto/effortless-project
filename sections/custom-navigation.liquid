@@ -1,12 +1,46 @@
 
 
-<div style="background-color:{{ section.settings.background_color }}">
 
 
 
-</div>
 
 
+
+
+
+
+
+
+<header class="custom-navigation--header">
+  <div class="page-width">
+    <div class="custom-navigation--items-container">
+      <div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+{{ section.settings.header_list.levels }}
+{% for item in section.settings.header_list.links %}
+{{ item }}
+
+{%  endfor %}
+{{ section.settings.header_list.links.url }}
+{{ section.settings.header_list.title }}
+
+
+
+
+
+
+
+
+</header>
 
 
 

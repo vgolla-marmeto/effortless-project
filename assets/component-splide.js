@@ -1,25 +1,28 @@
-class SpliderComponent extends HTMLElement{
+if(!customElements.get("venkatesh-slider")) {
+  console.log(customElements.get("venkatesh-slider"))
+  console.log(!customElements.get("venkatesh-slider"))
+class CustomSlider extends HTMLElement{
 
-constructor(){
+   constructor(){
+      super();
+      this.element = this
+      this.options = JSON.parse(this.element.dataset.sliderOptions);
+      console.log(this.options);
 
-    super()
+      this.displaySliderShow()
 
-
-    this.spliderComp = document.querySelector(".splide")
-    this.options = JSON.parse(this.spliderComp.dataset.sliderSettings)
-    console.log(this.options)
-    this.intializeSlider()
-
-}
-
-   intializeSlider(){
-
-     let caurosal = new Splide('.splide',this.options).mount();
    }
 
+    displaySliderShow(){
 
+         new Splide(this.element, this.options).mount()
+    }
+
+
+
+  }
+  customElements.define("venkatesh-slider", CustomSlider)
 
 }
 
-
-customElements.define('slide-component', SpliderComponent)
+  

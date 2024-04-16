@@ -3,12 +3,10 @@
 
 {% liquid 
 
- assign autoplay = {{ section.settings.auto_play }}
- assign showPagination = {{ section.settings.show_pagination }}
-
- assign showArrows = {{ section.settings.show_arrows }}
-
- assign duration = {{ section.settings.auto_play_duration }}
+ assign autoplay =  section.settings.auto_play 
+ assign showPagination =  section.settings.show_pagination 
+ assign showArrows =  section.settings.show_arrows 
+ assign duration =  section.settings.auto_play_duration 
 
 
 %}
@@ -17,9 +15,8 @@
 {% capture sliderSettings %}
 {
  "autoplay": {{ autoplay }},
- "pagination" : {{ show_pagination }},
- "arrows": {{ showArrows }},
- "speed": {{ duration }}
+ "pagination" : {{ showPagination }},
+ "arrows": {{ showArrows }}
 
 }
 {% endcapture %}
@@ -46,47 +43,18 @@
 
 {% endstyle %}
 
-
-<div class="custom-slideshow padding-{{ section.id }}">
-    <div class="page-width">
-        <slide-component data-slider-settings='{{ sliderSettings }}'>
-            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
-                <div class="splide__track">
-                      <ul class="splide__list">
-                          <li class="splide__slide">{{ 'product-1' | placeholder_svg_tag }}</li>
-                          <li class="splide__slide">{{ 'product-1' | placeholder_svg_tag }}</li>
-                          <li class="splide__slide">{{ 'product-1' | placeholder_svg_tag }}</li>
-                      </ul>
-                </div>
-              </div>
-
-        </slide-component>
+<venkatesh-slider class="splide" data-slider-options= '{{ sliderSettings }}'>
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">Hello</li>
+        <li class="splide__slide">Hello</li>
+        <li class="splide__slide">Hello</li>
+        </ul>
     </div>
-</div>
-
-
-
-
+</venkatesh-slider>
 
 
 <script src= {{ "component-splide.js" | asset_url }} defer></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 {% schema %}
 
