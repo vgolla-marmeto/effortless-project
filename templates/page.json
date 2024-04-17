@@ -2,13 +2,46 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "week_6_assignment_d36Nza": {
+      "type": "week-6-assignment",
+      "blocks": {
+        "slider_eTeepm": {
+          "type": "slider",
+          "settings": {
+            "background_active": "rgba(246, 255, 194, 1)",
+            "background_normal": "#ffffff",
+            "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
+            "author_name": "Mr. John Doe",
+            "authror_title": "Clients"
+          }
+        }
+      },
+      "block_order": [
+        "slider_eTeepm"
+      ],
+      "settings": {
+        "background_color": "#ffffff",
+        "title": "Testimonials",
+        "text_align": "left",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "auto_play": true,
+        "show_pagination": true,
+        "show_arrows": true,
+        "auto_play_duration": 2000,
+        "slider_animation": "slide",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "week_6_assignment_d36Nza"
   ]
 }
