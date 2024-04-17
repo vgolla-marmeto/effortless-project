@@ -83,7 +83,7 @@
             "text": ""
           }
         },
-        "email_form_wpLAQU": {
+        "email_form_ACAkme": {
           "type": "email_form",
           "settings": {
           }
@@ -92,7 +92,7 @@
       "block_order": [
         "heading_CD6MPr",
         "paragraph_VYwz8q",
-        "email_form_wpLAQU"
+        "email_form_ACAkme"
       ],
       "settings": {
         "color_scheme": "scheme-4",
