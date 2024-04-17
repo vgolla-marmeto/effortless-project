@@ -61,10 +61,11 @@
 
 
 <div class="custom-testmonial--bg-container  custom-testmonial-{{ section.id }}" >
-
+    {% for testmonial in section.settings.blocks %}
     <div class="custom-testmonial--content-container">
+       
         <div class="custom-testmonial--image-container">
-            {% comment %} <img src="" height="auto" width="auto" class="custom-testmonial--image-size" /> {% endcomment %}
+             <img src="{{testmonial.settings.Main_image }}" height="auto" width="auto" class="custom-testmonial--image-size" />
         
         </div>
         <div class="custom-testmonial--main-container">
@@ -87,6 +88,7 @@
 
 
    </div>
+   {% endfor %}
 
 
 
