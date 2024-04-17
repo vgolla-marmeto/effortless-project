@@ -141,7 +141,6 @@ margin-right:10px;
 
 .custom-testmonial--heading{
   font-weight:bold;
-  text-align: {{ section.settings.text_align }}
 }
 
 
@@ -213,15 +212,8 @@ margin-right:10px;
             </div>
         </div>
         <div class="custom-testmonial--main-container">
-          <div>
-          {%  if {{ section.settings.title != blank }} %}
-          <h1 class="custom-testmonial--heading">{{ section.settings.title }}</h1>
-          {% endif %}
-          {% if section.settings.description  != blank%}
+            <h1 class="custom-testmonial--heading">{{ section.settings.title }}</h1>
             <p class="custom-testmonial--description">{{ section.settings.description }} </p>
-
-          {% endif %}
-          </div>
             <div class="custom-testmonial--slider-container">
                 <custom-slider class="splide" data-slider-options= '{{ sliderSettings }}' id="custom-testmonial--splider">
                     <div class="splide__track">
