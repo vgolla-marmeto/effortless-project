@@ -14,7 +14,12 @@ class CustomSlider extends HTMLElement{
 
     displaySliderShow(){
 
-         new Splide(this.element, this.options).mount()
+      this.reviews =    new Splide(this.element, this.options).mount()
+      this.imageSlide = new Splide("#display-image", {
+         type: "fade",
+         perPage:1
+      }).mount()
+      this.reviews.sync(this.imageSlide)
     }
 
 
