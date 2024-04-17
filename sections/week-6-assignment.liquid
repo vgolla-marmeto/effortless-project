@@ -50,12 +50,8 @@
 
 
 .custom-testmonial--main-container{
-  width:100%;
-}
-.custom-container--sub-container{
   padding:3rem;
-  
-
+  width:100%;
 }
 .custom-testimonials--authour-container{
   display:flex;
@@ -113,8 +109,6 @@ border : 1px solid #5C6E4A;
   width:50%;
   display:flex;
   flex-direction:column;
-  justify-content:center;
-  align-items:center;
 }
 
 }
@@ -202,42 +196,41 @@ margin-right:10px;
             </div>
         </div>
         <div class="custom-testmonial--main-container">
-            <div class="custom-container--sub-container">
-              <h1 class="custom-testmonial--heading">{{ section.settings.title }}</h1>
-              <p class="custom-testmonial--description">{{ section.settings.description }} </p>
-              <div class="custom-testmonial--slider-container">
-                  <custom-slider class="splide" data-slider-options= '{{ sliderSettings }}' id="custom-testmonial--splider">
-                      <div class="splide__track">
-                        <ul class="splide__list">
-                          {%  for block in section.blocks %}
-                          <li class="splide__slide">
-                            <div class="custom-testimonials--slide">
-                              {%- if block.settings.testmonial_text != blank -%}
-                                  <p class="cutsom-testmonial--blog-text">{{ block.settings.testmonial_text }}</p>
-                              {%- endif -%}
-                              <div class="custom-testimonials--authour-container">
-                                {%- if block.settings.authour_image -%}
-                                  <img src="{{ block.settings.authour_image | image_url }}" height="auto" width="auto" class="profile-pic"/>
-                              {%- endif -%}
-                                  <div class="custom-testimonials--authour-text">
-                                      {%- if block.settings.author_name != blank -%}
-                                          <span class="custom-testmonial--author-name">{{ block.settings.author_name }}</span>
-                                          <br/>
-                                      {%- endif -%}
-                                      {%- if block.settings.authror_title != blank -%}
-                                          <span>{{ block.settings.authror_title }}</span>
-                                      {%- endif -%}
-                                  </div>
-                              </div>
-                          </div>
-                          </li>
-                        {% endfor %}
-                          </ul>
-                      </div>
-                  </custom-slider>
+            <h1 class="custom-testmonial--heading">{{ section.settings.title }}</h1>
+            <p class="custom-testmonial--description">{{ section.settings.description }} </p>
+            <div class="custom-testmonial--slider-container">
+                <custom-slider class="splide" data-slider-options= '{{ sliderSettings }}' id="custom-testmonial--splider">
+                    <div class="splide__track">
+                      <ul class="splide__list">
+                        {%  for block in section.blocks %}
+                        <li class="splide__slide">
+                          <div class="custom-testimonials--slide">
+                            {%- if block.settings.testmonial_text != blank -%}
+                                <p class="cutsom-testmonial--blog-text">{{ block.settings.testmonial_text }}</p>
+                            {%- endif -%}
+                            <div class="custom-testimonials--authour-container">
+                              {%- if block.settings.authour_image -%}
+                                <img src="{{ block.settings.authour_image | image_url }}" height="auto" width="auto" class="profile-pic"/>
+                            {%- endif -%}
+                                <div class="custom-testimonials--authour-text">
+                                    {%- if block.settings.author_name != blank -%}
+                                        <span class="custom-testmonial--author-name">{{ block.settings.author_name }}</span>
+                                        <br/>
+                                    {%- endif -%}
+                                    {%- if block.settings.authror_title != blank -%}
+                                        <span>{{ block.settings.authror_title }}</span>
+                                    {%- endif -%}
+                                </div>
+                            </div>
+                        </div>
+                        </li>
+                      {% endfor %}
+                        </ul>
+                    </div>
+                </custom-slider>
 
-              </div>
-          </div>
+            </div>
+
         </div>
 
 
