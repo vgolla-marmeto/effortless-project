@@ -437,20 +437,10 @@
         "padding_bottom": 0
       }
     },
-    "cutsom_testmonial_gtbpHC": {
-      "type": "cutsom-testmonial",
+    "week_6_assignment_3HKgaf": {
+      "type": "week-6-assignment",
       "blocks": {
-        "slider_WiefUe": {
-          "type": "slider",
-          "settings": {
-            "background_active": "rgba(246, 255, 194, 1)",
-            "background_normal": "#ffffff",
-            "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
-            "author_name": "Mr. John Doe",
-            "authror_title": "Clients"
-          }
-        },
-        "slider_PY4mMf": {
+        "slider_gHFUbm": {
           "type": "slider",
           "settings": {
             "background_active": "rgba(246, 255, 194, 1)",
@@ -462,8 +452,7 @@
         }
       },
       "block_order": [
-        "slider_WiefUe",
-        "slider_PY4mMf"
+        "slider_gHFUbm"
       ],
       "settings": {
         "background_color": "#ffffff",
@@ -491,6 +480,6 @@
     "ours_story_section_ptcYdR",
     "newsletter_bJAgBp",
     "custom_slideshow_BJmdja",
-    "cutsom_testmonial_gtbpHC"
+    "week_6_assignment_3HKgaf"
   ]
 }
