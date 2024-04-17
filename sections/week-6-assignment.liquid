@@ -64,7 +64,7 @@
 <div class="custom-testmonial--bg-container  custom-testmonial-{{ section.id }}" >
     <div class="custom-testmonial--content-container">
         <div class="custom-testmonial--image-container">
-       <img src="{{ block.settings.Main_image }}" height="auto" width="auto" class="custom-testmonial--image-size" />
+       <img src="{{ block.first.settings.Main_image }}" height="auto" width="auto" class="custom-testmonial--image-size" />
         
         </div>
         <div class="custom-testmonial--main-container">
@@ -81,9 +81,6 @@
                                 <p>{{ block.settings.testmonial_text }}</p>
                             {%- endif -%}
                             <div class="custom-testimonials--authour-container">
-                                {% comment %} {%- if block.settings.authour_image -%}
-                                    <img src="{{ block.settings.authour_image | image_url }}" height="auto" width="auto"/>
-                                {%- endif -%} {% endcomment %}
                                 <div class="custom-testimonials--authour-text">
                                     {%- if block.settings.author_name != blank -%}
                                         <h3>{{ block.settings.author_name }}</h3>
