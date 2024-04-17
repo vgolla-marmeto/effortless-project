@@ -487,7 +487,7 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "auto_play": true,
         "show_pagination": true,
-        "show_arrows": false,
+        "show_arrows": true,
         "auto_play_duration": 2000,
         "slider_animation": "slide",
         "padding_top": 10,
