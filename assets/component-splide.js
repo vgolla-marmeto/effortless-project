@@ -17,7 +17,9 @@ class CustomSlider extends HTMLElement{
       this.reviews =    new Splide(this.element, this.options).mount()
       this.imageSlide = new Splide("#display-image", {
          type: "fade",
-         perPage:1
+         perPage:1,
+         pagination:false,
+         arrows: false
       }).mount()
       this.reviews.sync(this.imageSlide)
     }
