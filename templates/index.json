@@ -406,14 +406,20 @@
           "type": "slide",
           "settings": {
             "pre_heading": "Women's Apparel",
-            "heading": "Elevate your wardrobe with our limited-time fashion offer!"
+            "heading": "Elevate your wardrobe with our limited-time fashion offer!",
+            "button_label": "Explore More",
+            "button_url": "",
+            "content_alignement": "center-center"
           }
         },
         "slide_Razyhj": {
           "type": "slide",
           "settings": {
             "pre_heading": "Women's Apparel",
-            "heading": "Elevate your wardrobe with our limited-time fashion offer!"
+            "heading": "Elevate your wardrobe with our limited-time fashion offer!",
+            "button_label": "Explore More",
+            "button_url": "",
+            "content_alignement": "center-center"
           }
         }
       },
@@ -430,6 +436,37 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "cutsom_testmonial_gtbpHC": {
+      "type": "cutsom-testmonial",
+      "blocks": {
+        "slider_PY4mMf": {
+          "type": "slider",
+          "settings": {
+            "background_active": "rgba(246, 255, 194, 1)",
+            "background_normal": "#ffffff",
+            "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
+            "author_name": "Mr. John Doe",
+            "authror_title": "Clients"
+          }
+        }
+      },
+      "block_order": [
+        "slider_PY4mMf"
+      ],
+      "settings": {
+        "background_color": "#ffffff",
+        "title": "Testimonials",
+        "text_align": "left",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "auto_play": false,
+        "show_pagination": false,
+        "show_arrows": false,
+        "auto_play_duration": 2000,
+        "slider_animation": "slide",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
     }
   },
   "order": [
@@ -442,6 +479,7 @@
     "rich_text_8DTH3g",
     "ours_story_section_ptcYdR",
     "newsletter_bJAgBp",
-    "custom_slideshow_BJmdja"
+    "custom_slideshow_BJmdja",
+    "cutsom_testmonial_gtbpHC"
   ]
 }
