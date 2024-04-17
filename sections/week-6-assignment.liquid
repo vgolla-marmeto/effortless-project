@@ -62,10 +62,10 @@
 
 
 <div class="custom-testmonial--bg-container  custom-testmonial-{{ section.id }}" >
-
+    {%  for block in section.blocks %}
     <div class="custom-testmonial--content-container">
         <div class="custom-testmonial--image-container">
-            {% comment %} <img src="" height="auto" width="auto" class="custom-testmonial--image-size" /> {% endcomment %}
+       <img src="{{ block.settings.Main_image }}" height="auto" width="auto" class="custom-testmonial--image-size" />
         
         </div>
         <div class="custom-testmonial--main-container">
@@ -75,9 +75,26 @@
                 <custom-slider class="splide" data-slider-options= '{{ sliderSettings }}'>
                     <div class="splide__track">
                       <ul class="splide__list">
-                        <li class="splide__slide">Hello</li>
-                        <li class="splide__slide">Hello</li>
-                        <li class="splide__slide">Hello</li>
+                        <li class="splide__slide">
+                          <div class="custom-testimonials--slide">
+                            {%- if block.settings.testmonial_text != blank -%}
+                                <p>{{ block.settings.testmonial_text }}</p>
+                            {%- endif -%}
+                            <div class="custom-testimonials--authour-container">
+                                {%- if block.settings.authour_image -%}
+                                    <img src="{{ block.settings.authour_image | image_url }}" height="auto" width="auto"/>
+                                {%- endif -%}
+                                <div class="custom-testimonials--authour-text">
+                                    {%- if block.settings.author_name != blank -%}
+                                        <h3>{{ block.settings.author_name }}</h3>
+                                    {%- endif -%}
+                                    {%- if block.settings.authror_title != blank -%}
+                                        <p>{{ block.settings.authror_title }}</p>
+                                    {%- endif -%}
+                                </div>
+                            </div>
+                        </div>
+                        </li>
                         </ul>
                     </div>
                 </custom-slider>
@@ -88,7 +105,7 @@
 
 
    </div>
-
+  {% endfor %}
 
 
 </div>
