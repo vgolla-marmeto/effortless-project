@@ -18,12 +18,35 @@
             "background_normal": "#ffffff",
             "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
             "author_name": "Mr. John Doe",
+            "authror_title": "Clients",
+            "Main_image": "shopify:\/\/shop_images\/Wrapper_1.png"
+          }
+        },
+        "slider_znPXBe": {
+          "type": "slider",
+          "settings": {
+            "background_active": "rgba(246, 255, 194, 1)",
+            "background_normal": "#ffffff",
+            "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
+            "author_name": "Mr. John Doe",
+            "authror_title": "Clients"
+          }
+        },
+        "slider_Gk9yUK": {
+          "type": "slider",
+          "settings": {
+            "background_active": "rgba(246, 255, 194, 1)",
+            "background_normal": "#ffffff",
+            "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
+            "author_name": "Mr. John Doe",
             "authror_title": "Clients"
           }
         }
       },
       "block_order": [
-        "slider_eTeepm"
+        "slider_eTeepm",
+        "slider_znPXBe",
+        "slider_Gk9yUK"
       ],
       "settings": {
         "background_color": "#ffffff",
@@ -52,7 +75,7 @@
         "paragraph_VYwz8q": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+            "text": ""
           }
         },
         "email_form_wpLAQU": {
