@@ -10,12 +10,6 @@
  padding: 3rem 1.5rem;
 }
 
-@media screen and (min-width:992px){
-  .custom-testmonial--bg-container{
-    padding:5rem;
-  }
-}
-
 
 
 .custom-testmonial-{{ section.id }}{
@@ -108,15 +102,20 @@ border : 1px solid #5C6E4A;
     flex-direction:row;
   }
   .custom-testmonial--image-container{
-    width:60%;
+    width:50%;
 
 }
 .custom-testmonial--main-container{
-  width:40%
+  width:50%
 }
 
 }
 
+@media screen and (min-width:992px){
+  .custom-testmonial--bg-container{
+    padding:5rem;
+  }
+}
 
 
 
@@ -143,7 +142,7 @@ border : 1px solid #5C6E4A;
     "autoplay": {{ autoplay }},
     "pagination" : {{ showPagination }},
     "arrows": {{ showArrows }},
-    "padding": "10rem",
+    "padding": "5rem",
     "gap": "10px"
    }
    {% endcapture %}
