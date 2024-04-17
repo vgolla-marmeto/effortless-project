@@ -62,7 +62,6 @@
 
 
 <div class="custom-testmonial--bg-container  custom-testmonial-{{ section.id }}" >
-    {%  for block in section.blocks %}
     <div class="custom-testmonial--content-container">
         <div class="custom-testmonial--image-container">
        <img src="{{ block.settings.Main_image }}" height="auto" width="auto" class="custom-testmonial--image-size" />
@@ -75,6 +74,7 @@
                 <custom-slider class="splide" data-slider-options= '{{ sliderSettings }}'>
                     <div class="splide__track">
                       <ul class="splide__list">
+                        {%  for block in section.blocks %}
                         <li class="splide__slide">
                           <div class="custom-testimonials--slide">
                             {%- if block.settings.testmonial_text != blank -%}
@@ -95,6 +95,7 @@
                             </div>
                         </div>
                         </li>
+                      {% endfor %}
                         </ul>
                     </div>
                 </custom-slider>
@@ -105,7 +106,7 @@
 
 
    </div>
-  {% endfor %}
+ 
 
 
 </div>
