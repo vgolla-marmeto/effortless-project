@@ -170,7 +170,7 @@ border : 1px solid #5C6E4A;
               <ul class="splide__list">
                 {%  for block in section.blocks  %}
                   <li class="splide__slide">
-                    <img src="{{ block.settings.Main_image | img_url }}" height="auto" width="auto" class="custom-testmonial--image-size" />
+                    <img src="{{ block.settings.Main_image | image_url }}" height="auto" width="auto" class="custom-testmonial--image-size" />
                   </li>
                 {% endfor %}
               </ul>
