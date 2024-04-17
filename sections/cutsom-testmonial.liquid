@@ -1,0 +1,426 @@
+
+
+
+
+
+{% style %}
+
+.padding-{{ section.id }}{
+    padding-top: {{ paddingTop | divided_by:2 }}px;
+    padding-bottom: {{ paddingBottom | divided_by:2 }}px;
+  }
+
+  @media screen and (min-width:750px){
+    .padding-{{section.id}}{
+      padding-top: {{ paddingTop }}px;
+      padding-bottom: {{ paddingBottom }}px;
+    }
+    
+  }
+
+*{
+    box-sizing: border-box;
+}
+
+.custom-section-bg-container{
+
+background-color: hsla(0, 0%, 0%, 1);
+padding:5rem;
+min-height: 100vh;
+}
+.custom-heading{
+
+color: hsla(0, 0%, 100%, 1);
+size: 48px;
+padding: 20px 0px;
+
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+}
+.custom-product-content-alignment{
+  display: flex;
+  justify-content: center;
+}
+
+*{
+color: #fff;
+box-sizing: border-box;
+padding:0px;
+}
+.view-button{
+    background-color: hsla(0, 0%, 100%, 1);
+    height: 51px;
+    width: 170px;
+    color:hsla(0, 0%, 0%, 1);
+  border-radius: 8px;
+  font-weight:700;
+  font-size:16px;
+ 
+}
+.product-heading{
+    color: hsla(310, 100%, 80%, 1);
+    font-weight: 800px;
+
+}
+.content-container{
+  padding: 5rem;
+  width: 50%;
+}
+.image-container{
+  width: 50%;
+  border:none;
+  background-image:radial-gradient(hsla(303, 90%, 35%, 0.5), hsla(0, 0%, 0%, 1), hsla(0, 0%, 0%, 1) )
+}
+.image-size{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.description{
+    font-size: 24px;
+    font-weight:600;
+}
+.description-color{
+    font-weight:300;
+    color:hsla(0, 0%, 100%, 1);
+    font-size: 16px;
+
+}
+.quantity-text{
+    font-size:24px;
+    font-weight:700;
+    margin:0px;
+}
+.price-section{
+    font-size: 32px;
+    font-weight:700;
+    margin:0px;
+}
+
+@media screen and (max-width:1000px){
+    .custom-product-content-alignment{
+        flex-direction:column;
+    }
+    .content-container{
+        width: auto;
+        padding:2rem;
+        
+    }
+    .image-container{
+        width:100%;
+    }
+    .custom-section-bg-container{
+      padding: 2rem;
+    }
+}
+
+
+{% endstyle %}
+
+
+
+
+
+{% liquid 
+
+    assign autoplay =  section.settings.auto_play 
+    assign showPagination =  section.settings.show_pagination 
+    assign showArrows =  section.settings.show_arrows 
+    assign duration =  section.settings.auto_play_duration 
+   
+   
+   %}
+   
+   
+   {% capture sliderSettings %}
+   {
+    "autoplay": {{ autoplay }},
+    "pagination" : {{ showPagination }},
+    "arrows": {{ showArrows }}
+   
+   }
+   {% endcapture %}
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="custom-testmonial--bg-container  custom-testmonial-{{ section.id }}" >
+
+    <div class="custom-testmonial--content-container">
+        <div class="custom-testmonial--image-container">
+            {% comment %} <img src="" height="auto" width="auto" class="custom-testmonial--image-size" /> {% endcomment %}
+        
+        </div>
+        <div class="custom-testmonial--main-container">
+            <h1 class="custom-testmonial--heading">{{ section.settings.title }}</h1>
+            <p class="custom-testmonial--description">{{ section.settings.description }} </p>
+            <div class="custom-testmonial--slider-container">
+                <custom-slider class="splide" data-slider-options= '{{ sliderSettings }}'>
+                    <div class="splide__track">
+                      <ul class="splide__list">
+                        <li class="splide__slide">Hello</li>
+                        <li class="splide__slide">Hello</li>
+                        <li class="splide__slide">Hello</li>
+                        </ul>
+                    </div>
+                </custom-slider>
+
+            </div>
+
+        </div>
+
+
+   </div>
+
+
+
+</div>
+
+
+
+
+
+<script src= {{ "component-splide.js" | asset_url }} defer></script>
+
+
+
+
+{% schema %}
+
+   {
+   "name": "Testmonial Section",
+   "tag": "section",
+   "class": "section",
+   "settings": [
+    {
+        "type": "header",
+        "content": "Testmonial settings"
+    },
+    {
+        "type": "color_background",
+        "id": "background_color",
+        "label": "Background color",
+        "default": "#ffffff"
+     
+     },
+     {
+        "type": "header",
+        "content": "Text customization"
+    },
+
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "default": "Testimonials",
+        "label": "Heading"
+      },
+      {
+        "type": "select",
+        "id": "text_align",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "left",
+        "label": "Heading alignment"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      
+      {
+        "type": "header",
+        "content": "Slider Options"
+      },
+      {
+        "type": "checkbox",
+        "id": "auto_play",
+        "label": "Enable autoplay",
+        "default": false
+    },
+    {
+        "type": "checkbox",
+        "id": "show_pagination",
+        "label": "Show Dots",
+        "default": false
+    },
+    {
+        "type": "checkbox",
+        "id": "show_arrows",
+        "label": "Show arrows",
+        "default": false
+    },
+    {
+        "type": "range",
+        "id": "auto_play_duration",
+        "min": 1000,
+        "max": 5000,
+        "step": 1000,
+        "unit": "ms",
+        "label": "Autoplay Duration",
+        "default":2000
+    },
+    {
+        "type": "header",
+        "content": "Animation Options"
+    },
+    {
+        "type": "select",
+        "id": "slider_animation",
+        "label": "Slider animation",
+        "options": [
+            {
+            "value": "fade",
+            "label": "Fade"
+            },
+            {
+              "value": "slide",
+            "label": "Slide"
+            },
+             {
+                 "value": "loop",
+                "label": "Loop"
+                }
+
+        ],
+        "default": "slide"
+    },
+    {
+        "type": "header",
+        "content": "Section Padding"
+    },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 10
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 10
+      }
+      
+
+
+   ],
+   "blocks": [
+    
+    {
+      "type": "slider",
+      "name": "slider",
+      "settings": [
+       {
+        "type": "header",
+        "content": "Background Color Customization"
+       },
+       {
+        "type": "color_background",
+        "id": "background_active",
+        "label": "Active card background color",
+        "default": "rgba(246, 255, 194, 1)"
+       },
+       {
+        "type": "color_background",
+        "id": "background_normal",
+        "label": "Card background color",
+        "default": "#ffffff"
+       },
+       {
+        "type": "text",
+        "id": "testmonial_text",
+        "label": "Testmonial card Text",
+        "default": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “"
+       },
+      {
+        "type": "header",
+        "content": "Author Deatils"
+      },
+      {
+        "type": "image_picker",
+        "id": "authour_image",
+        "label": "author image"
+      },
+      
+      {
+        "type": "inline_richtext",
+        "id": "author_name",
+        "default": "Mr. John Doe",
+        "label": "Author name"
+      },
+      {
+        "type": "text",
+        "id": "authror_title",
+        "label": "author Title",
+        "default": "Clients"
+      },
+      {
+        "type": "image_picker",
+        "id": "Main_image",
+        "label": "Main Image"
+      }
+
+      ]
+    
+    
+    }
+
+
+
+
+
+   ],
+   "presets": [
+    {
+     "name": " custom Testmonial section",
+     "blocks": [
+        {
+        "type": "slider"
+        }
+     ]
+    }
+
+   ]
+
+
+}
+
+
+
+
+{% endschema %}
