@@ -99,6 +99,12 @@ padding:20px;
 border : 1px solid #5C6E4A;
 
 }
+.custom-testmonial--author-name{
+  color: #5C6E4A;
+  font-size:18px;
+  font-weight:400;
+}
+
 
 
 
@@ -170,7 +176,7 @@ border : 1px solid #5C6E4A;
                             {%- endif -%}
                                 <div class="custom-testimonials--authour-text">
                                     {%- if block.settings.author_name != blank -%}
-                                        <h3>{{ block.settings.author_name }}</h3>
+                                        <p class="custom-testmonial--author-name">{{ block.settings.author_name }}</p>
                                     {%- endif -%}
                                     {%- if block.settings.authror_title != blank -%}
                                         <p>{{ block.settings.authror_title }}</p>
