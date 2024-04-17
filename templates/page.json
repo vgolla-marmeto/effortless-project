@@ -18,7 +18,8 @@
             "background_normal": "#ffffff",
             "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
             "author_name": "Mr. John Doe",
-            "authror_title": "Clients"
+            "authror_title": "Clients",
+            "Main_image": "shopify:\/\/shop_images\/Wrapper_1.png"
           }
         }
       },
@@ -52,7 +53,7 @@
         "paragraph_VYwz8q": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+            "text": ""
           }
         },
         "email_form_wpLAQU": {
