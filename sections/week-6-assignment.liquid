@@ -5,14 +5,15 @@
 
 {% style %}
 
-.custom-testmonial-{{ section.id }}{
+.custom-testmonial--bg-container{
  background-color:{{ section.settings.background_color }}
  padding: 3rem 1.5rem;
 
 
 }
+
 @media screen and (min-width:992px){
-  .custom-testmonial-{{ section.id }}{
+  .custom-testmonial--bg-container{
     padding:5rem;
   }
 }
@@ -51,6 +52,7 @@
 .custom-testmonial--image-container{
   min-width:400px;
   min-height:400px;
+  width:90%;
 
 
 }
