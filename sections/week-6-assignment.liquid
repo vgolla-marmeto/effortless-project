@@ -77,6 +77,16 @@
 }
 
 
+.cutsom-testmonial--blog-text{
+  font-family: "inter";
+font-weight:400;
+font-size: 22px;
+line-height:30.8px;
+
+}
+
+
+
 
 {% endstyle %}
 
@@ -135,7 +145,7 @@
                         <li class="splide__slide">
                           <div class="custom-testimonials--slide">
                             {%- if block.settings.testmonial_text != blank -%}
-                                <p>{{ block.settings.testmonial_text }}</p>
+                                <p class="cutsom-testmonial--blog-text">{{ block.settings.testmonial_text }}</p>
                             {%- endif -%}
                             <div class="custom-testimonials--authour-container">
                               {%- if block.settings.authour_image -%}
