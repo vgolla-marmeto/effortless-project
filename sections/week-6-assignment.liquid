@@ -72,6 +72,9 @@
   display:flex;
   align-items:center;
 }
+.profile-pic{
+  margin-right:20px;
+}
 
 
 
@@ -136,7 +139,7 @@
                             {%- endif -%}
                             <div class="custom-testimonials--authour-container">
                               {%- if block.settings.authour_image -%}
-                                <img src="{{ block.settings.authour_image | image_url }}" height="auto" width="auto"/>
+                                <img src="{{ block.settings.authour_image | image_url }}" height="auto" width="auto" class="profile-pic"/>
                             {%- endif -%}
                                 <div class="custom-testimonials--authour-text">
                                     {%- if block.settings.author_name != blank -%}
