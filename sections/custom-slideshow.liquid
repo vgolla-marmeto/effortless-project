@@ -1,4 +1,4 @@
-
+{% comment %} 
 
 
 {% liquid 
@@ -41,20 +41,8 @@
   }
 
 
-{% endstyle %}
+{% endstyle %} {% endcomment %}
 
-<venkatesh-slider class="splide" data-slider-options= '{{ sliderSettings }}'>
-    <div class="splide__track">
-      <ul class="splide__list">
-        <li class="splide__slide">Hello</li>
-        <li class="splide__slide">Hello</li>
-        <li class="splide__slide">Hello</li>
-        </ul>
-    </div>
-</venkatesh-slider>
-
-
-<script src= {{ "component-splide.js" | asset_url }} defer></script>
 
 {% schema %}
 

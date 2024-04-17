@@ -1,11 +1,10 @@
-if(!customElements.get("venkatesh-slider")) {
-  console.log(customElements.get("venkatesh-slider"))
-  console.log(!customElements.get("venkatesh-slider"))
+if(!customElements.get("custom-slider")) {
 class CustomSlider extends HTMLElement{
 
    constructor(){
       super();
       this.element = this
+      console.log(this)
       this.options = JSON.parse(this.element.dataset.sliderOptions);
       console.log(this.options);
 
@@ -21,7 +20,7 @@ class CustomSlider extends HTMLElement{
 
 
   }
-  customElements.define("venkatesh-slider", CustomSlider)
+  customElements.define("custom-slider", CustomSlider)
 
 }
 
