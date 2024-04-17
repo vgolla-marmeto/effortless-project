@@ -38,7 +38,8 @@
 }
 
 .custom-testmonial--image-container{
-  width:90%;
+  width:70%;
+  max-height:500px;
 }
 
 .custom-testmonial--image-size{
@@ -116,6 +117,15 @@ border : 1px solid #5C6E4A;
   }
 }
 
+#custom-testmonial--splider .splide__pagination__page{
+  
+}
+#custom-testmonial--splider .splide__pagination__page.is-active{
+    background-color: #3A837E;
+    transform: scale(1);
+}
+
+
 
 
 
@@ -185,7 +195,7 @@ border : 1px solid #5C6E4A;
             <h1 class="custom-testmonial--heading">{{ section.settings.title }}</h1>
             <p class="custom-testmonial--description">{{ section.settings.description }} </p>
             <div class="custom-testmonial--slider-container">
-                <custom-slider class="splide" data-slider-options= '{{ sliderSettings }}'>
+                <custom-slider class="splide" data-slider-options= '{{ sliderSettings }}' id="custom-testmonial--splider">
                     <div class="splide__track">
                       <ul class="splide__list">
                         {%  for block in section.blocks %}
