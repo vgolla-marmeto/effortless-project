@@ -56,15 +56,7 @@
   height:100%;
   object-fit:cover;
 }
-@media screen and (min-width:992px){
-  .custom-testmonial--content-container{
-    flex-direction:row;
-  }
-  .custom-testmonial--image-container{
-    width:60%;
 
-}
-}
 
 .custom-testmonial--main-container{
   padding:3rem;
@@ -100,7 +92,7 @@ color: #282824;
 background-color:#F6FFC2;
 min-height:285px;
 overflow:hidden;
-max-width:300px;
+max-width:350px;
 padding:20px;
 border : 1px solid #5C6E4A;
 
@@ -111,7 +103,19 @@ border : 1px solid #5C6E4A;
   font-weight:400;
 }
 
+@media screen and (min-width:992px){
+  .custom-testmonial--content-container{
+    flex-direction:row;
+  }
+  .custom-testmonial--image-container{
+    width:60%;
 
+}
+.custom-testmonial--main-container{
+  width:40%
+}
+
+}
 
 
 
