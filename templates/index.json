@@ -436,6 +436,19 @@
     },
     "custombestsellers_BYKhfA": {
       "type": "custombestsellers",
+      "blocks": {
+        "slider_VNJ7Tc": {
+          "type": "slider",
+          "settings": {
+            "collection_handle": "",
+            "Quicklink_view": "Quick View",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_VNJ7Tc"
+      ],
       "settings": {
         "topheading": "You may also like"
       }
