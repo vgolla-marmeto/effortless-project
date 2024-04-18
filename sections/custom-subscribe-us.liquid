@@ -1,80 +1,23 @@
 
-{% schema %}
-{
-  "name": "t:sections.email-signup-banner.name",
-  "tag": "section",
-  "class": "section",
-  "settings": [
-    {
-      "type": "color_background",
-      "id": "color_background",
-      "label": "t:sections.all.colors.label",
-      "info": "t:sections.email-signup-banner.settings.color_background.info",
-      "default": "scheme-1"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.email-signup-banner.settings.header.content"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "heading",
-      "name": "t:sections.email-signup-banner.blocks.heading.name",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "text",
-          "id": "heading",
-          "default": "Subscribe to our news letter",
-          "label": "t:sections.email-signup-banner.blocks.heading.settings.heading.label"
-        },
-       {
-        "type": "range",
-        "id": "font_size",
-        "min": 10,
-        "max": 100,
-        "step": 10,
-        "unit": "px",
-        "label": "Font size",
-        "default": 30
-       }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "name": "t:sections.email-signup-banner.blocks.paragraph.name",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "richtext",
-          "id": "text",
-          "default": "<p>Be the first to know when we launch.</p>",
-          "label": "t:sections.email-signup-banner.blocks.paragraph.settings.paragraph.label"
-        }
-      ]
-    },
-    {
-      "type": "email_form",
-      "name": "t:sections.email-signup-banner.blocks.email_form.name",
-      "limit": 1
-    }
-  ],
-  "presets": [
-    {
-      "name": "custom email signup",
-      "blocks": [
-        {
-          "type": "heading"
-        },
-        {
-          "type": "paragraph"
-        },
-        {
-          "type": "email_form"
-        }
-      ]
-    }
-  ]
-}
-{% endschema %}
+
+
+
+
+
+
+
+
+
+<div class="custom-subscribeus--container custom-subscribeus--{{ section.id }}">
+  <div class="custom-subscribeus--container">
+    <h1 class="custom-subscribeus--heading">
+    </h1>
+    <p class="custom-subscribeus--description">
+
+    </p>
+  
+  </div>
+
+
+</div>
+

@@ -1,22 +1,23 @@
 
 {% style %}
-    .custom-slideshow--{{ section.id }}{
+    .custom-announcementbar--{{ section.id }}{
         padding-top:{{ section.settings.padding_top | divided_by:2 }}px;
         padding-bottom:{{ section.settings.padding_bottom | divided_by:2 }}px;
         background-color: {{section.settings.backgrond_color}};
     }
-    .custom-slide{
+    .custom-announcementbar--text{
     font-weight: 600;
     line-height: 1.5;
     text-align:center;
-    font-size:12px;
-    flex-wrap:wrap;
+    font-size : {{ section.settings.font_size_for_mobile }};
+    color: {{ section.settings.text_color }};
+    font-weight: {{ Section.settings.font_weight }}
     }
    
-    .splide__arrow{
+    #customSlideshow .splide__arrow{
         background:transparent;
     }
-    .splide__arrow svg{
+    #customSlideshow .splide__arrow svg{
         fill:#ffffff;
         height:18px;
         width:18px;
@@ -28,20 +29,20 @@
     }
 
     @media screen and (min-width:749px){
-        .custom-slideshow--{{ section.id }}{
+        .custom-announcementbar--{{ section.id }}{
             padding-top:{{ section.settings.padding_top }}px;
             padding-bottom:{{ section.settings.padding_bottom }}px;
         }
-        .splide{
+        .custom-announcementbar--splide-container{
             width:600px;
             margin : 0 auto;
         }
-         .custom-slide{
-        font-size: 16px;
+         .custom-announcementbar--text{
+        font-size: {{ section.settings.fontsize_for_desktop }}
         }
     }
 
-    .splide{
+    .custom-announcementbar--splide-container{
         max-width:100%;
         margin:0 auto;
     }
@@ -50,12 +51,12 @@
     
 {% endstyle %}
 
-<div class="custom-slideshow--{{ section.id }}" id="customSlideshow">
-    <div class="splide">
+<div class="custom-announcementbar--{{ section.id }}" id="customSlideshow">
+    <div class="splide  custom-announcementbar--splide-container">
         <div class="splide__track">
             <ul class="splide__list">
                 {% for block in section.blocks %}
-                    <li class="splide__slide custom-slide" style="color:{{ block.settings.text_color }}; font-weight:{{ block.settings.font_weight }};" >{{ block.settings.announcement }} <span class="navigation_styles"> <a href="{{block.settings.navigation_url}}" class="anchor_element_none" style="border-bottom: 1px solid {{ block.settings.underline_color }}; color: {{block.settings.text_color }};" > {{ block.settings.navigation_text }} </a> </span></li>
+                    <li class="splide__slide custom-announcementbar--text" style="color:{{ block.settings.text_color }}; font-weight:{{ block.settings.font_weight }};" >{{ block.settings.announcement }} <span class="navigation_styles"> <a href="{{block.settings.navigation_url}}" class="anchor_element_none" style="border-bottom: 1px solid {{ block.settings.underline_color }}; color: {{block.settings.text_color }};" > {{ block.settings.navigation_text }} </a> </span></li>
                 {% endfor %}
             </ul>
         </div>
@@ -125,6 +126,45 @@
             },
             {
                 "type": "header",
+                "content": "Text customization"
+            },
+            {
+                "type": "range",
+                "id": "font_size_for_mobile",
+                "min": 0,
+                "max": 30,
+                "step": 1,
+                "unit": "px",
+                "label": "Fontsize for mobile",
+                "default": 12
+            },
+            {
+                "type": "range",
+                "id": "fontsize_for_desktop",
+                "min": 0,
+                "max": 50,
+                "step": 1,
+                "unit": "px",
+                "label": "Fontsize for desktop",
+                "default": 20
+            },
+            {
+                "type": "color",
+                "id": "text_color",
+                "label": "Text color",
+                "default": "#ffffff"
+            },
+            {
+                "type": "range",
+                "id": "font_weight",
+                "min": 100,
+                "max": 1000,
+                "step": 100,
+                "label": "Font Weight",
+                "default": 400
+            },
+            {
+                "type": "header",
                 "content": "Section padding"
             },
             {
@@ -164,12 +204,6 @@
                         "default": "An Effortless Shipping Experience"
                     },
                     {
-                        "type": "color",
-                        "id": "text_color",
-                        "label": "Text color",
-                        "default": "#ffffff"
-                    },
-                    {
                         "type": "text",
                         "id": "navigation_text",
                         "label": "Navigation Label",
@@ -186,15 +220,6 @@
                         "id": "underline_color",
                         "label": "Navigation link Underline color",
                         "default": "#06aaa1"
-                    },
-                    {
-                        "type": "range",
-                        "id": "font_weight",
-                        "min": 100,
-                        "max": 1000,
-                        "step": 100,
-                        "label": "Font Weight",
-                        "default": 400
                     }
                    
                 ]
