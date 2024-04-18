@@ -137,65 +137,6 @@
         "no_of_blocks_for_mobile": 1
       }
     },
-    "featured_blog_H4Qixb": {
-      "type": "featured-blog",
-      "settings": {
-        "heading": "Our journal",
-        "heading_size": "h1",
-        "blog": "news",
-        "post_limit": 3,
-        "columns_desktop": 3,
-        "color_scheme": "",
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "show_view_all": true,
-        "padding_top": 20,
-        "padding_bottom": 36
-      }
-    },
-    "rich_text_8DTH3g": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_jg8Uw6": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h1"
-          }
-        },
-        "text_fyeGKU": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        },
-        "button_bHk3Jr": {
-          "type": "button",
-          "settings": {
-            "button_label": "View All",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_jg8Uw6",
-        "text_fyeGKU",
-        "button_bHk3Jr"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "ours_story_section_ptcYdR": {
       "type": "ours-story-section",
       "blocks": {
@@ -334,7 +275,6 @@
     },
     "custom_blog_9dwVej": {
       "type": "custom-blog",
-      "disabled": true,
       "settings": {
         "heading": "Blog posts",
         "heading_size": "h1",
@@ -447,8 +387,6 @@
     "slideshow_p7VNTP",
     "custom_whychoose_X8eBGU",
     "custom_collections_ppWJGC",
-    "featured_blog_H4Qixb",
-    "rich_text_8DTH3g",
     "ours_story_section_ptcYdR",
     "custom_reviews_4gb4aB",
     "custom_blog_9dwVej",
