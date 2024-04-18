@@ -1,18 +1,20 @@
 
 {%style %}
 
-.collections-container{
-
-
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
+.collections-container--{{ section.id }}{
+  padding-top:{{ section.settings.padding_top | divided_by:2 }}px;
+  padding-bottom:{{ section.settings.padding_bottom | divided_by:2 }}px;
+  background-color: {{ section.settings.color_background }};
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 }
 
-.custom-section-heading{
-text-align: center;
+.custom-collections--heading{
+  text-align:{{ section.settings.heading_position }};
+  font-size:{{ section.settings.fontSize }}px;
 }
 
 .custom-collections--single-collection{
@@ -21,7 +23,7 @@ width: 100%;
 
 position: relative;
 }
-.collections{
+.custom-collections--collections{
 
 display: grid;
 grid-template-columns:  repeat({{section.settings.no_of_blocks_for_desktop}}, 1fr);
@@ -77,30 +79,34 @@ animation-fill-mode: forwards;
 }
 
 @media  screen and (max-width:600px) {
-.collections{
+.custom-collections--collections{
     grid-template-columns: repeat({{section.settings.no_of_blocks_for_mobile}}, 1fr);
 }
 }
-@media  screen and (min-width:768px) {
-.custom-section-heading{
-    font-size: 42px;
-}
+
+@media screen and (min-width:749px){
+  .collections-container--{{ section.id }}{
+  padding-top:{{ section.settings.padding_top  }}px;
+  padding-bottom:{{ section.settings.padding_bottom }}px;
 
 }
+
+       
+    }
 
 {% endstyle %}
 
 
- <div class=" section collections-container page-width" style="background-color: {{ section.settings.color_background }}; padding-top:{{ section.settings.padding_top }}px; padding-bottom:{{ section.settings.padding_bottom }}px;  ">
+ <div class=" section collections-container--{{ section.id }} page-width">
         {%- if section.settings.title != blank -%}
-        <h1 class="custom-section-heading" style="text-align:{{ section.settings.heading_position }}; font-size:{{ section.settings.fontSize }}px;">{{ section.settings.title }}</h1>
+        <h1 class="custom-collections--heading">{{ section.settings.title }}</h1>
         {%- endif -%}
-        <div class="collections">
+        <div class="custom-collections--collections">
         {%- for block in section.blocks -%}
             <div class="custom-collections--single-collection">
               <a class="custom-collections--collection_url" href= "{{ block.settings.collection.url }}" >
                   {% if block.settings.collection.featured_image != blank -%}
-                 <img src="{{ block.settings.collection.featured_image | image_url }}" class="custom-collections--img-ele" />
+                 <img src="{{ block.settings.collection.featured_image | image_url }}" width="auto" height="350" class="custom-collections--img-ele" />
                  {%- endif -%}
                  <div class="custom-collections--text-container">
                     {%- if block.settings.collection.title -%}
