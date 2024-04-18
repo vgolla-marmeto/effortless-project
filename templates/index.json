@@ -363,6 +363,7 @@
         "text": "Effortless was designed and developed by leading ecommerce professionals who are passionate about design and user experience, creating intuitive, user-friendly layouts that are optimized for success and sure to delight our customers.",
         "button_label": "Shop Now",
         "button_linkEl": "",
+        "backgrond_color": "#fff",
         "padding_top": 17,
         "padding_bottom": 0
       }
