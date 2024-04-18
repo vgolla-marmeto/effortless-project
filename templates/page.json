@@ -67,44 +67,23 @@
         "padding_bottom": 30
       }
     },
-    "newsletter_fwBYeg": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_CD6MPr": {
-          "type": "heading",
-          "settings": {
-            "heading": "Subscribe to our News letter",
-            "heading_size": "h1"
-          }
-        },
-        "paragraph_VYwz8q": {
-          "type": "paragraph",
-          "settings": {
-            "text": ""
-          }
-        },
-        "email_form_ACAkme": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "heading_CD6MPr",
-        "paragraph_VYwz8q",
-        "email_form_ACAkme"
-      ],
+    "custom_subscribe_us_GfrzHn": {
+      "type": "custom-subscribe-us",
       "settings": {
-        "color_scheme": "scheme-4",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "background_color": "#ffffff",
+        "title": "Subscribe to our Newsletter",
+        "text_align": "left",
+        "heading_color": "",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "button_text": "Subscribe",
+        "padding_top": 10,
+        "padding_bottom": 10
       }
     }
   },
   "order": [
     "main",
     "week_6_assignment_d36Nza",
-    "newsletter_fwBYeg"
+    "custom_subscribe_us_GfrzHn"
   ]
 }
