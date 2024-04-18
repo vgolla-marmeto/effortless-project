@@ -250,7 +250,7 @@
                   {% for block in section.blocks %}
                    <li class="splide__slide">
                       {% if block.settings.Image_id != blank %}
-                        <img src="{{ block.settings.Image_id | image_url}}" height="auto" width="auto" class="img-ele">
+                        <img src="{{ block.settings.Image_id | image_url}}"class="img-ele">
                         {% if block.settings.first_checkbox == true %}
                         <div class="hotspot-container-top">
                          <span class="product-tag-circle-top" style="top:{{ block.settings.first_hotspot_top_position }}%; left:{{ block.settings.first_hotspot_left_position }}%; transform:translate(-50%)"></span>
