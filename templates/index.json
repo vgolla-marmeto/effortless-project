@@ -471,11 +471,20 @@
             "para_view": "Fast and free delivery\n\nworldwide.",
             "svg_code": ""
           }
+        },
+        "image_box_ECp3gk": {
+          "type": "imageBox",
+          "settings": {
+            "header": "Guarantee",
+            "para_view": "100% customer satisfaction\nguaranteed.",
+            "svg_code": ""
+          }
         }
       },
       "block_order": [
         "image_box_C4Qzi9",
-        "image_box_MH8dQj"
+        "image_box_MH8dQj",
+        "image_box_ECp3gk"
       ],
       "settings": {
         "topheading": "Why Choose Effortless?"
