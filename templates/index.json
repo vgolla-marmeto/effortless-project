@@ -502,7 +502,7 @@
     "custom_subscribe_us_fFxMLV": {
       "type": "custom-subscribe-us",
       "settings": {
-        "background_color": "#ffffff",
+        "background_color": "#EDFF84",
         "title": "Subscribe to our Newsletter",
         "text_align": "left",
         "heading_color": "",
