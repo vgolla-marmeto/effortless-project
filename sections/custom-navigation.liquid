@@ -25,16 +25,15 @@
 
 
 
-{{ section.settings.header_list.levels }}
-{% for item in section.settings.header_list.links %}
-{{ item }}
-
-{%  endfor %}
-{{ section.settings.header_list.links.url }}
-{{ section.settings.header_list.title }}
+]
 
 
+<div>
+  {% for link in header_list.main-menu.links -%}
+    {{ link.title | link_to: link.url }}
+  {%- endfor %}
 
+</div>
 
 
 
