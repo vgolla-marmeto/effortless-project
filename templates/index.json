@@ -305,13 +305,21 @@
             "review": "Super fast load speed with fully responsive design",
             "customer_name": "Verified Customer"
           }
+        },
+        "ratings_yV8Tj4": {
+          "type": "ratings",
+          "settings": {
+            "review": "Quality coding with exceptional customer support.",
+            "customer_name": "Verified Customer"
+          }
         }
       },
       "block_order": [
         "ratings_4wYHpm",
         "ratings_E9TGcJ",
         "ratings_KHXMrq",
-        "ratings_gWjXPh"
+        "ratings_gWjXPh",
+        "ratings_yV8Tj4"
       ],
       "settings": {
         "heading": "Reviews",
