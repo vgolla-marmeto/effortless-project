@@ -1,9 +1,13 @@
 
 {%style %}
 
+.custom-collections--{{ section.id }}{
+  padding-top:{{ section.settings.padding_top | divided_by:2 }}px;
+  padding-bottom:{{ section.settings.padding_bottom | divided_by:2 }}px;
+  background-color: {{section.settings.color_background}};
+}
+
 .custom-collections-container{
-
-
 min-height: 100vh;
 display: flex;
 flex-direction: column;
@@ -11,20 +15,21 @@ justify-content: center;
 
 }
 
-.custom-section-heading{
-text-align: center;
+.custom-collection-heading{
+  text-align:{{ section.settings.heading_position }};
+ font-size:{{ section.settings.fontSize }}px;
+
 }
 
 .custom-collections--single-collection{
 height:350px;
 width: 100%;
-
 position: relative;
 }
-.custom-collections--collections-container{
 
+.custom-collections--collections-container{
 display: grid;
-grid-template-columns: repeat({{section.settings.no_of_blocks_for_desktop}}, 1fr);
+grid-template-columns: repeat({{section.settings.no_of_blocks_for_mobile}}, 1fr);
 gap:20px;
 
 }
@@ -65,8 +70,6 @@ animation-fill-mode: forwards;
     height: 50%;
 
 }
-
-
 100%{
     background-color: rgba(58, 131,126, 0.5);
     height: 100%;
@@ -74,15 +77,17 @@ animation-fill-mode: forwards;
 
 }
 
-@media  screen and (max-width:600px) {
-.custom-collection--collections-container{
-    grid-template-columns: repeat({{section.settings.no_of_blocks_for_mobile}}, 1fr);
-}
-}
-@media  screen and (min-width:768px) {
-.custom-collection-heading{
+@media screen and (min-width:749px){
+  .custom-collections--{{ section.id }}{
+  padding-top:{{ section.settings.padding_top }}px;
+  padding-bottom:{{ section.settings.padding_bottom }}px;
+  }
+  .custom-collection-heading{
     font-size: 42px;
-}
+  }
+  .custom-collection--collections-container{
+      grid-template-columns: repeat({{section.settings.no_of_blocks_for_desktop}}, 1fr);
+  }
 
 }
 
@@ -90,9 +95,9 @@ animation-fill-mode: forwards;
 
 
 
- <div class="section custom-collections-container page-width" style="background-color: {{ section.settings.color_background }}; padding-top:{{ section.settings.padding_top }}px; padding-bottom:{{ section.settings.padding_bottom }}px;  ">
+ <div class="custom-collections-container page-width custom-collections--{{ section.id }}">
         {%- if section.settings.title != blank -%}
-        <h1 class="custom-collection-heading" style="text-align:{{ section.settings.heading_position }}; font-size:{{ section.settings.fontSize }}px;">{{ section.settings.title }}</h1>
+        <h1 class="custom-collection-heading">{{ section.settings.title }}</h1>
         {%- endif -%}
         <div class="custom-collection--collections-container">
         {%- for block in section.blocks -%}
@@ -100,7 +105,7 @@ animation-fill-mode: forwards;
             <div class="custom-collections--single-collection">
               <a class="collection_url" href= "{{ block.settings.collection.url }}" >
                   {% if block.settings.collection.img.src | image_url != blank -%}
-                 <img src="{{ block.settings.collection.featured_image | image_url }}" class="custom-collection--img-ele" />
+                 <img src="{{ block.settings.collection.featured_image | image_url }}" height="auto" width="auto" class="custom-collection--img-ele" />
                  {%- endif -%}
                  <div class="custom-collections--text-container">
                     {%- if block.settings.collection.title -%}
