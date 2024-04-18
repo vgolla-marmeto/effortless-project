@@ -23,7 +23,11 @@
 
   </div>
   
-
+  {%- liquid
+    if section.settings.header_list != blank
+      render 'header-drawer'
+    endif
+  -%}
 
 
 {% for link in section.settings.header_list.links %}
