@@ -1,8 +1,3 @@
-
-
-
-
-
 {% style %}
 
 .custom-testmonial--bg-container{
@@ -143,10 +138,6 @@ margin-right:10px;
 .custom-testmonial--heading{
   font-weight:bold;
 }
-
-
-
-
 {% endstyle %}
 
 
@@ -154,17 +145,15 @@ margin-right:10px;
 
 
 {% liquid 
-
     assign autoplay =  section.settings.auto_play 
     assign showPagination =  section.settings.show_pagination 
     assign showArrows =  section.settings.show_arrows 
     assign duration =  section.settings.auto_play_duration 
+
+%}
    
    
-   %}
-   
-   
-   {% capture sliderSettings %}
+{% capture sliderSettings %}
    {
     "autoplay": {{ autoplay }},
     "pagination" : {{ showPagination }},
@@ -181,19 +170,9 @@ margin-right:10px;
     }
    }
    
-   {% endcapture %}
+{% endcapture %}
    
    
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -245,16 +224,9 @@ margin-right:10px;
                         </ul>
                     </div>
                 </custom-slider>
-
             </div>
-
         </div>
-
-
    </div>
- 
-
-
 </div>
 
 
