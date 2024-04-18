@@ -139,7 +139,6 @@
     },
     "featured_blog_H4Qixb": {
       "type": "featured-blog",
-      "disabled": true,
       "settings": {
         "heading": "Our journal",
         "heading_size": "h1",
@@ -322,6 +321,7 @@
         "ratings_gWjXPh",
         "ratings_yV8Tj4"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Reviews",
         "heading_size": "h1",
