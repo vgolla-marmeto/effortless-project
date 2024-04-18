@@ -2,19 +2,20 @@
 {% style %}
 
 .ourstory-section--{{ section.id }}{
+  padding:1.5rem 3rem; 
   padding-top:{{ section.settings.padding_top | divided_by:2 }}px;
   padding-bottom:{{ section.settings.padding_bottom | divided_by:2 }}px;
   background-color: {{section.settings.backgrond_color}};
   min-height: 100vh;
-  padding:1.5rem 3rem; 
 
 
 }
 @media screen and (min-width:749px){
   .ourstory-section--{{ section.id }}{
+  padding:6rem;
   padding-top:{{ section.settings.padding_top }}px;
   padding-bottom:{{ section.settings.padding_bottom }}px;
-  padding:6rem;
+  
 }
 
 }
