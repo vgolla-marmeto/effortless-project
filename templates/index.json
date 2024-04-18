@@ -363,6 +363,24 @@
     },
     "customherobanner_XFGVTH": {
       "type": "customherobanner",
+      "blocks": {
+        "slide_HLPj38": {
+          "type": "slide",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/hero_section_2160x_2.webp",
+            "mobile_image": "shopify:\/\/shop_images\/hero_section_2160x_2.webp",
+            "pre_heading": "Women's Apparel",
+            "heading_two": "<p>Heading Text<\/p>",
+            "button_label": "Explore More",
+            "button_link": "",
+            "text_position_selector": "center-center",
+            "desktop_content_allignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_HLPj38"
+      ],
       "settings": {
         "autoplay": false,
         "show_pagination": true,
