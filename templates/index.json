@@ -284,10 +284,18 @@
             "review": "Modern, clean and easily customizable.",
             "customer_name": "Verified Customer"
           }
+        },
+        "ratings_E9TGcJ": {
+          "type": "ratings",
+          "settings": {
+            "review": "Super fast speed with fully responsive design.",
+            "customer_name": "Verified Customer"
+          }
         }
       },
       "block_order": [
-        "ratings_4wYHpm"
+        "ratings_4wYHpm",
+        "ratings_E9TGcJ"
       ],
       "settings": {
         "heading": "Reviews",
