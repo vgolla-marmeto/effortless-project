@@ -455,6 +455,19 @@
     },
     "custom_whychoose_X8eBGU": {
       "type": "custom-whychoose",
+      "blocks": {
+        "image_box_C4Qzi9": {
+          "type": "imageBox",
+          "settings": {
+            "header": "Quality",
+            "para_view": "Exceptional quality from top\n\nto bottom.",
+            "svg_code": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_box_C4Qzi9"
+      ],
       "settings": {
         "topheading": "Why Choose Effortless?"
       }
