@@ -1,6 +1,21 @@
 
 {% style %}
 
+.ourstory-section--{{ section.id }}{
+  padding-top:{{ section.settings.padding_top | divided_by:2 }}px;
+  padding-bottom:{{ section.settings.padding_bottom | divided_by:2 }}px;
+  background-color: {{section.settings.backgrond_color}};
+
+}
+@media screen and (min-width:749px){
+  .ourstory-section--{{ section.id }}{
+  padding-top:{{ section.settings.padding_top }}px;
+  padding-bottom:{{ section.settings.padding_bottom }}px;
+
+}
+
+}
+
 .our-story-bg-container{
     background-color:#2d2d2d ;
     padding:6rem;
@@ -236,7 +251,7 @@
 
 
 
-<div class="our-story-bg-container" >
+<div class="our-story-bg-container ourstory-section--{{ section.id }}" >
   <div class="our-story-content-container">
    <div class="our-story-iamge-container">
        <div class="splide" id="ourStorySplider">
@@ -376,7 +391,31 @@
       "type": "url",
       "id": "button_linkEl",
       "label": "Button Url"
-    }
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+  },
+  {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 0
+  },
+  {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 0
+  }
    
   ],
   "blocks": [
