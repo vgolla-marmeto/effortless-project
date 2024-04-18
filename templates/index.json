@@ -452,6 +452,12 @@
       "settings": {
         "topheading": "You may also like"
       }
+    },
+    "custom_whychoose_X8eBGU": {
+      "type": "custom-whychoose",
+      "settings": {
+        "topheading": "Why Choose Effortless?"
+      }
     }
   },
   "order": [
@@ -467,6 +473,7 @@
     "custom_blog_9dwVej",
     "custom_testmonials_g43JrD",
     "customherobanner_XFGVTH",
-    "custombestsellers_BYKhfA"
+    "custombestsellers_BYKhfA",
+    "custom_whychoose_X8eBGU"
   ]
 }
