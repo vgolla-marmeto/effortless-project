@@ -17,7 +17,7 @@ justify-content: center;
 
 .custom-collection-heading{
   text-align:{{ section.settings.heading_position }};
- font-size:{{ section.settings.fontSize }}px;
+  font-size:{{ section.settings.fontSize }}px;
   font-weight:bold;
 
 }
@@ -163,8 +163,9 @@ animation-fill-mode: forwards;
     {
       "type": "range",
       "id": "fontSize",
-      "min": 20,
+      "min": 0,
       "max": 100,
+      "step": 1,
       "unit": "px",
       "label": "Font Size",
       "default": 30
