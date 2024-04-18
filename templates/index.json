@@ -485,6 +485,7 @@
         "slider_CmiWpE",
         "slider_gXidwE"
       ],
+      "disabled": true,
       "settings": {
         "background_color": "#ffffff",
         "title": "Testimonials",
@@ -501,6 +502,7 @@
     },
     "custom_subscribe_us_fFxMLV": {
       "type": "custom-subscribe-us",
+      "disabled": true,
       "settings": {
         "background_color": "#EDFF84",
         "title": "Subscribe to our Newsletter",
