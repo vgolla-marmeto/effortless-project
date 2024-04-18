@@ -298,12 +298,20 @@
             "review": "Exceptional quality and customer support.",
             "customer_name": "Verified Customer"
           }
+        },
+        "ratings_gWjXPh": {
+          "type": "ratings",
+          "settings": {
+            "review": "Super fast load speed with fully responsive design",
+            "customer_name": "Verified Customer"
+          }
         }
       },
       "block_order": [
         "ratings_4wYHpm",
         "ratings_E9TGcJ",
-        "ratings_KHXMrq"
+        "ratings_KHXMrq",
+        "ratings_gWjXPh"
       ],
       "settings": {
         "heading": "Reviews",
