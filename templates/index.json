@@ -291,11 +291,19 @@
             "review": "Super fast speed with fully responsive design.",
             "customer_name": "Verified Customer"
           }
+        },
+        "ratings_KHXMrq": {
+          "type": "ratings",
+          "settings": {
+            "review": "Exceptional quality and customer support.",
+            "customer_name": "Verified Customer"
+          }
         }
       },
       "block_order": [
         "ratings_4wYHpm",
-        "ratings_E9TGcJ"
+        "ratings_E9TGcJ",
+        "ratings_KHXMrq"
       ],
       "settings": {
         "heading": "Reviews",
