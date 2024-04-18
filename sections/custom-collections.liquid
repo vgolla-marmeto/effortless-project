@@ -7,6 +7,7 @@
   background-color: {{ section.settings.color_background }};
   min-height: 100vh;
   display: flex;
+  padding:3rem;
   flex-direction: column;
   justify-content: center;
 
@@ -20,11 +21,10 @@
 .custom-collections--single-collection{
 height:350px;
 width: 100%;
-
 position: relative;
 }
-.custom-collections--collections{
 
+.custom-collections--collections{ 
 display: grid;
 grid-template-columns:  repeat({{section.settings.no_of_blocks_for_desktop}}, 1fr);
 gap:20px;
