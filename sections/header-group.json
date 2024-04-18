@@ -35,11 +35,11 @@
         "show_arrows": true,
         "auto_play_duration": 3,
         "font_size_for_mobile": 10,
-        "fontsize_for_desktop": 20,
+        "fontsize_for_desktop": 15,
         "text_color": "#ffffff",
         "font_weight": 300,
         "padding_top": 15,
-        "padding_bottom": 20
+        "padding_bottom": 15
       }
     },
     "header": {
