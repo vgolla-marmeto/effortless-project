@@ -6,7 +6,6 @@
   padding-bottom:{{ section.settings.padding_bottom | divided_by:2 }}px;
   background-color: {{section.settings.backgrond_color}};
   min-height: 100vh;
-  padding:3rem;
 
 
 }
@@ -98,7 +97,7 @@
 
 
 #ourStorySplider .splide__pagination__page{
-    bottom: -35px;
+    bottom: -50px;
     width: 10px;
     height: 10px;
     background-color: #ffffff;
@@ -243,7 +242,7 @@
 
 
 <div class="our-story-bg-container ourstory-section--{{ section.id }}" >
-  <div class="our-story-content-container">
+  <div class="our-story-content-container page-width">
    <div class="our-story-iamge-container">
        <div class="splide" id="ourStorySplider">
            <div class="splide__track">
@@ -251,7 +250,7 @@
                   {% for block in section.blocks %}
                    <li class="splide__slide">
                       {% if block.settings.Image_id != blank %}
-                        <img src="{{ block.settings.Image_id | image_url}}"class="img-ele">
+                        <img src="{{ block.settings.Image_id | image_url}}" height="auto" width="auto" class="img-ele">
                         {% if block.settings.first_checkbox == true %}
                         <div class="hotspot-container-top">
                          <span class="product-tag-circle-top" style="top:{{ block.settings.first_hotspot_top_position }}%; left:{{ block.settings.first_hotspot_left_position }}%; transform:translate(-50%)"></span>
