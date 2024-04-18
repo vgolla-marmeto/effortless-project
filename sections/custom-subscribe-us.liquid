@@ -17,8 +17,22 @@
   padding-bottom: {{section.settings.padding_bottom  }}px;
   }
 }
-
-
+.custom-subscribeus--button{
+background-color: #5C6E4A;
+width:140px;
+height:40px;
+border-radius:8px;
+color: #fff;
+}
+.custom-subscribeus--form{
+  display:flex;
+  flex-direction:column;
+}
+@media screen and (min-width:768px){
+  .custom-subscribeus--form{
+   flex-direction:row;
+}
+}
 
 {% endstyle %}
 
@@ -36,7 +50,7 @@
         </h2>
         <div class="custom-subscribeus--form">
           <input type="email"  placeholder="Email Address"/>
-          <button> {{ section.settings.button_text }} </button>
+          <button class="custom-subscribeus--button"> {{ section.settings.button_text }} </button>
         <div>
   </div>
 </div>
