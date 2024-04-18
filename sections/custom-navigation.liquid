@@ -11,7 +11,7 @@
 
 
 
-{% comment %} <header class="custom-navigation--header">
+<header class="custom-navigation--header">
   <div class="page-width">
     <div class="custom-navigation--items-container">
       <div>
@@ -21,18 +21,27 @@
     </div>
 
 
-  </div> {% endcomment %}
+  </div>
+  
+
+
+
+{% for item in section.settings.header_list.links %}
+{{ item }}
+
+{%  endfor %}
 
 
 <div>
-  {% for link in section.settings.header_list.main-menu.links -%}
-    {{ link.title | link_to: link.url }}
-  {%- endfor %}
+
 
 </div>
 
 
 
+
+
+</header>
 
 
 
