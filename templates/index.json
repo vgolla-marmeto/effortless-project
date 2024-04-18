@@ -437,6 +437,7 @@
         "block_XXY373",
         "block_ykWQRJ"
       ],
+      "disabled": true,
       "settings": {
         "rich_text": "<p>Featured In<\/p>"
       }
