@@ -382,6 +382,7 @@
       "block_order": [
         "slide_HLPj38"
       ],
+      "disabled": true,
       "settings": {
         "autoplay": false,
         "show_pagination": true,
@@ -436,6 +437,7 @@
         "block_XXY373",
         "block_ykWQRJ"
       ],
+      "disabled": true,
       "settings": {
         "rich_text": "<p>Featured In<\/p>"
       }
