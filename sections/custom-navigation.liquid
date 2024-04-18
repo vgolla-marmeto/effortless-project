@@ -26,8 +26,8 @@
 
 
 
-{% for item in section.settings.header_list.links %}
-{{ item }}
+{% for link in section.settings.header_list.links %}
+  {{ link.title | link_to: link.url }}
 
 {%  endfor %}
 
