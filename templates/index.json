@@ -139,6 +139,7 @@
     },
     "featured_blog_H4Qixb": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Our journal",
         "heading_size": "h1",
