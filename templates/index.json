@@ -313,6 +313,7 @@
         "ratings_KHXMrq",
         "ratings_gWjXPh"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Reviews",
         "heading_size": "h1",
