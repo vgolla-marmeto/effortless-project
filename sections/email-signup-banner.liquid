@@ -72,7 +72,7 @@
             </div>
           {%- when 'email_form' -%}
             <div {{ block.shopify_attributes }}>
-              {% form 'customer', class: 'newsletter-form' %}
+              {% form 'customer' %}
                 <input type="hidden" name="contact[tags]" value="newsletter">
                 <div class="newsletter-form__field-wrapper">
                   <div class="field">
@@ -96,9 +96,6 @@
                       placeholder="{{ 'newsletter.label' | t }}"
                       required
                     >
-                    <label class="field__label" for="NewsletterForm--{{ section.id }}">
-                      {{ 'newsletter.label' | t }}
-                    </label>
                     <button
                       type="submit"
                       class="newsletter-form__button field__button"
@@ -106,7 +103,7 @@
                       id="Subscribe"
                       aria-label="{{ 'newsletter.button_label' | t }}"
                     >
-                      {% render 'icon-arrow' %}
+                      {{ section.settings.button_text }}
                     </button>
                   </div>
                   {%- if form.errors -%}
@@ -117,17 +114,6 @@
                     </small>
                   {%- endif -%}
                 </div>
-                {%- if form.posted_successfully? -%}
-                  <h3
-                    class="newsletter-form__message newsletter-form__message--success form__message"
-                    id="Newsletter-success--{{ section.id }}"
-                    tabindex="-1"
-                    autofocus
-                  >
-                    {% render 'icon-success' -%}
-                    {{- 'newsletter.success' | t }}
-                  </h3>
-                {%- endif -%}
               {% endform %}
             </div>
         {%- endcase -%}
