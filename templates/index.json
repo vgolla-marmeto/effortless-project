@@ -463,10 +463,19 @@
             "para_view": "Exceptional quality from top\n\nto bottom.",
             "svg_code": ""
           }
+        },
+        "image_box_MH8dQj": {
+          "type": "imageBox",
+          "settings": {
+            "header": "Delivery",
+            "para_view": "Fast and free delivery\n\nworldwide.",
+            "svg_code": ""
+          }
         }
       },
       "block_order": [
-        "image_box_C4Qzi9"
+        "image_box_C4Qzi9",
+        "image_box_MH8dQj"
       ],
       "settings": {
         "topheading": "Why Choose Effortless?"
