@@ -362,6 +362,28 @@
     },
     "featured_in_JcVWGc": {
       "type": "featuredIn",
+      "blocks": {
+        "block_kJnjGN": {
+          "type": "block",
+          "settings": {
+          }
+        },
+        "block_XXY373": {
+          "type": "block",
+          "settings": {
+          }
+        },
+        "block_ykWQRJ": {
+          "type": "block",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "block_kJnjGN",
+        "block_XXY373",
+        "block_ykWQRJ"
+      ],
       "settings": {
         "rich_text": "<p>Featured In<\/p>"
       }
