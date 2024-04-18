@@ -22,10 +22,11 @@
         height:18px;
         width:18px;
     }
-    .anchor_element_none{
+    .custom-announcementbar--navigation_styles{ 
         text-decoration:none;
         outline:none;
         margin-left:15px;
+        color:{{ section.settings.text_color }}
     }
 
     @media screen and (min-width:749px){
@@ -56,7 +57,7 @@
         <div class="splide__track">
             <ul class="splide__list">
                 {% for block in section.blocks %}
-                    <li class="splide__slide custom-announcementbar--text" style="color:{{ block.settings.text_color }}; font-weight:{{ block.settings.font_weight }};" >{{ block.settings.announcement }} <span class="navigation_styles"> <a href="{{block.settings.navigation_url}}" class="anchor_element_none" style="border-bottom: 1px solid {{ block.settings.underline_color }}; color: {{block.settings.text_color }};" > {{ block.settings.navigation_text }} </a> </span></li>
+                    <li class="splide__slide custom-announcementbar--text" >{{ block.settings.announcement }} <span > <a href="{{block.settings.navigation_url}}" class="custom-announcementbar--navigation_styles" style="border-bottom: 1px solid {{ block.settings.underline_color }}; color: {{block.settings.text_color }};" > {{ block.settings.navigation_text }} </a> </span></li>
                 {% endfor %}
             </ul>
         </div>
