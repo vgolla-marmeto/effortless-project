@@ -368,151 +368,6 @@
         "padding_bottom": 83
       }
     },
-    "newsletter_bJAgBp": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_HGPAUB": {
-          "type": "heading",
-          "settings": {
-            "heading": "Subscribe and Save",
-            "heading_size": "h2"
-          }
-        },
-        "paragraph_gxzqhb": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Stay in touch.<\/p>"
-          }
-        },
-        "email_form_xC9NMa": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "heading_HGPAUB",
-        "paragraph_gxzqhb",
-        "email_form_xC9NMa"
-      ],
-      "settings": {
-        "color_scheme": "scheme-4",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "custom_slideshow_BJmdja": {
-      "type": "custom-slideshow",
-      "blocks": {
-        "slide_kRiR4U": {
-          "type": "slide",
-          "settings": {
-            "pre_heading": "Women's Apparel",
-            "heading": "Elevate your wardrobe with our limited-time fashion offer!",
-            "button_label": "Explore More",
-            "button_url": "",
-            "content_alignement": "center-center"
-          }
-        },
-        "slide_Razyhj": {
-          "type": "slide",
-          "settings": {
-            "pre_heading": "Women's Apparel",
-            "heading": "Elevate your wardrobe with our limited-time fashion offer!",
-            "button_label": "Explore More",
-            "button_url": "",
-            "content_alignement": "center-center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_kRiR4U",
-        "slide_Razyhj"
-      ],
-      "settings": {
-        "auto_play": false,
-        "show_pagination": false,
-        "show_arrows": false,
-        "auto_play_duration": 2000,
-        "slider_animation": "slide",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "week_6_assignment_3HKgaf": {
-      "type": "week-6-assignment",
-      "blocks": {
-        "slider_gHFUbm": {
-          "type": "slider",
-          "settings": {
-            "background_active": "rgba(246, 255, 194, 1)",
-            "background_normal": "#ffffff",
-            "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
-            "authour_image": "shopify:\/\/shop_images\/Rectangle_8.png",
-            "author_name": "Mr. John Doe",
-            "authror_title": "Clients",
-            "Main_image": "shopify:\/\/shop_images\/Wrapper.jpg"
-          }
-        },
-        "slider_CmiWpE": {
-          "type": "slider",
-          "settings": {
-            "background_active": "rgba(246, 255, 194, 1)",
-            "background_normal": "#ffffff",
-            "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
-            "authour_image": "shopify:\/\/shop_images\/Rectangle_8_1.png",
-            "author_name": "Mr. John Doe",
-            "authror_title": "Clients",
-            "Main_image": "shopify:\/\/shop_images\/pizza-pizza-filled-with-tomatoes-salami-olives.jpg"
-          }
-        },
-        "slider_gXidwE": {
-          "type": "slider",
-          "settings": {
-            "background_active": "rgba(246, 255, 194, 1)",
-            "background_normal": "#ffffff",
-            "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
-            "authour_image": "shopify:\/\/shop_images\/Rectangle_8.png",
-            "author_name": "Mr. John Doe",
-            "authror_title": "Clients",
-            "Main_image": "shopify:\/\/shop_images\/vertical-shot-traditional-indian-paneer-butter-masala-cheese-cottage-curry-black-surface.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "slider_gHFUbm",
-        "slider_CmiWpE",
-        "slider_gXidwE"
-      ],
-      "settings": {
-        "background_color": "#ffffff",
-        "title": "Testimonials",
-        "text_align": "left",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "auto_play": true,
-        "show_pagination": true,
-        "show_arrows": false,
-        "auto_play_duration": 2000,
-        "slider_animation": "slide",
-        "padding_top": 28,
-        "padding_bottom": 25
-      }
-    },
-    "custom_subscribe_us_fFxMLV": {
-      "type": "custom-subscribe-us",
-      "disabled": true,
-      "settings": {
-        "background_color": "#EDFF84",
-        "title": "Subscribe to our Newsletter",
-        "text_align": "left",
-        "heading_color": "",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "button_text": "Subscribe",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
     "custom_reviews_4gb4aB": {
       "type": "custom-reviews",
       "blocks": {
@@ -538,37 +393,6 @@
         "padding_bottom": 0
       }
     },
-    "week_6_assignment_7R3nMF": {
-      "type": "week-6-assignment",
-      "blocks": {
-        "slider_m3dgEb": {
-          "type": "slider",
-          "settings": {
-            "background_active": "rgba(246, 255, 194, 1)",
-            "background_normal": "#ffffff",
-            "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
-            "author_name": "Mr. John Doe",
-            "authror_title": "Clients"
-          }
-        }
-      },
-      "block_order": [
-        "slider_m3dgEb"
-      ],
-      "settings": {
-        "background_color": "#ffffff",
-        "title": "Testimonials",
-        "text_align": "left",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "auto_play": false,
-        "show_pagination": false,
-        "show_arrows": false,
-        "auto_play_duration": 2000,
-        "slider_animation": "slide",
-        "padding_top": 10,
-        "padding_bottom": 10
-      }
-    },
     "custom_blog_9dwVej": {
       "type": "custom-blog",
       "settings": {
@@ -584,6 +408,19 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "custom_testmonials_9UnwwW": {
+      "type": "custom-testmonials",
+      "settings": {
+        "heading": "Reviews",
+        "heading_size": "h1",
+        "show_customer_name": true,
+        "show_pagination": true,
+        "show_arrows": false,
+        "auto_play_duration": 2000,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -595,12 +432,8 @@
     "featured_blog_H4Qixb",
     "rich_text_8DTH3g",
     "ours_story_section_ptcYdR",
-    "newsletter_bJAgBp",
-    "custom_slideshow_BJmdja",
-    "week_6_assignment_3HKgaf",
-    "custom_subscribe_us_fFxMLV",
     "custom_reviews_4gb4aB",
-    "week_6_assignment_7R3nMF",
-    "custom_blog_9dwVej"
+    "custom_blog_9dwVej",
+    "custom_testmonials_9UnwwW"
   ]
 }
