@@ -498,6 +498,19 @@
         "padding_top": 28,
         "padding_bottom": 25
       }
+    },
+    "custom_subscribe_us_fFxMLV": {
+      "type": "custom-subscribe-us",
+      "settings": {
+        "background_color": "#ffffff",
+        "title": "Subscribe to our Newsletter",
+        "text_align": "left",
+        "heading_color": "",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "button_text": "Subscribe",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
     }
   },
   "order": [
@@ -511,6 +524,7 @@
     "ours_story_section_ptcYdR",
     "newsletter_bJAgBp",
     "custom_slideshow_BJmdja",
-    "week_6_assignment_3HKgaf"
+    "week_6_assignment_3HKgaf",
+    "custom_subscribe_us_fFxMLV"
   ]
 }
