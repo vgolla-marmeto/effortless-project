@@ -538,6 +538,53 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "week_6_assignment_7R3nMF": {
+      "type": "week-6-assignment",
+      "blocks": {
+        "slider_m3dgEb": {
+          "type": "slider",
+          "settings": {
+            "background_active": "rgba(246, 255, 194, 1)",
+            "background_normal": "#ffffff",
+            "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
+            "author_name": "Mr. John Doe",
+            "authror_title": "Clients"
+          }
+        }
+      },
+      "block_order": [
+        "slider_m3dgEb"
+      ],
+      "settings": {
+        "background_color": "#ffffff",
+        "title": "Testimonials",
+        "text_align": "left",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "auto_play": false,
+        "show_pagination": false,
+        "show_arrows": false,
+        "auto_play_duration": 2000,
+        "slider_animation": "slide",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
+    },
+    "custom_blog_9dwVej": {
+      "type": "custom-blog",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "blog": "",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -553,6 +600,8 @@
     "custom_slideshow_BJmdja",
     "week_6_assignment_3HKgaf",
     "custom_subscribe_us_fFxMLV",
-    "custom_reviews_4gb4aB"
+    "custom_reviews_4gb4aB",
+    "week_6_assignment_7R3nMF",
+    "custom_blog_9dwVej"
   ]
 }
