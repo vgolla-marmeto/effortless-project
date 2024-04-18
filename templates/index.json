@@ -359,6 +359,12 @@
       "settings": {
         "topheading": "You may also like"
       }
+    },
+    "featured_in_JcVWGc": {
+      "type": "featuredIn",
+      "settings": {
+        "rich_text": ""
+      }
     }
   },
   "order": [
@@ -372,6 +378,7 @@
     "custom_blog_9dwVej",
     "custom_testmonials_g43JrD",
     "customherobanner_XFGVTH",
-    "custombestsellers_BYKhfA"
+    "custombestsellers_BYKhfA",
+    "featured_in_JcVWGc"
   ]
 }
