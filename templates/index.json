@@ -353,6 +353,7 @@
       "block_order": [
         "slide_HLPj38"
       ],
+      "disabled": true,
       "settings": {
         "autoplay": false,
         "show_pagination": true,
