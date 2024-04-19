@@ -1,19 +1,9 @@
-{% style %}
-
-.custom-testmonial--bg-container{
- background-color:{{ section.settings.background_color }};
- padding: 3rem;
- min-height:100vh;
-}
-*{
-
-  font-family: "Inter";
-  padding:0px;
-  box-sizing:"border-box"
-}
 
 
-/* .custom-testmonial-{{ section.id }}{
+
+
+{%- style -%}
+  .custom-testmonial-{{ section.id }}{
     padding-top: {{section.settings.padding_top | divided_by:2 }}px;
     padding-bottom: {{section.settings.padding_bottom | divided_by:2 }}px;
 
@@ -25,165 +15,21 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
     
-  } */
-*, :after, :before {
-    box-sizing: inherit;
-    
-}
-.custom-testmonial--content-container{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-
-}
-
-.custom-testmonial--image-container{
-  text-align:center;
-}
-
-.custom-testmonial--image-size{
-  width:100%;
-  height:100%;
-  max-height:500px;
-  object-fit:cover;
-}
-
-
-.custom-testmonial--main-container{
-  padding:3rem;
-  width:100%;
-}
-.custom-testimonials--authour-container{
-  display:flex;
-  align-items:center;
-}
-.profile-pic{
-  margin-right:20px;
-}
-
-
-.cutsom-testmonial--blog-text{
-  font-family: "inter";
-  font-weight:400;
-  font-size: 22px;
-  line-height:30.8px;
-  color: #282824;
-
-
-}
-.custom-testmonial--description{
-  font-family: "Inter";
-  font-size: 15px;
-  line-height:21px;
-  font-weight:300;
-  color: #282824;
-
-}
-.custom-testimonials--slide{
-/* background-color:#F6FFC2; */
-  min-height:285px;
-  overflow:hidden;
-  max-width:300px;
-  padding:20px;
-  border : 1px solid #5C6E4A;
-
-}
-.custom-testmonial--author-name{
-  color: #5C6E4A;
-  font-size:18px;
-  font-weight:400;
-}
-
-@media screen and (min-width:992px){
-  .custom-testmonial--content-container{
-    flex-direction:row;
   }
-  .custom-testmonial--image-container{
-    width:50%;
+{%- endstyle -%}
 
-}
-.custom-testmonial--main-container{
-  width:50%;
-  display:flex;
-  flex-direction:column;
-}
-
-}
-
-@media screen and (min-width:992px){
-  .custom-testmonial--bg-container{
-    padding:5rem;
-  }
-}
-
-#custom-testmonial--splider .splide__pagination__page{
-Width:15px;
-Height:4px;
-border-radius: 2px;
-color:#D0D0C9;
-bottom:-50px;
-margin-right:10px;
-  
-}
-
-#custom-testmonial--splider .splide__pagination__page.is-active{
-    width:40px;
-    height:4px;
-    border-radius:2px;
-    background-color:#5C6E4A;
-}
-
-.custom-testmonial--heading{
-  font-weight:bold;
-}
-{% endstyle %}
-
-
-
-
-
-{% liquid 
-    assign autoplay =  section.settings.auto_play 
-    assign showPagination =  section.settings.show_pagination 
-    assign showArrows =  section.settings.show_arrows 
-    assign duration =  section.settings.auto_play_duration 
-
-%}
-   
-   
-{% capture sliderSettings %}
-   {
-    "autoplay": {{ autoplay }},
-    "pagination" : {{ showPagination }},
-    "arrows": {{ showArrows }},
-    "gap": "20px",
-    "PerPage": "2",
-    "focus": 0,
-    "perPage": 1.95,
-    "perMove": 1,
-    "breakpoints": {
-        "500": {
-            "perPage": 1
-        }
-    }
-   }
-   
-{% endcapture %}
-   
-   
 
 
 
 <div class="custom-testmonial--bg-container  custom-testmonial-{{ section.id }}" >
-    <div class="custom-testmonial--content-container page-width">
+    <div class="custom-testmonial--content-container">
         <div class="custom-testmonial--image-container">
           <div class="splide" id="display-image">
             <div class="splide__track">
               <ul class="splide__list">
                 {%  for block in section.blocks  %}
                   <li class="splide__slide">
-                    <img src="{{ block.settings.Main_image | image_url }}" height="auto" width="auto" class="custom-testmonial--image-size" />
+                    <img src="{{ block.settings.Main_image | image_url }}" height="614" width="519" class="custom-testmonial--image-size" />
                   </li>
                 {% endfor %}
               </ul>
@@ -467,4 +313,6 @@ margin-right:10px;
 
 
 
-{% endschema %} 
+{% endschema %}
+
+
