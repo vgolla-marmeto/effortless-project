@@ -307,11 +307,20 @@
             "customer_name": "-- Jhon Doe",
             "customer_image": "shopify:\/\/shop_images\/Rectangle_78.webp"
           }
+        },
+        "ratings_xQH8nb": {
+          "type": "ratings",
+          "settings": {
+            "review": "Give your Review HAs an industry expert with deep knowledge and understanding of this space. I cannot say enough good things about this company and their products as they are modern, clean, with sophisticated designs, quality materials and top-level support.ere",
+            "customer_name": "--Jhone Doe",
+            "customer_image": "shopify:\/\/shop_images\/Rectangle_78.webp"
+          }
         }
       },
       "block_order": [
         "ratings_TGpyNc",
-        "ratings_BbKN8G"
+        "ratings_BbKN8G",
+        "ratings_xQH8nb"
       ],
       "settings": {
         "heading": "Reviews",
