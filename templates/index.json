@@ -289,50 +289,6 @@
         "padding_bottom": 36
       }
     },
-    "custom_testmonials_g43JrD": {
-      "type": "custom-testmonials",
-      "blocks": {
-        "ratings_TGpyNc": {
-          "type": "ratings",
-          "settings": {
-            "review": "As an industry expert with deep knowledge and understanding of this space. I cannot say enough good things about this company and their products as they are modern, clean, with sophisticated designs, quality materials and top-level support.",
-            "customer_name": "- John Doe",
-            "customer_image": "shopify:\/\/shop_images\/Rectangle_78.webp"
-          }
-        },
-        "ratings_BbKN8G": {
-          "type": "ratings",
-          "settings": {
-            "review": "As an industry expert with deep knowledge and understanding of this space. I cannot say enough good things about this company and their products as they are modern, clean, with sophisticated designs, quality materials and top-level support.",
-            "customer_name": "-- Jhon Doe",
-            "customer_image": "shopify:\/\/shop_images\/Rectangle_78.webp"
-          }
-        },
-        "ratings_xQH8nb": {
-          "type": "ratings",
-          "settings": {
-            "review": "Give your Review HAs an industry expert with deep knowledge and understanding of this space. I cannot say enough good things about this company and their products as they are modern, clean, with sophisticated designs, quality materials and top-level support.ere",
-            "customer_name": "--Jhone Doe",
-            "customer_image": "shopify:\/\/shop_images\/Rectangle_78.webp"
-          }
-        }
-      },
-      "block_order": [
-        "ratings_TGpyNc",
-        "ratings_BbKN8G",
-        "ratings_xQH8nb"
-      ],
-      "settings": {
-        "heading": "Reviews",
-        "heading_size": "h1",
-        "show_customer_name": true,
-        "show_pagination": true,
-        "show_arrows": false,
-        "auto_play_duration": 2000,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "customherobanner_XFGVTH": {
       "type": "customherobanner",
       "blocks": {
@@ -353,7 +309,6 @@
       "block_order": [
         "slide_HLPj38"
       ],
-      "disabled": true,
       "settings": {
         "autoplay": false,
         "show_pagination": true,
@@ -421,7 +376,6 @@
     "ours_story_section_ptcYdR",
     "custom_reviews_4gb4aB",
     "custom_blog_9dwVej",
-    "custom_testmonials_g43JrD",
     "customherobanner_XFGVTH",
     "custombestsellers_BYKhfA",
     "featured_in_JcVWGc"
