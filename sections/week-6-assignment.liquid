@@ -135,9 +135,12 @@ margin-right:10px;
 }
 
 .custom-testmonial--heading{
-  font-weight:bold;
+  font-weight:500;
 }
-
+.custom-testimonial-profile-pic{
+height:65px;
+width:65px;
+}
 {% endstyle %}
 
 
@@ -206,7 +209,7 @@ margin-right:10px;
                             {%- endif -%}
                             <div class="custom-testimonials--authour-container">
                               {%- if block.settings.authour_image -%}
-                                <img src="{{ block.settings.authour_image | image_url }}" height="auto" width="auto" class="profile-pic"/>
+                                <img src="{{ block.settings.authour_image | image_url }}" height="auto" width="auto" class="custom-testimonial-profile-pic"/>
                             {%- endif -%}
                                 <div class="custom-testimonials--authour-text">
                                     {%- if block.settings.author_name != blank -%}
