@@ -262,6 +262,7 @@
         "ratings_gWjXPh",
         "ratings_yV8Tj4"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Reviews",
         "heading_size": "h1",
@@ -275,6 +276,7 @@
     },
     "custom_blog_9dwVej": {
       "type": "custom-blog",
+      "disabled": true,
       "settings": {
         "heading": "Blog posts",
         "heading_size": "h1",
@@ -322,6 +324,7 @@
         "ratings_BbKN8G",
         "ratings_xQH8nb"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Reviews",
         "heading_size": "h1",
@@ -353,6 +356,7 @@
       "block_order": [
         "slide_HLPj38"
       ],
+      "disabled": true,
       "settings": {
         "autoplay": false,
         "show_pagination": true,
