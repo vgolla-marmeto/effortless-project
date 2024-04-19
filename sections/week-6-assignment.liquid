@@ -84,7 +84,7 @@
 }
 .custom-testmonial--author-name{
   color: #5C6E4A;
-  font-size:15px;
+  font-size:18px;
   font-weight:400;
 }
 
@@ -140,6 +140,10 @@ margin-right:15px;
 .custom-testmonial-text-container{
   text-align:left;
   margin-bottom:15px;
+}
+.custom-testmonial--author-title{
+  color:#282824;
+  font-size:14px;
 }
 
 
@@ -222,7 +226,7 @@ margin-right:15px;
                                         <br/>
                                     {%- endif -%}
                                     {%- if block.settings.authror_title != blank -%}
-                                        <span>{{ block.settings.authror_title }}</span>
+                                        <span class="custom-testmonial--author-title">{{ block.settings.authror_title }}</span>
                                     {%- endif -%}
                                 </div>
                             </div>
