@@ -36,9 +36,10 @@ if (!customElements.get("custom-slider")) {
            slides.forEach((slide, index) => {
                if (index === activeIndex) {
                    slide.classList.add("active-slide");
+                   slide.classList.remove("normal-color")
                } else {
                    slide.classList.remove("active-slide");
-                   
+                   slide.classList.add("normal-color")
                }
            });
        }
