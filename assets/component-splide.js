@@ -30,7 +30,7 @@ class CustomSlider extends HTMLElement{
            this.reviews = reviews; // Store reviews instance as a property of the class
 
            this.reviews.on("move",()=>{
-            let activeEl = document.querySelector("splide__list .is-active")
+            let activeEl = document.querySelector(".splide__list .is-active")
             console.log(activeEl)
             let activeColor = activeEl.dataset.active;
             console.log(activeColor)
