@@ -1,9 +1,7 @@
-
 {% style %}
-
 .custom-subscribeus--{{ section.id }}{
-  padding-top: {{section.settings.padding_top | divided_by:2 }}px;
-  padding-bottom: {{section.settings.padding_bottom | divided_by:2 }}px;
+  padding-top: {{ section.settings.padding_top | divided_by:2 }}px;
+  padding-bottom: {{ section.settings.padding_bottom | divided_by:2 }}px;
   background-color: {{ section.settings.background_color }};
   min-height:50vh;
   display:flex;
@@ -14,8 +12,8 @@
 }
 @media screen and (min-width:768px){
   .custom-subscribeus--{{ section.id }}{
-  padding-top: {{section.settings.padding_top  }}px;
-  padding-bottom: {{section.settings.padding_bottom  }}px;
+  padding-top: {{ section.settings.padding_top  }}px;
+  padding-bottom: {{ section.settings.padding_bottom  }}px;
   }
 }
 .custom-subscribeus--button{
@@ -61,13 +59,6 @@ margin-top:20px;
 
 {% endstyle %}
 
-
-
-
-
-
-
-
 <div class="custom-subscribeus--container custom-subscribeus--{{ section.id }}">
   <div class="custom-subscribeus--container">
         <h2 class="email-signup-banner__heading ">
@@ -98,6 +89,7 @@ margin-top:20px;
                   placeholder="{{ 'newsletter.label' | t }}"
                   required
                 >
+                <p class="show-msg"></p>
                 <button
                   type="submit"
                   class="custom-subscribeus--button"
@@ -122,103 +114,141 @@ margin-top:20px;
   </div>
 </div>
 
-{% schema %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Function to handle form submission
+    function handleFormSubmit(event) {
+      event.preventDefault(); // Prevent default form submission behavior
 
-   {
-   "name": "subscribeus Section",
-   "tag": "section",
-   "class": "section",
-   "settings": [
-    {
-        "type": "color_background",
-        "id": "background_color",
-        "label": "Background color",
-        "default": "#ffffff"
-     
-     },
-     {
-        "type": "header",
-        "content": "Text customization"
-    },
+      var form = event.target; // Get the form element
+      var emailInput = form.querySelector('input[type="email"]'); // Get the email input element
+      var email = emailInput.value.trim(); // Get the value of the email input and remove leading/trailing whitespace
 
-      {
-        "type": "inline_richtext",
-        "id": "title",
-        "default": "Subscribe to our Newsletter",
-        "label": "Heading"
-      },
-      {
-        "type": "select",
-        "id": "text_align",
-        "options": [
-          {
-            "value": "left",
-            "label": "Left"
-          },
-          {
-            "value": "center",
-            "label": "Center"
-          },
-          {
-            "value": "right",
-            "label": "Right"
-          }
-        ],
-        "default": "left",
-        "label": "Heading alignment"
-      },
-      {
-        "type": "color",
-        "id": "heading_color",
-        "label": "Heading Color"
-      },
-      {
-        "type": "text",
-        "id": "description",
-        "label": "Description",
-        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      },
-      {
-        "type": "text",
-        "id": "button_text",
-        "label": "Button text",
-        "default": "Subscribe"
-      },
-
-    {
-        "type": "header",
-        "content": "Section Padding"
-    },
-      {
-        "type": "range",
-        "id": "padding_top",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "label": "Padding top",
-        "default": 10
-      },
-      {
-        "type": "range",
-        "id": "padding_bottom",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "label": "Padding bottom",
-        "default": 10
+      if (email === '') {
+        // If email is empty, show error message
+        var errorMsg = form.querySelector('.show-msg');
+        errorMsg.textContent = "Email can't be blank.";
+        return; // Exit the function
       }
-      
 
+      // Reset error message if email is not empty
+      var errorMsg = form.querySelector('.show-msg');
+      errorMsg.textContent = '';
 
-   ],
-   "presets": [
-    {
-     "name": "subscribe us section"
+      // Hide the input element
+      emailInput.style.display = 'none';
+
+      // Show success message
+      var successMsg = document.createElement('p');
+      successMsg.textContent = "Thanks for subscribing!";
+      form.appendChild(successMsg);
     }
 
-   ]
+    // Find the form element
+    var form = document.querySelector('.custom-subscribeus--form form');
+
+    // Add event listener for form submission
+    form.addEventListener('submit', handleFormSubmit);
+  });
+</script>
+
+{% schema %}
+
+{
+"name": "subscribeus Section",
+"tag": "section",
+"class": "section",
+"settings": [
+ {
+    "type": "color_background",
+    "id": "background_color",
+    "label": "Background color",
+    "default": "#ffffff"
+ 
+ },
+ {
+    "type": "header",
+    "content": "Text customization"
+},
+
+  {
+    "type": "inline_richtext",
+    "id": "title",
+    "default": "Subscribe to our Newsletter",
+    "label": "Heading"
+  },
+  {
+    "type": "select",
+    "id": "text_align",
+    "options": [
+      {
+        "value": "left",
+        "label": "Left"
+      },
+      {
+        "value": "center",
+        "label": "Center"
+      },
+      {
+        "value": "right",
+        "label": "Right"
+      }
+    ],
+    "default": "left",
+    "label": "Heading alignment"
+  },
+  {
+    "type": "color",
+    "id": "heading_color",
+    "label": "Heading Color"
+  },
+  {
+    "type": "text",
+    "id": "description",
+    "label": "Description",
+    "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "type": "text",
+    "id": "button_text",
+    "label": "Button text",
+    "default": "Subscribe"
+  },
+
+{
+    "type": "header",
+    "content": "Section Padding"
+},
+  {
+    "type": "range",
+    "id": "padding_top",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "label": "Padding top",
+    "default": 10
+  },
+  {
+    "type": "range",
+    "id": "padding_bottom",
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "unit": "px",
+    "label": "Padding bottom",
+    "default": 10
+  }
+  
+
+
+],
+"presets": [
+ {
+  "name": "subscribe us section"
+ }
+
+]
 
 
 }
