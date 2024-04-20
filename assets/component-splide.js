@@ -22,24 +22,8 @@ class CustomSlider extends HTMLElement{
             reviews.sync(imageSlide);
 
             reviews.on("active", (slide) => { // Use arrow function to retain the context of `this`
-               if (reviews.index === 0){
-                  var activeColor = slide.dataset.active
-                  console.log(activeColor)
-               }
                 var activeIndex = reviews.index;
                 console.log(activeIndex);
-
-                var slides = document.querySelectorAll('#custom-testmonial--splider .splide__slide');
-        
-                // Remove active-slide class from all slides
-                slides.forEach(function (slide) {
-                  console.log(slide)
-                  slide.style.backgroundColor = "#ffffff"
-                });
-        
-                // Add active-slide class to the active slide
-                slides[activeIndex].style.backgroundColor = activeColor
-
 
             });
 
@@ -50,7 +34,7 @@ class CustomSlider extends HTMLElement{
         
 
 
-  }
+}
 }
   customElements.define("custom-slider", CustomSlider)
 
