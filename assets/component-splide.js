@@ -22,6 +22,11 @@ class CustomSlider extends HTMLElement{
          arrows: false
       }).mount()
       this.reviews.sync(this.imageSlide)
+
+      this.reviews.on("active", function(slide) {
+         var activeIndex = this.reviews.index;
+         console.log(activeIndex)
+      } )
     }
 
 
