@@ -6,8 +6,7 @@ class CustomSlider extends HTMLElement{
       this.element = this
       console.log(this)
       this.options = JSON.parse(this.element.dataset.sliderOptions);
-      this.active = this.element.dataset.active
-      console.log(this.active)
+      console.log(this.options);
 
       this.displaySliderShow()
 
@@ -15,25 +14,14 @@ class CustomSlider extends HTMLElement{
 
     displaySliderShow(){
 
-         // Intialization of first splider 
-
-         this.reviews =    new Splide(this.element, this.options).mount()
-
-         this.imageSlide = new Splide("#display-image", {
-            type: "fade",
-            perPage:1,
-            pagination:false,
-            arrows: false
-         }).mount()
-
-         this.reviews.sync(this.imageSlide)
-   
-
-
-
-    
-      
-      
+      this.reviews =    new Splide(this.element, this.options).mount()
+      this.imageSlide = new Splide("#display-image", {
+         type: "fade",
+         perPage:1,
+         pagination:false,
+         arrows: false
+      }).mount()
+      this.reviews.sync(this.imageSlide)
     }
 
 
