@@ -28,11 +28,11 @@ class CustomSlider extends HTMLElement{
            
            // Remove active-slide class from all slides
            slides.forEach(function (slide) {
-             slide.classList.remove('active-slide');
+            //  slide.classList.remove('active-slide');
            });
-   
+             console.log(activeIndex)
            // Add active-slide class to the active slide
-           slides[activeIndex].classList.add('active-slide');
+         //   slides[activeIndex].classList.add('active-slide');
          });
        });
 
