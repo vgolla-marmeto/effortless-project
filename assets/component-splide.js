@@ -13,7 +13,7 @@ class CustomSlider extends HTMLElement{
    }
 
     displaySliderShow(){
-
+      document.addEventListener('DOMContentLoaded', function () {
       let reviews = new Splide(this.element, this.options).mount();
             let imageSlide = new Splide("#display-image", {
                 type: "fade",
@@ -29,11 +29,13 @@ class CustomSlider extends HTMLElement{
             });
 
             this.reviews = reviews; // Store r
-    }
+    });
+
 
 
 
   }
+}
   customElements.define("custom-slider", CustomSlider)
 
 }
