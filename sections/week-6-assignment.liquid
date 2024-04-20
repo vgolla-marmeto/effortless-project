@@ -134,6 +134,7 @@ margin-right:10px;
 }
 
 .custom-testmonial--heading{
+  text-align:{{ section.settings.text_align }};
   font-weight:500;
   margin:0;
 }
@@ -198,11 +199,12 @@ margin-right:15px;
    
 {% endcapture %}
    
-   
+  
 
 
+{% if customer %}
 
-<div class="custom-testmonial--bg-container  custom-testmonial-{{ section.id }}" >
+  <div class="custom-testmonial--bg-container  custom-testmonial-{{ section.id }}" >
     <div class="custom-testmonial--content-container">
         <div class="custom-testmonial--image-container">
           <div class="splide" id="display-image">
@@ -256,6 +258,19 @@ margin-right:15px;
         </div>
    </div>
 </div>
+
+
+
+  
+  
+  
+{% else %}
+  <!-- If the customer is not logged in -->
+  <p>Please log in to access this page.</p>
+  <a href="/account/login" class="btn">Login</a>
+{% endif %}
+
+
 
 
 
