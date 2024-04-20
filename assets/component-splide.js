@@ -24,7 +24,12 @@ class CustomSlider extends HTMLElement{
             reviews.on("active", (slide) => { // Use arrow function to retain the context of `this`
                var activeIndex = reviews.index;
                var color = slide.dataset.active 
-               console.log(slide)
+               if (slide !== undefined){
+                  console.log("active slide")
+               }
+               else {
+                  console.log("not found")
+               }
            });
 
            // Trigger the "active" event for the initial slide
