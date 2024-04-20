@@ -14,16 +14,16 @@ class CustomSlider extends HTMLElement{
 
     displaySliderShow(){
 
-      this.reviews =    new Splide(this.element, this.options).mount()
-      this.imageSlide = new Splide("#display-image", {
+      let reviews =    new Splide(this.element, this.options).mount()
+      let imageSlide = new Splide("#display-image", {
          type: "fade",
          perPage:1,
          pagination:false,
          arrows: false
       }).mount()
-      this.reviews.sync(this.imageSlide)
+      reviews.sync(imageSlide)
 
-      this.reviews.on("active", function(slide) {
+      reviews.on("active", function(slide) {
          var activeIndex = reviews.index;
          console.log(activeIndex)
       } )
