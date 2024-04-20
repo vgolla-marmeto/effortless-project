@@ -26,7 +26,7 @@ class CustomSlider extends HTMLElement{
             });
 
             this.reviews = reviews;
-             console.log(activeIndex)
+             console.log(this.activeIndex)
             // Store reviews instance as a property of the class
 
             // Trigger the "active" event for the initial slide
