@@ -23,7 +23,7 @@ class CustomSlider extends HTMLElement{
    
          // Listen for active event to change background color of active slide
          splide.on('active', function (slide) {
-           var activeIndex = splide.index;
+           var activeIndex = reviews.index;
            var slides = document.querySelectorAll('.splide__slide');
            
            // Remove active-slide class from all slides
