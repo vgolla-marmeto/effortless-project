@@ -37,7 +37,7 @@ class CustomSlider extends HTMLElement{
            })
 
            // Trigger the "active" event for the initial slide
-           reviews.emit("active", reviews.Components.Elements.slides[0]);
+         //   reviews.emit("active", reviews.Components.Elements.slides[0]);
 
 
 }
