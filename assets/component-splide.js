@@ -25,7 +25,6 @@ class CustomSlider extends HTMLElement{
                var activeIndex = reviews.index;
                if (activeIndex ===0 ){
                   var color = slide.dataset.active 
-                  console.log(activeIndex, color)
                }
               try{
                if (slide !== undefined){
