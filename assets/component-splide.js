@@ -21,13 +21,20 @@ class CustomSlider extends HTMLElement{
             }).mount();
             reviews.sync(imageSlide);
 
-            reviews.on("active", (slide) => { // Use arrow function to retain the context of `this`
-               // var activeIndex = reviews.index;
-               // var color = slide.dataset.active 
-               console.log(slide)
-           });
+         //    reviews.on("active", (slide) => { // Use arrow function to retain the context of `this`
+         //       // var activeIndex = reviews.index;
+         //       // var color = slide.dataset.active 
+         //       console.log(slide)
+         //   });
 
            this.reviews = reviews; // Store reviews instance as a property of the class
+
+           this.reviews.on("move",()=>{
+            activeEl = document.getElementById("splide__slide .is-active")
+            console.log(activeEl)
+            activeColor = activeEl.dataset.active;
+            console.log(activeColor)
+           })
 
            // Trigger the "active" event for the initial slide
            reviews.emit("active", reviews.Components.Elements.slides[0]);
