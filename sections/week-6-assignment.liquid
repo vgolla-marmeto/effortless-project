@@ -212,11 +212,11 @@ margin-right:15px;
               <p class="custom-testmonial--description">{{ section.settings.description }} </p>
             </div>
             <div class="custom-testmonial--slider-container">
-                <custom-slider class="splide" data-slider-options= '{{ sliderSettings }}' id="custom-testmonial--splider">
+                <custom-slider class="splide" data-slider-options= '{{ sliderSettings }}' id="custom-testmonial--splider" data-active="{{ block.settings.background_active }}">
                     <div class="splide__track">
                       <ul class="splide__list">
                         {%  for block in section.blocks %}
-                        <li class="splide__slide" data-active="{{ block.settings.background_active }}">
+                        <li class="splide__slide">
                           <div class="custom-testimonials--slide">
                             {%- if block.settings.testmonial_text != blank -%}
                                 <p class="cutsom-testmonial--blog-text">{{ block.settings.testmonial_text }}</p>
