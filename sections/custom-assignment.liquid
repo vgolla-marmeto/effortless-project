@@ -20,8 +20,9 @@
 
 
 
+{% if customer %}
 
-<div class="custom-testmonial--bg-container  custom-testmonial-{{ section.id }}" >
+  <div class="custom-testmonial--bg-container  custom-testmonial-{{ section.id }}" >
     <div class="custom-testmonial--content-container">
         <div class="custom-testmonial--image-container">
           <div class="splide" id="display-image">
@@ -73,6 +74,16 @@
         </div>
    </div>
 </div>
+
+ 
+{% else %}
+ 
+  <p>Please log in to access this page.</p>
+  <a href="/account/login" class="btn">Login</a>
+{% endif %}
+
+
+
 
 
 
