@@ -111,13 +111,6 @@ margin-top:20px;
                   {{ section.settings.button_text }}
                 </button>
               </div>
-              {%- if form.errors -%}
-                <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
-                  {%- render 'icon-error' -%}
-                  {{- form.errors.translated_fields.email | capitalize }}
-                  {{ form.errors.messages.email -}}
-                </small>
-              {%- endif -%}
             </div>
           {% endform %}
          
