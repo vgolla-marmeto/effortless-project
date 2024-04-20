@@ -29,7 +29,7 @@ class CustomSlider extends HTMLElement{
                 var activeIndex = reviews.index;
                 console.log(activeIndex);
 
-                var slides = document.querySelectorAll('.splide__slide');
+                var slides = document.querySelectorAll('#custom-testmonial--splider .splide__slide');
         
                 // Remove active-slide class from all slides
                 slides.forEach(function (slide) {
