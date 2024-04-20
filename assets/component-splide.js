@@ -35,7 +35,7 @@ class CustomSlider extends HTMLElement{
 
               }
               catch(e){
-               console.log(e)
+               console.log("slide not found")
               }
            });
 
