@@ -6,7 +6,8 @@ class CustomSlider extends HTMLElement{
       this.element = this
       console.log(this)
       this.options = JSON.parse(this.element.dataset.sliderOptions);
-      console.log(this.options);
+      this.active = this.element.dataset.active
+      console.log(this.active)
 
       this.displaySliderShow()
 
@@ -14,7 +15,30 @@ class CustomSlider extends HTMLElement{
 
     displaySliderShow(){
 
-      this.reviews =    new Splide(this.element, this.options).mount()
+      document.addEventListener('DOMContentLoaded', function () {
+
+         // Intialization of first splider 
+
+         this.reviews =    new Splide(this.element, this.options).mount()
+   
+         // Listen for active event to change background color of active slide
+         splide.on('active', function (slide) {
+           var activeIndex = splide.index;
+           var slides = document.querySelectorAll('.splide__slide');
+           
+           // Remove active-slide class from all slides
+           slides.forEach(function (slide) {
+             slide.classList.remove('active-slide');
+           });
+   
+           // Add active-slide class to the active slide
+           slides[activeIndex].classList.add('active-slide');
+         });
+       });
+
+
+
+    
       this.imageSlide = new Splide("#display-image", {
          type: "fade",
          perPage:1,
