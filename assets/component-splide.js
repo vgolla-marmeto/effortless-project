@@ -38,6 +38,7 @@ if (!customElements.get("custom-slider")) {
                    slide.classList.add("active-slide");
                } else {
                    slide.classList.remove("active-slide");
+                   slide.classList.add("normal-color")
                }
            });
        }
