@@ -22,8 +22,8 @@ class CustomSlider extends HTMLElement{
             reviews.sync(imageSlide);
 
             reviews.on("active", (slide) => { // Use arrow function to retain the context of `this`
-               var activeIndex = reviews.index;
-               var color = slide.dataset.active 
+               // var activeIndex = reviews.index;
+               // var color = slide.dataset.active 
                console.log(slide)
            });
 
