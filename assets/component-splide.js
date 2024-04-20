@@ -4,9 +4,8 @@ class CustomSlider extends HTMLElement{
    constructor(){
       super();
       this.element = this
-      console.log(this)
       this.options = JSON.parse(this.element.dataset.sliderOptions);
-      console.log(this.activeColor)
+   
 
       this.displaySliderShow()
 
