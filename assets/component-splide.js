@@ -23,7 +23,7 @@ class CustomSlider extends HTMLElement{
 
             reviews.on("active", (slide) => { // Use arrow function to retain the context of `this`
                var activeIndex = reviews.index;
-               console.log(activeIndex);
+               console.log(slide);
            });
 
            this.reviews = reviews; // Store reviews instance as a property of the class
