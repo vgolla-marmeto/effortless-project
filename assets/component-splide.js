@@ -33,6 +33,7 @@ class CustomSlider extends HTMLElement{
         
                 // Remove active-slide class from all slides
                 slides.forEach(function (slide) {
+                  console.log(slide)
                   slide.classList.remove('active-slide');
                 });
         
