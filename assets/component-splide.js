@@ -14,19 +14,21 @@ class CustomSlider extends HTMLElement{
 
     displaySliderShow(){
 
-      let reviews =    new Splide(this.element, this.options).mount()
-      let imageSlide = new Splide("#display-image", {
-         type: "fade",
-         perPage:1,
-         pagination:false,
-         arrows: false
-      }).mount()
-      reviews.sync(imageSlide)
+      let reviews = new Splide(this.element, this.options).mount();
+            let imageSlide = new Splide("#display-image", {
+                type: "fade",
+                perPage: 1,
+                pagination: false,
+                arrows: false
+            }).mount();
+            reviews.sync(imageSlide);
 
-      reviews.on("active", function(slide) {
-         var activeIndex = reviews.index;
-         console.log(activeIndex)
-      } )
+            reviews.on("active", (slide) => { // Use arrow function to retain the context of `this`
+                var activeIndex = reviews.index;
+                console.log(activeIndex);
+            });
+
+            this.reviews = reviews; // Store r
     }
 
 
