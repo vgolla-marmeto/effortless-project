@@ -56,7 +56,6 @@
                   placeholder="{{ 'newsletter.label' | t }}"
                   required
                 >
-                <p class="show-msg"></p>
                 <button
                   type="submit"
                   class="custom-subscribeus--button"
@@ -87,11 +86,8 @@
       event.preventDefault(); 
 
       var form = event.target; 
-      var emailInput = form.querySelector('input[type="email"]');
+      var emailInput = form.querySelector('NewsletterForm--{{ section.id }}');
       var email = emailInput.value.trim();
-
-      var errorMsg = form.querySelector('.show-msg');
-      errorMsg.textContent = '';
 
       emailInput.style.display = 'none';
 
