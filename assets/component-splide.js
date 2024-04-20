@@ -13,8 +13,12 @@ class CustomSlider extends HTMLElement{
    }
 
     displaySliderShow(){
-      document.addEventListener('DOMContentLoaded', function () {
       let reviews = new Splide(this.element, this.options).mount();
+
+      reviews.on("active", (slide) => { // Use arrow function to retain the context of `this`
+         var activeIndex = reviews.index;
+         console.log(activeIndex);
+     });
             let imageSlide = new Splide("#display-image", {
                 type: "fade",
                 perPage: 1,
@@ -23,13 +27,9 @@ class CustomSlider extends HTMLElement{
             }).mount();
             reviews.sync(imageSlide);
 
-            reviews.on("active", (slide) => { // Use arrow function to retain the context of `this`
-                var activeIndex = reviews.index;
-                console.log(activeIndex);
-            });
+            
 
             this.reviews = reviews; // Store r
-    });
 
 
 
