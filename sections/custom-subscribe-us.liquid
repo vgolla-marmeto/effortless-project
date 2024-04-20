@@ -41,6 +41,9 @@ margin-top:20px;
   height:40px;
 
 }
+.email-signup-banner__heading{
+  font-size:25px;
+}
 @media screen and (min-width:768px){
   .custom-subscribeus--form{
    flex-direction:row;
@@ -60,15 +63,18 @@ margin-top:20px;
   width:394px;
 
 }
+.email-signup-banner__heading{
+  font-size:56px;
+}
 }
 
 {% endstyle %}
 
 <div class="custom-subscribeus--container custom-subscribeus--{{ section.id }}">
   <div class="custom-subscribeus--container">
-        <h2 class="email-signup-banner__heading ">
+        <h1 class="email-signup-banner__heading">
           {{ section.settings.title }}
-        </h2>
+        </h1>
         <div class="custom-subscribeus--form">
           {% form 'customer' %}
             <input type="hidden" name="contact[tags]" value="newsletter">
