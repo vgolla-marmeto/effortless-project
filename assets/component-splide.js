@@ -34,11 +34,11 @@ class CustomSlider extends HTMLElement{
                 // Remove active-slide class from all slides
                 slides.forEach(function (slide) {
                   console.log(slide)
-                  slide.classList.remove('active-slide');
+                  slide.style.backgroundColor = "#ffffff"
                 });
         
                 // Add active-slide class to the active slide
-                slides[activeIndex].classList.add('active-slide');
+                slides[activeIndex].style.backgroundColor = activeColor
 
 
             });
