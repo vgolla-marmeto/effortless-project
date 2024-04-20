@@ -34,8 +34,8 @@ class CustomSlider extends HTMLElement{
                }
 
               }
-              catch{
-               console.log("error found")
+              catch(e){
+               console.log(e)
               }
            });
 
