@@ -20,10 +20,19 @@ class CustomSlider extends HTMLElement{
          // Intialization of first splider 
 
          this.reviews =    new Splide(this.element, this.options).mount()
+
+         this.imageSlide = new Splide("#display-image", {
+            type: "fade",
+            perPage:1,
+            pagination:false,
+            arrows: false
+         }).mount()
+
+         this.reviews.sync(this.imageSlide)
    
          // Listen for active event to change background color of active slide
-         splide.on('active', function (slide) {
-           var activeIndex = reviews.index;
+         this.reviews.on('active', function (slide) {
+           var activeIndex = this.reviews.index;
            var slides = document.querySelectorAll('.splide__slide');
            
            // Remove active-slide class from all slides
@@ -39,13 +48,8 @@ class CustomSlider extends HTMLElement{
 
 
     
-      this.imageSlide = new Splide("#display-image", {
-         type: "fade",
-         perPage:1,
-         pagination:false,
-         arrows: false
-      }).mount()
-      this.reviews.sync(this.imageSlide)
+      
+      
     }
 
 
