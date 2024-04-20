@@ -30,19 +30,7 @@ class CustomSlider extends HTMLElement{
 
          this.reviews.sync(this.imageSlide)
    
-         // Listen for active event to change background color of active slide
-         this.reviews.on('active', function (slide) {
-           var activeIndex = this.reviews.index;
-           var slides = document.querySelectorAll('.splide__slide');
-           
-           // Remove active-slide class from all slides
-           slides.forEach(function (slide) {
-            //  slide.classList.remove('active-slide');
-           });
-             console.log(activeIndex)
-           // Add active-slide class to the active slide
-         //   slides[activeIndex].classList.add('active-slide');
-         });
+     
        });
 
 
