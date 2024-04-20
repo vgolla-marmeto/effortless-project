@@ -28,6 +28,18 @@ class CustomSlider extends HTMLElement{
                }
                 var activeIndex = reviews.index;
                 console.log(activeIndex);
+
+                var slides = document.querySelectorAll('.splide__slide');
+        
+                // Remove active-slide class from all slides
+                slides.forEach(function (slide) {
+                  slide.classList.remove('active-slide');
+                });
+        
+                // Add active-slide class to the active slide
+                slides[activeIndex].classList.add('active-slide');
+
+
             });
 
             this.reviews = reviews; // Store reviews instance as a property of the class
