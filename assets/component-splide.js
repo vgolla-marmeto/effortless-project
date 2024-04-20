@@ -26,8 +26,9 @@ class CustomSlider extends HTMLElement{
               try{
                if (slide !== undefined){
                   console.log("active slide")
-                  console.log(activeIndex, color)
+               
                   var color = slide.dataset.active 
+                  console.log(activeIndex, color)
                   
                }
                else {
