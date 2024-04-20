@@ -24,7 +24,7 @@ class CustomSlider extends HTMLElement{
       this.reviews.sync(this.imageSlide)
 
       this.reviews.on("active", function(slide) {
-         var activeIndex = this.reviews.index;
+         var activeIndex = reviews.index;
          console.log(activeIndex)
       } )
     }
