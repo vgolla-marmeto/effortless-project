@@ -6,7 +6,6 @@ class CustomSlider extends HTMLElement{
       this.element = this
       console.log(this)
       this.options = JSON.parse(this.element.dataset.sliderOptions);
-      this.activeColor = Json.parse(this.element.dataset.active)
       console.log(this.activeColor)
 
       this.displaySliderShow()
@@ -24,6 +23,7 @@ class CustomSlider extends HTMLElement{
             reviews.sync(imageSlide);
 
             reviews.on("active", (slide) => { // Use arrow function to retain the context of `this`
+               console.log(slide)
                 var activeIndex = reviews.index;
                 console.log(activeIndex);
             });
