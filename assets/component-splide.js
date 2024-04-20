@@ -15,8 +15,6 @@ class CustomSlider extends HTMLElement{
 
     displaySliderShow(){
 
-      document.addEventListener('DOMContentLoaded', function () {
-
          // Intialization of first splider 
 
          this.reviews =    new Splide(this.element, this.options).mount()
@@ -30,8 +28,6 @@ class CustomSlider extends HTMLElement{
 
          this.reviews.sync(this.imageSlide)
    
-     
-       });
 
 
 
