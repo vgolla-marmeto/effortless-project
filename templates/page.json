@@ -66,10 +66,24 @@
         "padding_top": 50,
         "padding_bottom": 30
       }
+    },
+    "custom_subscribe_us_cNbwRH": {
+      "type": "custom-subscribe-us",
+      "settings": {
+        "background_color": "#EDFF84",
+        "title": "Subscribe to our Newsletter",
+        "text_align": "left",
+        "heading_color": "",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "button_text": "Subscribe",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
     }
   },
   "order": [
     "main",
-    "custom_testimonials_l2_assignment_fzEwxb"
+    "custom_testimonials_l2_assignment_fzEwxb",
+    "custom_subscribe_us_cNbwRH"
   ]
 }
