@@ -70,10 +70,10 @@
     "custom_subscribe_us_RNkFa7": {
       "type": "custom-subscribe-us",
       "settings": {
-        "background_color": "#ffffff",
+        "background_color": "#EDFF84",
         "title": "Subscribe to our Newsletter",
         "text_align": "left",
-        "heading_color": "",
+        "heading_color": "#121212",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "button_text": "Subscribe",
         "padding_top": 13,
