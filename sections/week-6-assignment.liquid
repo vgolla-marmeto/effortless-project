@@ -164,6 +164,22 @@ margin-right:15px;
     
   }
 
+  .login-to-view-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh
+  }
+  .login-button{
+    background-color:black;
+    color:white;
+  }
+  .login-button a{
+    text-decoration:none;
+    color:white;
+  }
+
 
 {% endstyle %}
 
@@ -199,7 +215,7 @@ margin-right:15px;
    
 {% endcapture %}
    
-
+{% if customer %}
 
 <div class="custom-testmonial--bg-container  custom-testmonial-{{ section.id }}" >
     <div class="custom-testmonial--content-container">
@@ -255,9 +271,15 @@ margin-right:15px;
         </div>
    </div>
 </div>
+{% else %}
+<div class="login-to-view-container">
+  <h1>Please login to view the page</h1>
+ <button class="login-button"> {{ "Log In Here" | customer_login_link }}</button>
 
 
+</div>
 
+{%  endif %}
 
 
 <script src= {{ "component-splide.js" | asset_url }} defer></script>
