@@ -9,18 +9,22 @@
           "type": "slide",
           "settings": {
             "announcement": "An Effortless Shipping Experience",
+            "text_color": "#ffffff",
             "navigation_text": "Learn More",
             "navigation_url": "shopify:\/\/pages\/theme-features-page",
-            "underline_color": "#06aaa1"
+            "underline_color": "#06aaa1",
+            "font_weight": 500
           }
         },
         "slide_i6dyPt": {
           "type": "slide",
           "settings": {
             "announcement": "An Effortless Shipping Experience",
+            "text_color": "#ffffff",
             "navigation_text": "Learn More",
             "navigation_url": "shopify:\/\/pages\/theme-features-page",
-            "underline_color": "#06aaa1"
+            "underline_color": "#06aaa1",
+            "font_weight": 400
           }
         }
       },
