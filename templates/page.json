@@ -8,53 +8,25 @@
         "padding_bottom": 28
       }
     },
-    "custom_testimonials_l2_assignment_zbfQYX": {
+    "custom_testimonials_l2_assignment_fzEwxb": {
       "type": "custom-testimonials-l2-assignment",
       "blocks": {
-        "slider_nwnDrq": {
+        "slider_RTYEc4": {
           "type": "slider",
           "settings": {
             "background_active": "#F6FFC2",
             "background_normal": "#ffffff",
             "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
-            "authour_image": "shopify:\/\/shop_images\/Rectangle_8_1.png",
             "author_name": "Mr. John Doe",
-            "authror_title": "Clients",
-            "Main_image": "shopify:\/\/shop_images\/Rectangle_14.jpg"
-          }
-        },
-        "slider_TnGnhe": {
-          "type": "slider",
-          "settings": {
-            "background_active": "#F6FFC2",
-            "background_normal": "#ffffff",
-            "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
-            "authour_image": "shopify:\/\/shop_images\/Rectangle_8.png",
-            "author_name": "Mr. John Doe",
-            "authror_title": "Clients",
-            "Main_image": "shopify:\/\/shop_images\/pizza-pizza-filled-with-tomatoes-salami-olives.jpg"
-          }
-        },
-        "slider_TRdhPM": {
-          "type": "slider",
-          "settings": {
-            "background_active": "#F6FFC2",
-            "background_normal": "#ffffff",
-            "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
-            "authour_image": "shopify:\/\/shop_images\/Rectangle_78.webp",
-            "author_name": "Mr. John Doe",
-            "authror_title": "Clients",
-            "Main_image": "shopify:\/\/shop_images\/vertical-shot-traditional-indian-paneer-butter-masala-cheese-cottage-curry-black-surface.jpg"
+            "authror_title": "Clients"
           }
         }
       },
       "block_order": [
-        "slider_nwnDrq",
-        "slider_TnGnhe",
-        "slider_TRdhPM"
+        "slider_RTYEc4"
       ],
       "settings": {
-        "background_color": "#fff",
+        "background_color": "#ffffff",
         "title": "Testimonials",
         "text_align": "left",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -66,24 +38,10 @@
         "padding_top": 10,
         "padding_bottom": 10
       }
-    },
-    "custom_subscribe_us_RNkFa7": {
-      "type": "custom-subscribe-us",
-      "settings": {
-        "background_color": "#EDFF84",
-        "title": "Subscribe to our Newsletter",
-        "text_align": "left",
-        "heading_color": "#121212",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "button_text": "Subscribe",
-        "padding_top": 13,
-        "padding_bottom": 10
-      }
     }
   },
   "order": [
     "main",
-    "custom_testimonials_l2_assignment_zbfQYX",
-    "custom_subscribe_us_RNkFa7"
+    "custom_testimonials_l2_assignment_fzEwxb"
   ]
 }
