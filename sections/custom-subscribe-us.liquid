@@ -121,37 +121,24 @@ margin-top:20px;
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    // Function to handle form submission
+  
     function handleFormSubmit(event) {
-      event.preventDefault(); // Prevent default form submission behavior
+      event.preventDefault(); 
 
-      var form = event.target; // Get the form element
-      var emailInput = form.querySelector('input[type="email"]'); // Get the email input element
-      var email = emailInput.value.trim(); // Get the value of the email input and remove leading/trailing whitespace
+      var form = event.target; 
+      var emailInput = form.querySelector('NewsletterForm--{{ section.id }}'); 
+      var email = emailInput.value.trim(); 
 
-      if (email === '') {
-        var errorMsg = form.querySelector('.show-msg');
-        errorMsg.textContent = "Email can't be blank.";
-        return; // Exit the function
-      }
-
-      // Reset error message if email is not empty
-      var errorMsg = form.querySelector('.show-msg');
-      errorMsg.textContent = '';
-
-      // Hide the input element
+  
       emailInput.style.display = 'none';
 
-      // Show success message
       var successMsg = document.createElement('p');
       successMsg.textContent = "Thanks for subscribing Us!";
       form.appendChild(successMsg);
     }
 
-    // Find the form element
     var form = document.querySelector('.custom-subscribeus--form form');
 
-    // Add event listener for form submission
     form.addEventListener('submit', handleFormSubmit);
   });
 </script>
