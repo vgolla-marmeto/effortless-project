@@ -2,13 +2,46 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "custom_testimonials_l2_assignment_zbfQYX": {
+      "type": "custom-testimonials-l2-assignment",
+      "blocks": {
+        "slider_nwnDrq": {
+          "type": "slider",
+          "settings": {
+            "background_active": "#F6FFC2",
+            "background_normal": "#ffffff",
+            "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
+            "author_name": "Mr. John Doe",
+            "authror_title": "Clients"
+          }
+        }
+      },
+      "block_order": [
+        "slider_nwnDrq"
+      ],
+      "settings": {
+        "background_color": "#ffffff",
+        "title": "Testimonials",
+        "text_align": "left",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "auto_play": false,
+        "show_pagination": false,
+        "show_arrows": false,
+        "auto_play_duration": 2000,
+        "slider_animation": "slide",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_testimonials_l2_assignment_zbfQYX"
   ]
 }
