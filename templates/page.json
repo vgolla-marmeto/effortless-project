@@ -14,8 +14,8 @@
         "slider_RTYEc4": {
           "type": "slider",
           "settings": {
-            "background_active": "#EDFF",
-            "background_normal": "green",
+            "background_active": "#F6FFC2",
+            "background_normal": "#ffffff",
             "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
             "authour_image": "shopify:\/\/shop_images\/Rectangle_8_1.png",
             "author_name": "Mr. John Doe",
@@ -26,8 +26,8 @@
         "slider_gHkLhV": {
           "type": "slider",
           "settings": {
-            "background_active": "#EDFF84",
-            "background_normal": "skyblue",
+            "background_active": "#F6FFC2",
+            "background_normal": "#ffffff",
             "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
             "authour_image": "shopify:\/\/shop_images\/Rectangle_8.png",
             "author_name": "Mr. John Doe",
@@ -38,8 +38,8 @@
         "slider_dNd3jE": {
           "type": "slider",
           "settings": {
-            "background_active": "#EDFF84",
-            "background_normal": "skyblue",
+            "background_active": "#F6FFC2",
+            "background_normal": "#ffffff",
             "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
             "authour_image": "shopify:\/\/shop_images\/Rectangle_78.webp",
             "author_name": "Mr. John Doe",
@@ -72,6 +72,8 @@
       "settings": {
         "background_color": "#EDFF84",
         "title": "Subscribe to our Newsletter",
+        "text_align": "left",
+        "heading_color": "",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "button_text": "Subscribe",
         "padding_top": 10,

@@ -68,8 +68,8 @@
     
 {% endstyle %}
 
-<splider-component class="custom-announcementbar--{{ section.id }} custom-announcementbar--splide-container" id="customSlideshow" data-slider-options= '{{ sliderSettings }}'>
-    <div class="splide  custom-announcementbar--splide-container">
+<div class="custom-announcementbar--{{ section.id }} custom-announcementbar--splide-container" id="customSlideshow">
+    <splider-component class="splide  custom-announcementbar--splide-container" data-slider-options='{{ sliderSettings }}'>
         <div class="splide__track">
             <ul class="splide__list">
                 {% for block in section.blocks %}
@@ -77,8 +77,8 @@
                 {% endfor %}
             </ul>
         </div>
-    </div>
-</splider-component>
+    </splider-component>
+</div>
 
 
 
