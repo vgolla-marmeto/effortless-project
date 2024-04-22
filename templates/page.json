@@ -27,7 +27,7 @@
           "type": "slider",
           "settings": {
             "background_active": "red",
-            "background_normal": "#ffffff",
+            "background_normal": "#green",
             "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
             "authour_image": "shopify:\/\/shop_images\/Rectangle_8.png",
             "author_name": "Mr. John Doe",
