@@ -85,25 +85,12 @@
     </splider-component>
 </div>
 
-<script src="{{ 'custom-splider.js' | asset_url  }}" defer></script>
+<script src= {{ "custom-splide.js" | asset_url }} defer></script>
 
-{% comment %} <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var splide = new Splide('.splide', {
-        type   : 'loop',
-        permove:1,
-        autoplay: {{ section.settings.auto_play }},
-        interval: {{ section.settings.auto_play_duration }} * 1000, 
-        pagination: {{ section.settings.show_pagination }},
-        arrows: {{ section.settings.show_arrows }},
-      }).mount();
-      
-    });
-</script> {% endcomment %}
 
 {% schema %}
     {
-        "name": "custom-announcement-bar",
+        "name": "Custom announcement bar",
         "tag": "section",
         "class": "section",
         "enabled_on": {
@@ -251,7 +238,7 @@
         ],
         "presets": [
             {
-                "name": "custom-announcement-bar",
+                "name": "Custom announcement bar",
                 "blocks": [
                     {
                         "type": "slide"
