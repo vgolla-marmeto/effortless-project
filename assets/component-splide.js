@@ -41,6 +41,7 @@ if (!customElements.get("custom-slider")) {
                } else {
                    slide.classList.remove(`active-slide-${activeIndex}`);
                    slide.classList.add(`normal-color-${activeIndex}`)
+                   console.log(`normal-color-${activeIndex}`)
                }
            });
        }
