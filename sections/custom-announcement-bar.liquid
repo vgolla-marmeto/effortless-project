@@ -51,7 +51,27 @@
     
 {% endstyle %}
 
-<div class="custom-announcementbar--{{ section.id }}" id="customSlideshow">
+
+<carousel-component class="splide custom-announcementbar--{{ section.id }} custom-announcementbar--splide-container" id="customSlideshow" 
+    data-desktopPerPage="1"
+    data-mobilePerPage="1"
+    data-autoplay=" {{ section.settings.auto_play }}"
+    data-autoplay-speed="{{ section.settings.auto_play_duration | times: 1000 | default: 3000 }}"
+    data-showArrows="{{ section.settings.show_arrows }}"
+    data-showArrowsOnMobile="{{ section.settings.show_arrows }}"
+    data-showDots="{{ section.settings.show_arrows }}"
+    data-showDotsOnMobile="{{ section.settings.show_arrows }}"
+>
+    <div class="splide__track">
+        <ul class="splide__list">
+            {% for block in section.blocks %}
+                <li class="splide__slide custom-announcementbar--text" >{{ block.settings.announcement }} <span > <a href="{{block.settings.navigation_url}}" class="custom-announcementbar--navigation_styles" style="border-bottom: 1px solid {{ block.settings.underline_color }}; color: {{block.settings.text_color }};" > {{ block.settings.navigation_text }} </a> </span></li>
+            {% endfor %}
+        </ul>
+    </div>
+</carousel-component>
+
+{% comment %} <div class="custom-announcementbar--{{ section.id }}" id="customSlideshow">
     <div class="splide  custom-announcementbar--splide-container">
         <div class="splide__track">
             <ul class="splide__list">
@@ -61,9 +81,9 @@
             </ul>
         </div>
     </div>
-</div>
+</div> {% endcomment %}
 
-<script>
+{% comment %} <script>
     document.addEventListener('DOMContentLoaded', function () {
         var splide = new Splide('.splide', {
         type   : 'loop',
@@ -75,7 +95,7 @@
       }).mount();
       
     });
-</script>
+</script> {% endcomment %}
 
 {% schema %}
     {
@@ -117,12 +137,12 @@
             {
                 "type": "range",
                 "id": "auto_play_duration",
-                "min": 1,
-                "max": 5,
-                "step": 1,
+                "min": 1000,
+                "max": 5000,
+                "step": 1000,
                 "unit": "sec",
                 "label": "Autoplay duration",
-                "default": 4
+                "default": 3000
             },
             {
                 "type": "header",
