@@ -141,10 +141,10 @@ margin-right:15px;
 
 {% for block in section.blocks %}
  
-  .active-slide{
+  .active-slide-{{forloop.index0}}{
    background-color:{{ block.settings.background_active }}
   }
-  .normal-color{
+  .normal-color-{{forloop.index0}}{
     background-color: {{ block.settings.background_normal }}
   }
 
