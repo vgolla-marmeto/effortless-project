@@ -16,6 +16,11 @@
   {% endcapture %}
 
 
+
+
+
+
+
 {% style %}
     .custom-announcementbar--{{ section.id }}{
         padding-top:{{ section.settings.padding_top | divided_by:2 }}px;
@@ -68,7 +73,7 @@
     
 {% endstyle %}
 
-<div class="custom-announcementbar--{{ section.id }} custom-announcementbar--splide-container" id="customSlideshow">
+<div class="custom-announcementbar--{{ section.id }}" id="customSlideshow">
     <splider-component class="splide  custom-announcementbar--splide-container" data-slider-options='{{ sliderSettings }}'>
         <div class="splide__track">
             <ul class="splide__list">
@@ -80,10 +85,21 @@
     </splider-component>
 </div>
 
-
-
 <script src="{{ 'custom-splider.js' | asset_url  }}" defer></script>
 
+{% comment %} <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide', {
+        type   : 'loop',
+        permove:1,
+        autoplay: {{ section.settings.auto_play }},
+        interval: {{ section.settings.auto_play_duration }} * 1000, 
+        pagination: {{ section.settings.show_pagination }},
+        arrows: {{ section.settings.show_arrows }},
+      }).mount();
+      
+    });
+</script> {% endcomment %}
 
 {% schema %}
     {
