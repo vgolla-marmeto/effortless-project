@@ -231,7 +231,7 @@ margin-right:15px;
                     {% if block.settings.Main_image != blank %}
                     <img src="{{ block.settings.Main_image | image_url }}" height="auto" width="auto" class="custom-testmonial--image-size" />
                     {% else %}
-                    {{ 'product-{{ forloop.index }}' | placeholder_svg_tag }}
+                    {{ 'product-1' | placeholder_svg_tag }}
                     {% endif %}
                   </li>
                 {% endfor %}
