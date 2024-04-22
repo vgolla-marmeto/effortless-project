@@ -14,7 +14,7 @@
         "slider_RTYEc4": {
           "type": "slider",
           "settings": {
-            "background_active": "#EDFF84",
+            "background_active": "black",
             "background_normal": "#fff",
             "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
             "authour_image": "shopify:\/\/shop_images\/Rectangle_8_1.png",
