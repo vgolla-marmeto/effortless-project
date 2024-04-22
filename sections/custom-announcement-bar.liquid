@@ -25,63 +25,59 @@
 
 
 {% style %}
-    .custom-announcementbar--{{ section.id }}{
-        padding-top:{{ section.settings.padding_top | divided_by:2 }}px;
-        padding-bottom:{{ section.settings.padding_bottom | divided_by:2 }}px;
-        background-color: {{section.settings.backgrond_color}};
-    }
-    .custom-announcementbar--text{
-    line-height: 1.5;
-    text-align:center;
-    font-size : {{ section.settings.font_size_for_mobile }}px;
-    color: {{ section.settings.text_color }};
-    font-weight: {{ Section.settings.font_weight }};
-    }
-   
-    #customSlideshow .splide__arrow{
-        background-color:transparent;
-        color:white;
-    }
-    #customSlideshow .splide__arrow svg{
-        fill:#ffffff;
-        height:18px;
-        width:18px;
-    }
-    #customSlideshow .splide__arrow:disabled {
-     opacity: 1; 
-    }
-    .custom-announcementbar--navigation_styles{ 
-        text-decoration:none;
-        outline:none;
-        margin-left:15px;
-        color:{{ section.settings.text_color }}
-    }
-    .custom-announcementbar--splide-container{
-        max-width:100%;
-        margin:0 auto;
-    }
-    @media screen and (min-width:749px){
-        .custom-announcementbar--{{ section.id }}{
-            padding-top:{{ section.settings.padding_top }}px;
-            padding-bottom:{{ section.settings.padding_bottom }}px;
-        }
-        .custom-announcementbar--splide-container{
-            width:600px;
-            margin : 0 auto;
-        }
-         .custom-announcementbar--text{
-        font-size: {{ section.settings.fontsize_for_desktop }}px;
-        }
-    }
+      .custom-announcementbar--{{ section.id }}{
+      padding-top:{{ section.settings.padding_top | divided_by:2 }}px;
+      padding-bottom:{{ section.settings.padding_bottom | divided_by:2 }}px;
+      background-color: {{section.settings.backgrond_color}};
+  }
+  .custom-announcementbar--text{
+  line-height: 1.5;
+  text-align:center;
+  font-size : {{ section.settings.font_size_for_mobile }}px;
+  color: {{ section.settings.text_color }};
+  font-weight: {{ Section.settings.font_weight }};
+  }
 
+  #customSlideshow .splide__arrow{
+      background:transparent;
+  }
+  #customSlideshow .splide__arrow svg{
+      fill:#ffffff;
+      height:18px;
+      width:18px;
+  }
+  .custom-announcementbar--navigation_styles{
+      text-decoration:none;
+      outline:none;
+      margin-left:15px;
+      color:{{ section.settings.text_color }}
+  }
 
+  @media screen and (min-width:749px){
+      .custom-announcementbar--{{ section.id }}{
+          padding-top:{{ section.settings.padding_top }}px;
+          padding-bottom:{{ section.settings.padding_bottom }}px;
+      }
+      .custom-announcementbar--splide-container{
+          width:600px;
+          margin : 0 auto;
+      }
+       .custom-announcementbar--text{
+      font-size: {{ section.settings.fontsize_for_desktop }}px;
+      }
+  }
+
+  .custom-announcementbar--splide-container{
+      max-width:100%;
+      margin:0 auto;
+  }
     
 {% endstyle %}
 
 <div class="custom-announcementbar--{{ section.id }}" id="customSlideshow">
-    <splider-component class="splide" data-slider-options='{{ sliderSettings }}'>
+    <splider-component class="splide  custom-announcementbar--splide-container" data-slider-options='{{ sliderSettings }}'>
         <div class="splide__track">
-            <ul class="splide__list custom-announcementbar--splide-container">
+            <ul class="splide__list">
                 {% for block in section.blocks %}
                     <li class="splide__slide custom-announcementbar--text" >{{ block.settings.announcement }} <span > <a href="{{block.settings.navigation_url}}" class="custom-announcementbar--navigation_styles" style="border-bottom: 1px solid {{ block.settings.underline_color }}; color: {{block.settings.text_color }};" > {{ block.settings.navigation_text }} </a> </span></li>
                 {% endfor %}
