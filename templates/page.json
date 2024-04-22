@@ -56,13 +56,24 @@
             "author_name": "Mr. John Doe",
             "authror_title": "Clients"
           }
+        },
+        "slider_DQtPeF": {
+          "type": "slider",
+          "settings": {
+            "background_active": "#F6FFC2",
+            "background_normal": "#ffffff",
+            "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
+            "author_name": "Mr. John Doe",
+            "authror_title": "Clients"
+          }
         }
       },
       "block_order": [
         "slider_RTYEc4",
         "slider_gHkLhV",
         "slider_dNd3jE",
-        "slider_JLgKeb"
+        "slider_JLgKeb",
+        "slider_DQtPeF"
       ],
       "settings": {
         "background_color": "#ffffff",
