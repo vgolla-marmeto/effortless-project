@@ -31,8 +31,8 @@
       "settings": {
         "backgrond_color": "#000000",
         "auto_play": true,
-        "show_pagination": false,
-        "show_arrows": false,
+        "show_pagination": true,
+        "show_arrows": true,
         "auto_play_duration": 3000,
         "font_size_for_mobile": 12,
         "fontsize_for_desktop": 18,
