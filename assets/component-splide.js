@@ -35,6 +35,7 @@ if (!customElements.get("custom-slider")) {
        toggleActiveClass(slides, activeIndex) {
            slides.forEach((slide, index) => {
                if (index === activeIndex) {
+                console.log(slide)
                    slide.classList.add(`active-slide-${activeIndex}`);
                    console.log(`active-slide-${activeIndex}`)
                    slide.classList.remove(`normal-color-${activeIndex}`)
