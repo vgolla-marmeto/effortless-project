@@ -28,14 +28,15 @@ if (!customElements.get("custom-slider")) {
        toggleActiveClass(slides, activeIndex) {
            slides.forEach((slide, index) => {
                if (index === activeIndex) {
-                console.log(slide.querySelector(".custom-testimonials--slide"))
-                   slide.classList.add(`active-slide-${activeIndex}`);
-                   console.log(`active-slide-${activeIndex}`)
-                   slide.classList.remove(`normal-color-${activeIndex}`)
+                slide.querySelector(".custom-testimonials--slide").classList.remove(`normal-color-${activeIndex}`)
+                slide.querySelector(".custom-testimonials--slide").classList.add(`active-slide-${activeIndex}`);
+                console.log(`active-slide-${activeIndex}`)
+                  
                } else {
-                   slide.classList.remove(`active-slide-${activeIndex}`);
-                   slide.classList.add(`normal-color-${activeIndex}`)
-                   console.log(`normal-color-${activeIndex}`)
+                slide.querySelector(".custom-testimonials--slide").classList.remove(`active-slide-${activeIndex}`);
+                slide.querySelector(".custom-testimonials--slide").classList.add(`normal-color-${activeIndex}`)
+                console.log(`normal-color-${activeIndex}`)
+                console.log(`active-slide-${activeIndex}`)
                }
            });
        }
