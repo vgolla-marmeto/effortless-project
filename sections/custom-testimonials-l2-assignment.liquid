@@ -227,8 +227,12 @@ margin-right:15px;
             <div class="splide__track">
               <ul class="splide__list">
                 {%  for block in section.blocks  %}
-                  <li class="splide__slide">
+                  <li class="splide__slide"> 
+                    {% if block.settings.Main_image != blank %}
                     <img src="{{ block.settings.Main_image | image_url }}" height="auto" width="auto" class="custom-testmonial--image-size" />
+                    {% else %}
+                    {{ 'product-{{ forloop.index }}' | placeholder_svg_tag }}
+                    {% endif %}
                   </li>
                 {% endfor %}
               </ul>
