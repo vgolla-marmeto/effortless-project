@@ -75,8 +75,8 @@
     
 {% endstyle %}
 
-<div class="custom-announcementbar--{{ section.id }}" id="customSlideshow">
-    <splider-component class="splide  custom-announcementbar--splide-container" data-slider-options='{{ sliderSettings }}'>
+<splider-component class="custom-announcementbar--{{ section.id }}" id="customSlideshow" data-slider-options='{{ sliderSettings }}'>
+    <div class="splide  custom-announcementbar--splide-container" >
         <div class="splide__track">
             <ul class="splide__list">
                 {% for block in section.blocks %}
@@ -84,8 +84,8 @@
                 {% endfor %}
             </ul>
         </div>
-    </splider-component>
-</div>
+    </div>
+</splider-component>
 
 <script src= {{ "custom-splider.js" | asset_url }} defer></script>
 
