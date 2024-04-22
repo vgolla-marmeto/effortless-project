@@ -22,7 +22,7 @@ if (!customElements.get("custom-slider")) {
             });
 
             this.reviews = reviews;
-            this.toggleActiveClass(reviews.Components.Elements.slides, 0); // Apply initial colors
+            this.toggleActiveClass(reviews.Components.Elements.slides, 0); 
         }
 
         toggleActiveClass(slides, activeIndex) {
