@@ -3,10 +3,7 @@ if (!customElements.get("custom-slider")) {
        constructor() {
            super();
            this.element = this;
-           console.log(this);
-           this.options = JSON.parse(this.element.dataset.sliderOptions);
-           console.log(this.options);
-
+           this.options = JSON.parse(this.element.dataset.sliderOptions)
            this.displaySliderShow();
        }
 
@@ -31,7 +28,7 @@ if (!customElements.get("custom-slider")) {
        toggleActiveClass(slides, activeIndex) {
            slides.forEach((slide, index) => {
                if (index === activeIndex) {
-                console.log(slide.queryselector(".custom-testimonials--slide"))
+                console.log(slide.querySelector(".custom-testimonials--slide"))
                    slide.classList.add(`active-slide-${activeIndex}`);
                    console.log(`active-slide-${activeIndex}`)
                    slide.classList.remove(`normal-color-${activeIndex}`)
