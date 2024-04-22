@@ -77,9 +77,9 @@
 {% endstyle %}
 
 <div class="custom-announcementbar--{{ section.id }}" id="customSlideshow">
-    <splider-component class="splide  custom-announcementbar--splide-container" data-slider-options='{{ sliderSettings }}'>
+    <splider-component class="splide" data-slider-options='{{ sliderSettings }}'>
         <div class="splide__track">
-            <ul class="splide__list">
+            <ul class="splide__list custom-announcementbar--splide-container">
                 {% for block in section.blocks %}
                     <li class="splide__slide custom-announcementbar--text" >{{ block.settings.announcement }} <span > <a href="{{block.settings.navigation_url}}" class="custom-announcementbar--navigation_styles" style="border-bottom: 1px solid {{ block.settings.underline_color }}; color: {{block.settings.text_color }};" > {{ block.settings.navigation_text }} </a> </span></li>
                 {% endfor %}
