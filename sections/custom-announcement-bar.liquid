@@ -50,24 +50,22 @@
         margin-left:15px;
         color:{{ section.settings.text_color }}
     }
-
+    .custom-announcementbar--splide-container{
+        max-width:100%;
+        margin:0 auto;
+    }
     @media screen and (min-width:749px){
         .custom-announcementbar--{{ section.id }}{
             padding-top:{{ section.settings.padding_top }}px;
             padding-bottom:{{ section.settings.padding_bottom }}px;
         }
         .custom-announcementbar--splide-container{
-            width:600px;
+            min-width:50%;
             margin : 0 auto;
         }
          .custom-announcementbar--text{
         font-size: {{ section.settings.fontsize_for_desktop }}px;
         }
-    }
-
-    .custom-announcementbar--splide-container{
-        max-width:100%;
-        margin:0 auto;
     }
 
 
