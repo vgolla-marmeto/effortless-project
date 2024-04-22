@@ -226,7 +226,7 @@ margin-right:15px;
             <div class="splide__track">
               <ul class="splide__list">
                 {%  for block in section.blocks  %}
-                  {{ forloop.index0 }}
+                  
                   <li class="splide__slide">
                     <img src="{{ block.settings.Main_image | image_url }}" height="auto" width="auto" class="custom-testmonial--image-size" />
                   </li>
@@ -249,6 +249,7 @@ margin-right:15px;
                           <div class="custom-testimonials--slide">
                             {%- if block.settings.testmonial_text != blank -%}
                                 <p class="cutsom-testmonial--blog-text">{{ block.settings.testmonial_text }}</p>
+                                {{ forloop.index0 }}
                             {%- endif -%}
                             <div class="custom-testimonials--authour-container">
                               {%- if block.settings.authour_image -%}
