@@ -118,6 +118,12 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-1",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_color": "#242833",
+    "checkout_input_background_color_mode": "transparent",
+    "checkout_sidebar_background_color": "#ffffff",
+    "checkout_button_color": "#1773b0",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
