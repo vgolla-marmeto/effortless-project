@@ -56,7 +56,7 @@
             padding-bottom:{{ section.settings.padding_bottom }}px;
         }
         .custom-announcementbar--splide-container{
-            width:50%;
+            width:600px;
             margin : 0 auto;
         }
          .custom-announcementbar--text{
@@ -85,7 +85,7 @@
     </splider-component>
 </div>
 
-<script src= {{ "custom-splide.js" | asset_url }} defer></script>
+<script src= {{ "custom-splider.js" | asset_url }} defer></script>
 
 
 {% schema %}
@@ -131,7 +131,7 @@
                 "min": 1000,
                 "max": 5000,
                 "step": 1000,
-                "unit": "sec",
+                "unit": "ms",
                 "label": "Autoplay duration",
                 "default": 3000
             },
