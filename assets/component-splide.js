@@ -19,23 +19,19 @@ if (!customElements.get("custom-slider")) {
                arrows: false
            }).mount();
            reviews.sync(imageSlide);
-
-           reviews.on("active", (slide) => { // Use arrow function to retain the context of `this`
+           reviews.on("active", (slide) => { 
                var activeIndex = reviews.index;
-               console.log(activeIndex);
                this.toggleActiveClass(reviews.Components.Elements.slides, activeIndex);
            });
 
-           this.reviews = reviews; // Store reviews instance as a property of the class
-
-           // Trigger the "active" event for the initial slide
+           this.reviews = reviews; 
            reviews.emit("active", reviews.Components.Elements.slides[0]);
        }
 
        toggleActiveClass(slides, activeIndex) {
            slides.forEach((slide, index) => {
                if (index === activeIndex) {
-                console.log(slide)
+                console.log(slide.queryselector(".custom-testimonials--slide"))
                    slide.classList.add(`active-slide-${activeIndex}`);
                    console.log(`active-slide-${activeIndex}`)
                    slide.classList.remove(`normal-color-${activeIndex}`)
