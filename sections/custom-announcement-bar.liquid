@@ -1,4 +1,21 @@
 
+{% liquid
+    assign autoPlay = section.settings.auto_play
+    assign autoPlayDuration = section.settings.auto_play_duration
+    assign showPagination = section.settings.show_pagination
+    assign showArrows = section.settings.show_arrows
+  %}
+  
+  {% capture sliderSettings %}
+    {
+      "autoplay":{{autoPlay}},
+      "pagination":{{showPagination}},
+      "speed":{{autoPlayDuration}},
+      "arrows":{{showArrows}}
+    }
+  {% endcapture %}
+
+
 {% style %}
     .custom-announcementbar--{{ section.id }}{
         padding-top:{{ section.settings.padding_top | divided_by:2 }}px;
@@ -34,7 +51,7 @@
             padding-bottom:{{ section.settings.padding_bottom }}px;
         }
         .custom-announcementbar--splide-container{
-            width:600px;
+            width:50%;
             margin : 0 auto;
         }
          .custom-announcementbar--text{
@@ -51,27 +68,7 @@
     
 {% endstyle %}
 
-
-<carousel-component class="splide custom-announcementbar--{{ section.id }} custom-announcementbar--splide-container" id="customSlideshow" 
-    data-desktopPerPage="1"
-    data-mobilePerPage="1"
-    data-autoplay=" {{ section.settings.auto_play }}"
-    data-autoplay-speed="{{ section.settings.auto_play_duration | times: 1000 | default: 3000 }}"
-    data-showArrows="{{ section.settings.show_arrows }}"
-    data-showArrowsOnMobile="{{ section.settings.show_arrows }}"
-    data-showDots="{{ section.settings.show_arrows }}"
-    data-showDotsOnMobile="{{ section.settings.show_arrows }}"
->
-    <div class="splide__track">
-        <ul class="splide__list">
-            {% for block in section.blocks %}
-                <li class="splide__slide custom-announcementbar--text" >{{ block.settings.announcement }} <span > <a href="{{block.settings.navigation_url}}" class="custom-announcementbar--navigation_styles" style="border-bottom: 1px solid {{ block.settings.underline_color }}; color: {{block.settings.text_color }};" > {{ block.settings.navigation_text }} </a> </span></li>
-            {% endfor %}
-        </ul>
-    </div>
-</carousel-component>
-
-{% comment %} <div class="custom-announcementbar--{{ section.id }}" id="customSlideshow">
+<splider-component class="custom-announcementbar--{{ section.id }} custom-announcementbar--splide-container" id="customSlideshow" data-slider-options= '{{ sliderSettings }}'>
     <div class="splide  custom-announcementbar--splide-container">
         <div class="splide__track">
             <ul class="splide__list">
@@ -81,23 +78,12 @@
             </ul>
         </div>
     </div>
-</div> {% endcomment %}
+</splider-component>
+
+
 
 <script src="{{ 'custom-splider.js' | asset_url  }}" defer></script>
 
-{% comment %} <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var splide = new Splide('.splide', {
-        type   : 'loop',
-        permove:1,
-        autoplay: {{ section.settings.auto_play }},
-        interval: {{ section.settings.auto_play_duration }} * 1000, 
-        pagination: {{ section.settings.show_pagination }},
-        arrows: {{ section.settings.show_arrows }},
-      }).mount();
-      
-    });
-</script> {% endcomment %}
 
 {% schema %}
     {

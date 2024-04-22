@@ -17,7 +17,7 @@ if (!customElements.get("custom-slider")) {
             }).mount();
             reviews.sync(imageSlide);
 
-            reviews.on("move", (newIndex, oldIndex, destIndex) => {
+            reviews.on("move", (newIndex) => {
                 this.toggleActiveClass(reviews.Components.Elements.slides, newIndex);
             });
 
