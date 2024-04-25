@@ -22,10 +22,23 @@
             "authror_title": "Clients",
             "Main_image": "shopify:\/\/shop_images\/Rectangle_14.jpg"
           }
+        },
+        "slider_XQrNVF": {
+          "type": "slider",
+          "settings": {
+            "background_active": "#F6FFC2",
+            "background_normal": "#ffffff",
+            "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
+            "authour_image": "shopify:\/\/shop_images\/Rectangle_8.png",
+            "author_name": "Mr. John Doe",
+            "authror_title": "Clients",
+            "Main_image": "shopify:\/\/shop_images\/pizza-pizza-filled-with-tomatoes-salami-olives.jpg"
+          }
         }
       },
       "block_order": [
-        "slider_RE9bQA"
+        "slider_RE9bQA",
+        "slider_XQrNVF"
       ],
       "settings": {
         "background_color": "#ffffff",
