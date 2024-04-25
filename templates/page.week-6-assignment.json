@@ -34,11 +34,24 @@
             "authror_title": "Clients",
             "Main_image": "shopify:\/\/shop_images\/pizza-pizza-filled-with-tomatoes-salami-olives.jpg"
           }
+        },
+        "slider_9p3gXK": {
+          "type": "slider",
+          "settings": {
+            "background_active": "#F6FFC2",
+            "background_normal": "#ffffff",
+            "testmonial_text": "“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque “",
+            "authour_image": "shopify:\/\/shop_images\/vertical-shot-traditional-indian-paneer-butter-masala-cheese-cottage-curry-black-surface.jpg",
+            "author_name": "Mr. John Doe",
+            "authror_title": "Clients",
+            "Main_image": "shopify:\/\/shop_images\/vertical-shot-traditional-indian-paneer-butter-masala-cheese-cottage-curry-black-surface.jpg"
+          }
         }
       },
       "block_order": [
         "slider_RE9bQA",
-        "slider_XQrNVF"
+        "slider_XQrNVF",
+        "slider_9p3gXK"
       ],
       "settings": {
         "background_color": "#ffffff",
