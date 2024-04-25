@@ -66,10 +66,22 @@
         "padding_top": 10,
         "padding_bottom": 10
       }
+    },
+    "custom_subscribe_us_4UpFgd": {
+      "type": "custom-subscribe-us",
+      "settings": {
+        "background_color": "#ffffff",
+        "title": "Subscribe to our Newsletter",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "button_text": "Subscribe",
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
     }
   },
   "order": [
     "main",
-    "custom_testimonials_l2_assignment_MdWdVT"
+    "custom_testimonials_l2_assignment_MdWdVT",
+    "custom_subscribe_us_4UpFgd"
   ]
 }
